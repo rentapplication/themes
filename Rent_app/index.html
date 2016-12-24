@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]>
-<html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]>
-<html lang="en" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en">
-<!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title>Project title</title>
@@ -39,23 +31,32 @@
     			<img src="images/logotype.svg" width="30" alt="">
     		</div>
     		<div class="h1-head">
-    			<h1>Rent Application</h1>
+    			<a href="index.html">Rent Application</a>
     		</div>
     		<a id="touch-menu" class="mobile-menu" href="#"><div class="square"><div class="line"></div></div></a>
     		<ul class="menu">
-    			<!-- <li><a href="#">Menu 1</a></li> -->
-    			<!-- <li><a href="#">Menu 2</a></li> -->
     			<li>
+                    <a href="#">
+                        <p>Dashbord</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Payments</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Help</p>
+                    </a>
+                </li>
+    			<li class="profile">
     				<a href="#">
-    					<img src="images/profile.svg" class="profile-image" alt="">
+    					<img src="images/profile.svg" width="27" class="profile-image" alt="">
     					<p class="profile-name">johnsmith@email.com</p>
     				</a>
     			</li>
-    			<li>
-    				<a href="#">
-    					<p>Help</p>
-    				</a>
-    			</li>
+    			
     		</ul>
     	</div>
     </nav>
@@ -71,6 +72,9 @@
     				<p>Applicants</p>
     			</li>
     		</ul>
+            <div class="landrow">
+                <p>Landlord Dashboard</p>
+            </div>
     	</div>
     </div>
     <div class="content form-content active">
@@ -78,7 +82,12 @@
     			<h2>Form Name</h2>
     			<h2 class="reports">Reports Included
     			<!-- <a href="#" class="tooltip-reports btn" for="modal-1"></a> -->
-    			<label class="btn tooltip-reports" for="modal-1"></label>
+    			<!-- <label class="btn tooltip-reports" for="modal-1"></label> -->
+                <div class="tooltip-reports">
+                    <div class="plashka">
+                        <p>Reports included with application</p>
+                    </div>
+                </div>
     			</h2>
     			<a href="#" class="button">
     				<img src="images/plus.svg" width="24" alt="">
@@ -87,7 +96,9 @@
     		</div>
     		<div class="content-body">
     			<div class="name">
-    				<h3>700 E Axis Avenue</h3>
+    				<h3>
+                        <a href="#" class="form-link">700 E Axis Avenue</a>            
+                    </h3>
     				<a href="www.rentapplication.net/axisavenue">www.rentapplication.net/axisavenue</a>
     			</div>
     			<div class="services">
@@ -111,7 +122,9 @@
     		</div>
     		<div class="content-body">
     			<div class="name">
-    				<h3>215 N Morgan Street</h3>
+    				<h3>
+                        <a href="#" class="form-link">215 N Morgan Street</a>            
+                    </h3>
     				<a href="www.rentapplication.net/morganstreet">www.rentapplication.net/morganstreet</a>
     			</div>
     			<div class="services">
@@ -135,7 +148,9 @@
     		</div>
     		<div class="content-body">
     			<div class="name">
-    				<h3>6673 Morse Street</h3>
+    				<h3>
+                        <a href="#" class="form-link">6673 Morse Street</a>            
+                    </h3>
     				<a href="www.rentapplication.net/morsestreet">www.rentapplication.net/morsestreet</a>
     			</div>
     			<div class="services">
@@ -170,8 +185,9 @@
     			</form>
     		</div>
     		<div class="content-body sent-to-applicant">
+                <div class="sent-block"></div> <!-- a block on top of the text -->
     			<div class="name">
-    				<h3>Jake Evergreen</h3>
+    				<a href="#" class="link">Jake Evergreen</a>
     			</div>
     			<div class="property">
     				<p>234 E Washington Street</p>
@@ -183,12 +199,13 @@
     				<!-- <p>11/19/2016</p> -->
     			</div>
     			<div class="button">
-    				<a href="#">Send</a>
+    				<a href="#">View</a>
+                    <a href="#" class="remove"></a>
     			</div>
     		</div>
     		<div class="content-body submitted">
     			<div class="name">
-    				<h3>Tyler Steele</h3>
+                    <a href="#" class="link">Tyler Steele</a>
     			</div>
     			<div class="property">
     				<p>100 Murphy Fork</p>
@@ -200,12 +217,13 @@
     				<p>11/19/2016</p>
     			</div>
     			<div class="button">
-    				<a href="#">Send</a>
+    				<a href="#">View</a>
+                    <a href="#" class="remove"></a>
     			</div>
     		</div>
     		<div class="content-body submitted">
     			<div class="name">
-    				<h3>Tillie Klein</h3>
+                    <a href="#" class="link">Tillie Klein</a>
     			</div>
     			<div class="property">
     				<p>881 Darron Wall</p>
@@ -217,12 +235,13 @@
     				<p>10/04/2016</p>
     			</div>
     			<div class="button">
-    				<a href="#">Send</a>
+    				<a href="#">View</a>
+                    <a href="#" class="remove"></a>
     			</div>
     		</div>
     		<div class="content-body rejected">
     			<div class="name">
-    				<h3>Jeffery Franklin</h3>
+                    <a href="#" class="link">Jeffery Franklin</a>
     			</div>
     			<div class="property">
     				<p>87 Lilyan Land Suite 951</p>
@@ -234,12 +253,13 @@
     				<p>10/03/2016</p>
     			</div>
     			<div class="button">
-    				<a href="#">Send</a>
+    				<a href="#">View</a>
+                    <a href="#" class="remove"></a>
     			</div>
     		</div>
     		<div class="content-body accepted">
     			<div class="name">
-    				<h3>Nellie Ramsey</h3>
+                    <a href="#" class="link">Nellie Ramsey</a>
     			</div>
     			<div class="property">
     				<p>964 Davis Cliff Apt. 376</p>
@@ -251,7 +271,8 @@
     				<p>09/22/2016</p>
     			</div>
     			<div class="button">
-    				<a href="#">Send</a>
+    				<a href="#">View</a>
+                    <a href="#" class="remove"></a>
     			</div>
     		</div>
     	</div>
@@ -286,6 +307,7 @@
 <!-- Load Scripts -->
 <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
 <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
 <script src="assets/js/common.js" type="text/javascript"></script>
 </body>
 

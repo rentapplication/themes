@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$steel-grey: #818183;
+$white: #fff;
+$black: #434343;
+$font-stack: 'Lato', sans-serif;
+
+.dropbtn {
+    cursor: pointer;
+}
+.border {
+    border-radius: 2px;
+    border: 1px solid #e68182;
+    margin-bottom:15px; 
+    }
+button {
+  width:100%;
+  padding:0;
+  border:none;
+  background:none;
+
+}
+
+.dropbtn_2:hover {
+  @extend .dropbtn;
+  background-color: #fff;
+}
+button:focus {
+  outline:0;
+}
+.dropbtn:focus {
+   outline:0;
+
+} 
+.dropdown {
+
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: inherit;
+     overflow:hidden;
+    z-index: 1000;
+}
+
+
+
+
+
+.show {display:block;}
+/**/
+#last_item {
+  display: none;
+}
+.rotatedown{
+  animation: rotatedown 500ms;
+  animation-fill-mode: forwards;
+}
+
+.rotateup{
+  animation: rotateup 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotatedown {
+  to{transform: rotate(0deg);}
+}
+
+@keyframes rotateup {
+  to{transform: rotate(180deg);}
+}
+.arrow {
+  float: right;
+  padding-top: 5px;
+  transition: 1s;
+}
+.data_1 {
+  color: $steel-grey;
+  font-family: $font-stack;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+.data_3 tbody td:nth-of-type(odd) {
+  vertical-align: middle !important;
+  color: $steel-grey;
+  font-family: $font-stack;
+  font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  text-transform:uppercase; 
+}
+
+.data_2 {
+  color: $steel-grey;
+  font-family: $font-stack;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+}
+  .border .table-bn3 td {
+  padding-left: 60px;
+}
+.table-bn {
+  width: 65%;
+}
+.table-bn td, .table-bn th {
+  border: none;
+  padding: .25rem;
+}
+.table-bn2 td, .table-bn2 th {
+  border: none;
+}
+.table-bn3 td, .table-bn3 th {
+  border: none;
+  padding-left: 40px;
+}
+table.table.table-bn2 {
+    margin-left: 4rem;
+}
+h1 {
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: $black;
+}
+h2 {
+  font-family: $font-stack;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: $black;
+}
+h3 {
+  font-family: $font-stack;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  color: $black;
+  padding: 1rem 0rem 1rem 0rem;
+  border-bottom: 1px solid #cacaca;
+  margin-bottom: 0rem;
+}
+.top20 {
+  margin-top: 20px;
+}
+.bold-text {
+  color: $black;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  line-height: 3;
+}
+.bold-text2 {
+  color: $black;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+}
+.jumbotron {
+  background-color: $white;
+  padding: 4rem 2rem 0rem 2rem;
+  margin-bottom: 0rem; 
+}
+.dropdown .jumbotron {
+  padding: 0rem 2rem 0rem 2rem;
+}
+.side {
+  margin-right:60px;
+}
+.side2 {
+  margin-right:0;
+}
+
+h2.background {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &:before {
+        border-top: 1px solid #cacaca;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+.alert.alert-success {
+  margin-bottom: 1rem;
+}
+.alert {
+  margin-bottom: 0; 
+}
+.alert-success {
+  border-radius: 2px;
+  background-color: rgba(184,233,134,0.4);
+  border: solid 3px rgba(90,172,0,0.4);
+  color: $black;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.alert-danger {
+  span {
+    color: $black;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    float: right;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: none;
+    pointer-events:none;
+  }
+}
+h3 {
+  span {
+    padding-top: 5px;
+    color: $black;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    float: right;
+    text-align: right;
+    text-transform: none;
+    pointer-events:none;
+  }
+}
+.alert-danger {
+  border-radius: 2px;
+  background-color: #f4bcc3;
+  border: solid 3px #e68182;
+  color: $black;
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.alert-success {
+  span {
+    color: $black;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    float: right;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+}
+
+th:nth-child(2) {
+    text-align:right;
+    padding-right: 40px;
+}
+.width_size {
+  margin-top: 15px;
+}
+ .width_size {
+  margin: auto;
+  width: 710px;
+  max-width: 100%;
+  padding: 0;
+ }
+.width_size tbody tr:nth-of-type(even) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-bordered {
+  border: solid 1px #cacaca;
+}
+
+.footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+.data_1 a {
+  color: $steel-grey;
+}
+#table1 {
+  display:none;
+}
+#table2 {
+  display:none;
+  }
+
+@media (min-width: 992px) {
+  .bold-text {
+    line-height: 2.5;
+  }
+    .arrow {
+    display: none;
+  }
+} 
+
+  @media (max-width: 992px) {
+.bold-text {
+    line-height: 1;
+  }
+    .arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .arrow {
+    display: none;
+  }
+  .dropbtn {
+    cursor: auto;
+}
+.container {
+  width: 862px;
+  max-width: 100%;
+  padding: 0;
+ }
+ .width_size {
+  margin: auto;
+  width: 710px;
+  max-width: 100%;
+  padding: 0;
+ }
+} 
+
+
+@media (max-width: 768px) {
+    .arrow {
+    display: block;
+    right: 50px;
+    display: block;
+    position: absolute;
+    top: 25px;
+  }
+  .table-bn {
+    margin:auto;
+    text-align: left;
+  }
+  h1 {
+    text-align: center;
+  }
+  #second_info {
+    display:none;
+  }
+  /*Modal*/
+  #second_info1 table.table.table-bn2 {
+    margin-left: 0;
+  }
+  .modal-header .close {
+    text-align: right;
+  }
+  .bold-text {
+    line-height: 2.5;
+  }  
+  .modal-header {
+    border:none;
+  }  
+  /*Modal*/
+  #last_item {
+    display: table-row;
+  }
+  .data_2 a {
+    text-decoration: underline;
+  }
+  h2.background {
+    padding: 20px 0px 15px 25px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 1rem;
+    text-align: left;
+   }
+  h2.background:before {
+    border-top: none;
+    
+  }
+  h2.background span {
+    padding: 0;
+  }
+  .table-bn3 td, .table-bn3 th {
+    padding-left: 25px;
+  }
+  #table1 {
+    display: block;
+  }
+  #table2 {
+    display: block;
+  }
+  #table3 {
+    display: none;
+  }
+  #table4 {
+    display: none;
+  }
+  .bold-text2 {
+    text-transform: initial;
+  }
+  .table {
+    margin-bottom: 0rem;
+  }
+  .alert-success {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .alert-success {
+  span {
+    float: none;
+    padding-top: 5px; 
+    display:block;
+    text-align: left; 
+    }
+  }
+    .alert-danger {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .alert-danger {
+  span {
+    float: none;
+    padding-top: 5px; 
+    display:block;
+    text-align: left;
+    pointer-events: none; 
+    }
+  }
+  h3 {
+  span {
+    color: $steel-grey;
+    float: none;
+    padding-top: 5px; 
+    display:block;
+    text-align: left;
+    pointer-events: none;
+    font-size: 12px;
+    text-transform: uppercase; 
+    }
+  }
+  footer {
+    display:none;
+  }
+  h3 {
+    padding-left: 25px;
+  }
+  .border {
+    border-radius: 2px;
+    border: 1px solid #e68182;
+    margin-bottom:15px; 
+    }
+  .table-bordered {
+    border: none;
+  }
+  .table thead th {
+    border-bottom: none;
+  }
+   table.table.table-bn3.data_3 tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .dropdown-content .table-bn3 td {
+    padding-left: 45px;
+  }
+  .dropdown .jumbotron {
+    padding: 0;
+  }
+  .top20 {
+  margin-top: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .table-bn {
+    width: 100%;
+  }
+  .bold-text {
+    line-height: 1;
+  } 
+}
