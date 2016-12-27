@@ -28,7 +28,7 @@
     <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox.css"> -->
-    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">    
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
@@ -76,7 +76,7 @@
         </nav>
         <!-- End navigation -->
         <!-- Begin wrapper-main -->
-        <div class="wrapper-main">
+        <div class="wrapper-main empty">
             <div id="sticky" class="sticky-element">
                 <div class="sticky-anchor"></div>
                 <div class="sticky-content">
@@ -95,7 +95,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <div class="content form-content active">
             <div class="content-head">
                 <h2>Form Name</h2>
@@ -111,81 +110,17 @@
                 </a>
             </div>
             <div class="content-body">
-                <div class="name">
-                    <h3>
-                        <a href="#" class="form-link">700 E Axis Avenue</a>            
-                    </h3>
-                    <a href="www.rentapplication.net/axisavenue">www.rentapplication.net/axisavenue</a>
-                </div>
-                <div class="services">
-                    <ul>
-                        <li>
-                            <p>Credit</p>
-                        </li>
-                        <li>
-                            <p>Background</p>
-                        </li>
-                        <li>
-                            <p>Eviction</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <a href="#" class="send">Send</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body">
-                <div class="name">
-                    <h3>
-                        <a href="#" class="form-link">215 N Morgan Street</a>            
-                    </h3>
-                    <a href="www.rentapplication.net/morganstreet">www.rentapplication.net/morganstreet</a>
-                </div>
-                <div class="services">
-                    <ul>
-                        <li>
-                            <p>Credit</p>
-                        </li>
-                        <li class="disabled">
-                            <p>Background</p>
-                        </li>
-                        <li class="disabled">
-                            <p>Eviction</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <a href="#" class="send">Send</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body">
-                <div class="name">
-                    <h3>
-                        <a href="#" class="form-link">6673 Morse Street</a>            
-                    </h3>
-                    <a href="www.rentapplication.net/morsestreet">www.rentapplication.net/morsestreet</a>
-                </div>
-                <div class="services">
-                    <ul>
-                        <li>
-                            <p>Credit</p>
-                        </li>
-                        <li>
-                            <p>Background</p>
-                        </li>
-                        <li>
-                            <p>Eviction</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <a href="#" class="send">Send</a>
-                    <a href="#" class="remove"></a>
+            <div class="container">
+                <div class="content-body">
+                    <div class="empty-block">
+                        <h3>Looks like you don’t have any forms yet.</h3>
+                        <h4>To create a new form click the “New Form” button above.</h4>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+
         <div class="content applicant-content">
             <div class="content-head">
                 <h2 class="h2-Name">Name</h2>
@@ -290,9 +225,7 @@
             </div>
         </div>
         <!-- End wrapper-main -->
-
         <div id="popup1" class="modal_div new_form popup" style="display: none;">
-            <!-- <a class="fancybox-item fancybox-close" title="Close" href="javascript:;"></a> -->
             <div class="header">
                 <h2>Send Application Link</h2>
             </div>
@@ -352,6 +285,7 @@
                 </form>
             </div>
         </div>
+
     </div>
     <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>

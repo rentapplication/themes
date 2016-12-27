@@ -11,10 +11,7 @@ var data = {
                 "#f8e81c",
                 "#7ed321",
                 "#5ab275"
-            ]
-
-                        
-                        
+            ]               
         }]
 };
 
@@ -26,7 +23,6 @@ var options = {
             enabled:false,
         },
 };
-
 
 var myDoughnutChart = new Chart(ctx, {
     type: 'doughnut',
