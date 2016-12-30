@@ -28,7 +28,6 @@
     <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">    
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- <script type="text/javascript">
@@ -351,7 +350,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="data_1">Prepared by</td>
-                                                        <td class="data_2"><a href="#modal1" class="fancybox-modal">ZipReports</a></td>
+                                                        <td class="data_2"><a href="#modal1" class="open_modal">ZipReports</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -475,7 +474,7 @@
                                         <div class="text-center">
                                             <h4 class="big">760</h4>
                                             <p class="subheader remove_margins">This score is Good
-                                                <a href="#modal2" class="fancybox-modal tooltip2"></a>
+                                                <a href="#modal2" class="open_modal tooltip2"></a>
                                             </p>
                                             <p class="data_1 remove_margins">Ranks higher than 20% of Consumers</p>
                                             <img class="bar1" src="images/credit/rectangle.svg">
@@ -488,7 +487,7 @@
                                 <div class="row dpb">
                                     <div class="col-md-12">
                                         <div class="data_2 cent">
-                                            <a href="#modal3" class="fancybox-modal">Score Factors</a>
+                                            <a href="#modal3" class="open_modal">Score Factors</a>
                                         </div>
                                     </div>
                                 </div>
@@ -864,7 +863,7 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td colspan="2">Payment History
-                                                                    <a href="#modal4" class="fancybox-modal tooltip3"></a>
+                                                                    <a href="#modal4" class="open_modal tooltip3"></a>
                                                 </div>
                                                 <br>
                                                 <div class="paid"></div>
@@ -884,7 +883,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td colspan="2">Payment History
-                                                            <a href="#modal4" class="fancybox-modal tooltip3"></a>
+                                                            <a href="#modal4" class="open_modal tooltip3"></a>
                                                             <br>
                                                             <table class="table2">
                                                                 <thead>
@@ -1450,7 +1449,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="data_1">Prepared by</td>
-                                                    <td class="data_2"><a href="#modal1" class="fancybox-modal">ZipReports</a></td>
+                                                    <td class="data_2"><a href="#modal1" class="open_modal">ZipReports</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2106,69 +2105,9 @@
         </div>
     </div>
     </div>
+    <div id="overlay"></div>
     <!-- End content -->
-    <div id="popup1" class="modal_div new_form popup" style="display: none;">
-            <!-- <a class="fancybox-item fancybox-close" title="Close" href="javascript:;"></a> -->
-            <div class="header">
-                <h2>Send Application Link</h2>
-            </div>
-            <div class="modal_content">
-                <div class="fll">
-                    <h3>700 E Axis Ave</h3>
-                    <p>(Form name only visible to you)</p>
-                    <div class="hidden-link">
-                        <a href="#" class="copy-link">Copy Application Link</a>
-                        <p class="hidden">www.rentapplication.net/axisavenue</p>
-                    </div>
-                </div>
-                <form action="" method="">
-                    <div class="flr">
-                        <h4>Reports Included:</h4>
-                        <input type="checkbox" id="service1">
-                        <label for="service1">Credit</label>
-                        <div class="cf"></div>
-                        <input type="checkbox" id="service2">
-                        <label for="service2">Background</label>
-                        <div class="cf"></div>
-                        <input type="checkbox" id="service3">
-                        <label for="service3">Eviction</label>
-                    </div>
-                    <div class="cf"></div>
-                    <div class="visible">
-                        <a href="#" class="copy-link">Copy Application Link</a>
-                        <p class="hidden">www.rentapplication.net/axisavenue</p>
-                    </div>
-                    <div class="cf margin"></div>
-                    <div class="row tabs">
-                        <div class="fll">
-                            <h5>Applicant’s Email</h5>
-                        </div>
-                        <div class="flr">
-                            <input type="checkbox" id="myself1" class="mycheck">
-                            <label for="myself1">CC myself</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="text">
-                    </div>
-                    <div class="row">
-                        <h5>Subject</h5>
-                        <input type="text" placeholder="Rental Application Link">
-                    </div>
-                    <div class="row">
-                        <h5>Message</h5>
-                        <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue"></textarea>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="button">Send Application Link</a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="cancel">Cancel</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    <div id="modal1" class="popup view" style="display: none;">
+    <div id="modal1" class="modal_div" style="display: none;">
         <span class="modal_close"></span>
         <img src="images/credit/zip-reports-logo.png">
         <p><span>ZipReports, an ACRAnet Company</span></p>
@@ -2176,7 +2115,7 @@
         <p>Northridge, CA 91327 Phone: (800) 311-1585</p>
         <p>Fax: (866) 894-6501</p>
     </div>
-    <div id="modal2" class="popup view" style="display: none;">
+    <div id="modal2" class="modal_div" style="display: none;">
         <span class="modal_close"></span>
         <div class="circle"></div>
         <p>380-400 &nbsp&nbsp&nbsp Far Below Avg Consumer Credit Score</p>
@@ -2192,7 +2131,8 @@
         <p>380-400 &nbsp&nbsp&nbsp Far Below Avg Consumer Credit Score</p>
     </div>
     </div>
-    <div id="modal3" class="popup view" style="display: none;">
+    <div id="modal3" class="modal_div" style="display: none;">
+        <span class="modal_close"></span>
         <h2>Score Factors</h2>
         <div class="modal-body">
             <div class="row">
@@ -2203,7 +2143,8 @@
             </div>
         </div>
     </div>
-    <div id="modal4" class="popup view" style="display: none;">
+    <div id="modal4" class="modal_div" style="display: none;">
+        <span class="modal_close"></span>
         <h2>Payment symbols</h2>
         <div class="paid"></div>
         <p>Paid</p>
