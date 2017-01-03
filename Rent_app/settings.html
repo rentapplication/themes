@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project title</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="(c)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox.css"> -->
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+</head>
+
+<body style="background: #f8f8f8;">
+    <div class="global_wrapper settings">
+        <!-- Begin navigation -->
+        <nav class="index">
+            <div class="menu-block cf">
+                <div class="image">
+                    <img src="images/logotype.svg" width="30" alt="">
+                </div>
+                <div class="h1-head">
+                    <a href="index.html">Rent Application</a>
+                </div>
+                <a id="touch-menu" class="mobile-menu" href="#">
+                    <div class="square">
+                        <div class="line"></div>
+                    </div>
+                </a>
+                <ul class="menu fullscreen">
+                    <li>
+                        <a href="#">
+                            <p>Dashbord</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Payments</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Help</p>
+                        </a>
+                    </li>
+                    <li class="profile">
+                        <a href="#">
+                            <img src="images/profile.svg" width="27" class="profile-image" alt="">
+                            <p class="profile-name">johnsmith@email.com</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Landlord Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Switch to Applicant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu dropmobile">
+                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="#">Switch to Applicant Dashboard</a></li>
+                    <li><a href="#">My Payments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End navigation -->
+        <!-- Begin wrapper-main -->
+        <div class="wrapper-main">
+            <div id="sticky" class="sticky-element">
+                <div class="sticky-anchor"></div>
+                <div class="sticky-content">
+                    <div class="row">
+                        <ul class="bottom-menu">
+                            <li class="profile-button active">
+                                <p>Profile</p>
+                            </li>
+                            <li class="notifications-button">
+                                <p>Notifications</p>
+                            </li>
+                            <li class="password-button">
+                                <p>Password</p>
+                            </li>
+                        </ul>
+                        <div class="landrow">
+                            <p>Settings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prof-padding">
+                <div class="profile-success">
+                    <p>Profile settings successfully updated.</p>
+                    <a class="close-butt"></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="profile-content">
+                    <h2>Profile Information</h2>
+                    <p>This information is optional and will be displayed to applicants as contact information</p>
+                    <form action="#" method="#" runat="server" id="form1">
+                        <h4>Name</h4>
+                        <input type="text">
+                        <h4>Email Address</h4>
+                        <input type="text">
+                        <h4>Website</h4>
+                        <input type="text">
+                        <h4>Company Name</h4>
+                        <input type="text">
+                        <h4>Phone Number</h4>
+                        <input type="text">
+                        <div class="logotype">
+                        <h4>Logo</h4>
+                            <div class="filebox bs3-primary preview-image">
+                                <div class="fll">
+                                    <input type="file" id="input_file" class="upload-hidden">
+                                </div>
+                                <div class="flr">
+                                    <h4>Upload a logo…</h4>
+                                    <p>Logo must be .png, .svg, .jpeg, or .gif format and should not exceed 50MB</p>
+                                    <label for="input_file">Upload</label>
+                                    <a class="deletelogo">delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <input type="submit" value="Save and Update">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="popup1" class="popup" style="display: none;"></div>
+    </div>
+    <!--[if lt IE 9]>
+<script src="components/html5shiv/es5-shim.min.js"></script>
+<script src="components/html5shiv/html5shiv.min.js"></script>
+<script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="components/respond/respond.min.js"></script>
+<![endif]-->
+    <!-- Load Scripts -->
+    <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="components/imagepreview/preview.js" type="text/javascript"></script>
+    <script src="assets/js/common.js" type="text/javascript"></script>
+    <!-- <script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#blah').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function() {
+        readURL(this);
+    });
+    </script> -->
+</body>
+
+</html>

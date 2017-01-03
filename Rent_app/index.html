@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
 
-<body>
+<body style="background: #fff">
     <div class="global_wrapper">
         <!-- Begin navigation -->
         <nav>
@@ -76,7 +76,7 @@
         </nav>
         <!-- End navigation -->
         <!-- Begin wrapper-main -->
-        <div class="wrapper-main">
+        <div class="wrapper-main main-page">
             <div id="sticky" class="sticky-element">
                 <div class="sticky-anchor"></div>
                 <div class="sticky-content">
@@ -115,7 +115,7 @@
                     <h3>
                         <a href="#" class="form-link">700 E Axis Avenue</a>            
                     </h3>
-                    <a href="www.rentapplication.net/axisavenue">www.rentapplication.net/axisavenue</a>
+                    <p>www.rentapplication.net/axisavenue</p>
                 </div>
                 <div class="services">
                     <ul>
@@ -140,7 +140,7 @@
                     <h3>
                         <a href="#" class="form-link">215 N Morgan Street</a>            
                     </h3>
-                    <a href="www.rentapplication.net/morganstreet">www.rentapplication.net/morganstreet</a>
+                    <p>www.rentapplication.net/morganstreet</p>
                 </div>
                 <div class="services">
                     <ul>
@@ -165,7 +165,7 @@
                     <h3>
                         <a href="#" class="form-link">6673 Morse Street</a>            
                     </h3>
-                    <a href="www.rentapplication.net/morsestreet">www.rentapplication.net/morsestreet</a>
+                    <p>www.rentapplication.net/morsestreet</p>
                 </div>
                 <div class="services">
                     <ul>
@@ -187,13 +187,32 @@
             </div>
         </div>
         <div class="content applicant-content">
+            <div class="search-row">
+                <div class="fll">
+                    <div class="entries">
+                        <p>Show <select>
+                            <option value="value10">10</option>
+                            <option value="value25">25</option>
+                            <option value="value50">50</option>
+                            <option value="value10">100</option>
+                        </select> entries</p>
+                    </div>
+                </div>
+                <div class="flr">
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Search...">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+                <div class="cf"></div>
+            </div>
             <div class="content-head">
                 <h2 class="h2-Name">Name</h2>
                 <h2 class="Property">Property</h2>
                 <h2 class="Status">Status</h2>
                 <h2 class="Date">Date Received</h2>
                 <form action="">
-                    <input type="search" placeholder="Search">
+                    <!-- <input type="search" placeholder="Search..."> -->
                 </form>
             </div>
             <div class="content-body sent-to-applicant">
@@ -305,17 +324,17 @@
                         <p class="hidden">www.rentapplication.net/axisavenue</p>
                     </div>
                 </div>
-                <form action="" method="">
+                <form action="send.php" method="post" id="form1">
                     <div class="flr">
                         <h4>Reports Included:</h4>
-                        <input type="checkbox" id="service1">
-                        <label for="service1">Credit</label>
+                        <!-- <input type="checkbox" id="service1"> -->
+                        <p class="check">Credit</p>
                         <div class="cf"></div>
-                        <input type="checkbox" id="service2">
-                        <label for="service2">Background</label>
+                        <!-- <input type="checkbox" id="service2"> -->
+                        <p class="check">Background</p>
                         <div class="cf"></div>
-                        <input type="checkbox" id="service3">
-                        <label for="service3">Eviction</label>
+                        <!-- <input type="checkbox" id="service3"> -->
+                        <p class="check">Eviction</p>
                     </div>
                     <div class="cf"></div>
                     <div class="visible">
@@ -333,24 +352,34 @@
                         </div>
                     </div>
                     <div class="row">
-                        <input type="text">
+                        <input type="text" name="name">
                     </div>
                     <div class="row">
                         <h5>Subject</h5>
-                        <input type="text" placeholder="Rental Application Link">
+                        <input type="text" placeholder="Rental Application Link" name="link">
                     </div>
                     <div class="row">
                         <h5>Message</h5>
-                        <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue"></textarea>
+                        <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue" name="message"></textarea>
                     </div>
                     <div class="row">
-                        <a href="#" class="button">Send Application Link</a>
+                        <!-- <a href="#" class="button">Send Application Link</a> -->
+                        <input type="submit" class="button" value="Send Application Link">
                     </div>
                     <div class="row">
                         <a href="#" class="cancel">Cancel</a>
                     </div>
                 </form>
             </div>
+        </div>
+        <div id="popupThanks" class="popup thanks" style="display: none;">
+            <img src="images/form-sent-illustration.svg" width="223" alt="">
+            <h2>Success!</h2>
+            <p>Application link has been sent to<br>Jake23Evergreen@gmail.com</p>
+            <a href="index.html" class="backto">Back to Dashboard</a>
+        </div>
+        <div id="popupError" class="popup error" style="display: none;">
+            <h2>Sorry, please enter the correct data</h2>
         </div>
     </div>
     <!--[if lt IE 9]>
@@ -364,6 +393,8 @@
     <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
     <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="components/forms/forms.js" type="text/javascript"></script>
+    <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
     <script src="assets/js/common.js" type="text/javascript"></script>
 </body>
 
