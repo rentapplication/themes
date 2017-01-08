@@ -1,1 +1,0 @@
-var ctx=document.getElementById("myChart"),data={datasets:[{data:[871,627,311,767],backgroundColor:["#61eecd","#f8e81c","#7ed321","#5ab275"]}]},options={cutoutPercentage:70,responsive:!0,tooltips:{enabled:!1}},myDoughnutChart=new Chart(ctx,{type:"doughnut",data:data,options:options});

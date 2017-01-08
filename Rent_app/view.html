@@ -27,14 +27,9 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <script type="text/javascript">
-    function resizeIframeLoad(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    }
-    </script> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
 
@@ -43,19 +38,22 @@
         <!-- Begin navigation -->
         <nav>
             <div class="menu-block cf">
-                <a href="#" class="menu-back-button"></a>
+                <!-- <a href="#" class="menu-back-button"></a> -->
                 <div class="image">
                     <img src="images/logotype.svg" width="30" alt="">
                 </div>
                 <div class="h1-head">
                     <a href="index.html">Rent Application</a>
                 </div>
+                <div class="title">
+                    <h2>Apply</h2>
+                </div>
                 <a id="touch-menu" class="mobile-menu" href="#">
                     <div class="square">
                         <div class="line"></div>
                     </div>
                 </a>
-                <ul class="menu">
+                <ul class="menu fullscreen">
                     <li>
                         <a href="#">
                             <p>Dashbord</p>
@@ -76,7 +74,29 @@
                             <img src="images/profile.svg" width="27" class="profile-image" alt="">
                             <p class="profile-name">johnsmith@email.com</p>
                         </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Landlord Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Switch to Applicant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
                     </li>
+                </ul>
+                <ul class="menu dropmobile">
+                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="#">Switch to Applicant Dashboard</a></li>
+                    <li><a href="#">My Payments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -93,7 +113,20 @@
                             <a href="#" class="accept">Accept</a>
                             <a href="#" class="reject">Reject</a>
                             <div class="cf"></div>
-                            <a href="#" class="trash"></a>
+                            <a href="#" class="bounce bounce-button-view">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                         <div class="about">
                             <h2>Jessy Nikolaus</h2>
@@ -111,21 +144,47 @@
                 <div id="sticky" class="sticky-element">
                     <div class="sticky-anchor"></div>
                     <div class="sticky-content">
-                        <div class="row-menu fixed-menu ">
-                            <ul>
-                                <li class="active libutton">
-                                    <p>Application</p>
-                                </li>
-                                <li class="libutton">
-                                    <p>Credit</p>
-                                </li>
-                                <li class="libutton">
-                                    <p>Criminal</p>
-                                </li>
-                                <li class="libutton">
-                                    <p>Eviction (app)</p>
-                                </li>
-                            </ul>
+                        <div class="row-menu fixed-menu">
+                            <div id="topbarTabs" class="container">
+                                <div class="wrapper">
+                                    <div class="left">
+                                        <button id="left-button" class="btn btn--link">
+                                            <svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="scroll-container nav-tabs list" id="myTab">
+                                        <li class="active libutton">
+                                            <p>Application</p>
+                                        </li>
+                                        <li class="libutton">
+                                            <p>Credit</p>
+                                        </li>
+                                        <li class="libutton">
+                                            <p>Criminal</p>
+                                        </li>
+                                        <li class="libutton">
+                                            <p>Eviction</p>
+                                        </li>
+                                        <!-- <li class="libutton">
+                                            <p>Eviction2</p>
+                                        </li>
+                                        <li class="libutton">
+                                            <p>Eviction3</p>
+                                        </li> -->
+                                    </ul>
+                                    <div class="right">
+                                        <button id="right-button" class="btn btn--link">
+                                            <svg height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +409,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="data_1">Prepared by</td>
-                                                        <td class="data_2"><a href="#modal1" class="open_modal">ZipReports</a></td>
+                                                        <td class="data_2"><a href="#popup1" class="fancybox-modal">ZipReports</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -474,7 +533,7 @@
                                         <div class="text-center">
                                             <h4 class="big">760</h4>
                                             <p class="subheader remove_margins">This score is Good
-                                                <a href="#modal2" class="open_modal tooltip2"></a>
+                                                <a href="#popup2" class="fancybox-modal tooltip2"></a>
                                             </p>
                                             <p class="data_1 remove_margins">Ranks higher than 20% of Consumers</p>
                                             <img class="bar1" src="images/credit/rectangle.svg">
@@ -487,7 +546,7 @@
                                 <div class="row dpb">
                                     <div class="col-md-12">
                                         <div class="data_2 cent">
-                                            <a href="#modal3" class="open_modal">Score Factors</a>
+                                            <a href="#popup3" class="fancybox-modal">Score Factors</a>
                                         </div>
                                     </div>
                                 </div>
@@ -863,7 +922,7 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td colspan="2">Payment History
-                                                                    <a href="#modal4" class="open_modal tooltip3"></a>
+                                                                    <a href="#popup4" class="fancybox-modal tooltip3"></a>
                                                 </div>
                                                 <br>
                                                 <div class="paid"></div>
@@ -883,7 +942,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td colspan="2">Payment History
-                                                            <a href="#modal4" class="open_modal tooltip3"></a>
+                                                            <a href="#popup4" class="fancybox-modal tooltip3"></a>
                                                             <br>
                                                             <table class="table2">
                                                                 <thead>
@@ -1142,7 +1201,7 @@
                                         <tbody>
                                             <tr>
                                                 <td colspan="2">Payment History
-                                                    <a href="#modal4" class="open_modal tooltip3"></a>
+                                                    <a href="#popup4" class="fancybox-modal tooltip3"></a>
                                                     <br>
                                                     <table class="table2">
                                                         <thead>
@@ -1449,7 +1508,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="data_1">Prepared by</td>
-                                                    <td class="data_2"><a href="#modal1" class="open_modal">ZipReports</a></td>
+                                                    <td class="data_2"><a href="#popup1" class="fancybox-modal">ZipReports</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1912,191 +1971,55 @@
                     <!-- <iframe src="Email_RentApp/mail.html" width="96%" height="100%" scrolling="auto" frameborder=0></iframe> -->
                     <div class="eviction-information">
                         <div class="wrapper-main">
-                            <div class="info_row">
-                                <div class="container">
-                                    <div class="info_wrap">
-                                        <div class="info_header">
-                                            <h2>applicant <br class="br"> information</h2>
-                                            <div class="chevron chevronemployment">
-                                                <img src="images/chevron.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="line"></div>
-                                        <div class="info_body applicant_body">
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>Applicant Name</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="applicant_name">Jessy Nikolaus</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Phone Number</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="phone_number">236-358-2470</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>Email Address</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="email_address">jessy_nikolaus@yahoo.com</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>SSN</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="ssn">33-333-11</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>Birthdate</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="birthdate">09-30-1974</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Property Address</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="property_address">1865 Novi Manor</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="secure">
+                                <img src="images/secure.svg" width="18" alt="">
+                                <p>Secure</p>
                             </div>
-                            <div class="employment_row">
-                                <div class="container">
-                                    <div class="info_wrap">
-                                        <div class="info_header">
-                                            <h2>Employment <br class="br">Information</h2>
-                                            <div class="chevron chevronemployment">
-                                                <img src="images/chevron.svg" alt="">
+                            <div class="eviction-payment active">
+                                <h2>Oops! This Eviction Report Has Not Been Ordered Yet.</h2>
+                                <p>Don't worry. It's still not too late to get it.</p>
+                                <div class="line"></div>
+                                <h2><span>Purchase Eviction Report</span></h2>
+                                <p class="rep">The report will take 3-4 minutes to run. We'll notify you by email as soon as it's ready or you can just refresh this page to view it in this tab.</p>
+                                <form action="" method="" name="form">
+                                    <div class="fullwidth">
+                                        <h4>Full Name <span>*</span></h4>
+                                        <input type="text" name="" class="name">
+                                        <h4>Card Number <span>*</span></h4>
+                                        <input type="text" id="card_number" name="cardcode">
+                                        <div class="row2">
+                                            <div class="half fll">
+                                                <h4>Expiration Date <span>*</span></h4>
+                                                <input type="text" class="date" name="cardDate">
+                                            </div>
+                                            <div class="half flr">
+                                                <h4>CVC <span>*</span></h4>
+                                                <input type="text" class="cvc" name="cardCvc">
                                             </div>
                                         </div>
-                                        <div class="line"></div>
-                                        <div class="info_body employment_body">
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>Previous Employer</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="previous_empolyer">Yahoo</span>
-                                                    </p>
-                                                </div>
+                                        <div class="cf"></div>
+                                        <div class="check">
+                                            <input type="checkbox" id="check2">
+                                            <label for="check2">Save this card for future use</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="row2 fee">
+                                            <div class="half fll">
+                                                <p>Total Fee</p>
                                             </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Position</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="position">Associate</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>Supervisor Phone Number</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="supervisor_phone">222-304-2349</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Do you have any pets?</p>
-                                                </div>
-                                                <div class="right">
-                                                    <div class="radio">
-                                                        <input id="radio-yes" type="radio" name="radio" value="radio-yes" />
-                                                        <label for="radio-yes">Yes</label>
-                                                        <div class="clearfix margin"></div>
-                                                        <input id="radio-no" type="radio" name="radio" value="radio-no" />
-                                                        <label for="radio-no">No</label>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p>If so, please list each pet</p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="list_each_pet">Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Which of the following options apply?</p>
-                                                </div>
-                                                <div class="right">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" id="c1" name="cc" />
-                                                        <label for="c1"><span></span>Option 1</label>
-                                                        <div class="margin clearfix"></div>
-                                                        <input type="checkbox" id="c2" name="cc" />
-                                                        <label for="c2"><span></span>Option 2</label>
-                                                        <div class="margin clearfix"></div>
-                                                        <input type="checkbox" id="c3" name="cc" />
-                                                        <label for="c3"><span></span>Option 3</label>
-                                                        <div class="margin clearfix"></div>
-                                                        <input type="checkbox" id="c4" name="cc" />
-                                                        <label for="c4"><span></span>Option 4</label>
-                                                        <br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont clearfix">
-                                                <div class="left">
-                                                    <p></p>
-                                                </div>
-                                                <div class="right">
-                                                    <p>
-                                                        <span class="more_info notbold">I hereby apply to lease this rental property and I warrant that all statements above set forth are true.<br><br>I hereby give my permission to communicate with my current and former landlord(s) or property manager(s) for the purpose of discussing any and all of the facts and circumstances of my current or former tenancy, as well as the other information listed above. I also give my permission to communicate with my current employer(s) and/or supervisor(s) for the purpose of verifying the employment information listed above. I understand there are no limitations or restrictions regarding what may be discussed or revealed.</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="colorcont white clearfix">
-                                                <div class="left">
-                                                    <p>Signature</p>
-                                                </div>
-                                                <div class="right">
-                                                    <div class="signature">
-                                                        <div class="signline"></div>
-                                                    </div>
-                                                </div>
+                                            <div class="half flr">
+                                                <p>$10.00</p>
                                             </div>
                                         </div>
+                                        <div class="cf"></div>
+                                        <input type="submit" class="next eviction-success" value="Submit Payment">
                                     </div>
-                                </div>
+                                </form>
+                            </div>
+                            <div class="eviction-processed">
+                                <img src="../images/truck-illustration.svg" width="157" alt="">
+                                <h2>Your Eviction Report has been ordered and is being processed</h2>
+                                <p>Criminal Reports may sometimes require manual review by an investigator. During business hours processing takes less than 10 minutes. On weekends or evenings, this report may be delayed while waiting for an investigator review.</p>
                             </div>
                         </div>
                     </div>
@@ -2105,17 +2028,14 @@
         </div>
     </div>
     </div>
-    <div id="overlay"></div>
-    <!-- End content -->
-    <div id="modal1" class="modal_div" style="display: none;">
-        <span class="modal_close"></span>
+    <div id="popup1" class="popup view-pop" style="display: none;">
         <img src="images/credit/zip-reports-logo.png">
         <p><span>ZipReports, an ACRAnet Company</span></p>
         <p>PO Box 7248</p>
         <p>Northridge, CA 91327 Phone: (800) 311-1585</p>
         <p>Fax: (866) 894-6501</p>
     </div>
-    <div id="modal2" class="modal_div" style="display: none;">
+    <div id="popup2" class="popup view-pop" style="display: none;">
         <span class="modal_close"></span>
         <div class="circle"></div>
         <p>380-400 &nbsp&nbsp&nbsp Far Below Avg Consumer Credit Score</p>
@@ -2130,8 +2050,7 @@
         <div class="dark_green"></div>
         <p>380-400 &nbsp&nbsp&nbsp Far Below Avg Consumer Credit Score</p>
     </div>
-    </div>
-    <div id="modal3" class="modal_div" style="display: none;">
+    <div id="popup3" class="popup view-pop" style="display: none;">
         <span class="modal_close"></span>
         <h2>Score Factors</h2>
         <div class="modal-body">
@@ -2143,7 +2062,7 @@
             </div>
         </div>
     </div>
-    <div id="modal4" class="modal_div" style="display: none;">
+    <div id="popup4" class="popup view-pop" style="display: none;">
         <span class="modal_close"></span>
         <h2>Payment symbols</h2>
         <div class="paid"></div>
@@ -2161,7 +2080,6 @@
         <div class="na_symbol"></div>
         <p>No Record</p>
     </div>
-    </div>
     <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>
 <script src="components/html5shiv/html5shiv.min.js"></script>
@@ -2175,7 +2093,61 @@
     <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
     <script src="assets/js/Chart.js" type="text/javascript"></script>
     <script src="assets/js/index.js" type="text/javascript"></script>
+    <script src="components/forms/forms.js" type="text/javascript"></script>
+    <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="components/scrolltab/scrolltab.js" type="text/javascript"></script>
     <script src="assets/js/common.js" type="text/javascript"></script>
+    <script src="components/cardvalidator/jquery.creditCardValidator.js"></script>
+    <script>
+    $(function() {
+        $('#card_number').validateCreditCard(function(result) {
+            if (result.card_type == null) {
+                $('#card_number').removeClass();
+            } else {
+                $('#card_number').addClass(result.card_type.name);
+            }
+
+            if (!result.valid) {
+                $('#card_number').removeClass("valid");
+            } else {
+                $('#card_number').addClass("valid");
+            }
+
+        });
+    });
+    </script>
+    <script>
+    var cc = form.cardcode;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cc.addEventListener('input', formatCardCode, false);
+    }
+
+    function formatCardCode() {
+        var cardCode = this.value.replace(/[^\d]/g, '').substring(0, 16);
+        cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
+        this.value = cardCode;
+    }
+    var cd = form.cardDate;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cd.addEventListener('input', formatCardDate, false);
+    }
+
+    function formatCardDate() {
+        var cardDate = this.value.replace(/[^\d]/g, '').substring(0, 4);
+        cardDate = cardDate != '' ? cardDate.match(/.{1,2}/g).join('/') : '';
+        this.value = cardDate;
+    }
+    var cv = form.cardCvc;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cv.addEventListener('input', formatCardCvc, false);
+    }
+
+    function formatCardCvc() {
+        var cardCvc = this.value.replace(/[^\d]/g, '').substring(0, 4);
+        cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
+        this.value = cardCvc;
+    }
+    </script>
 </body>
 
 </html>

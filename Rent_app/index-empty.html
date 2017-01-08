@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
 
-<body>
+<body style="background: #fff">
     <div class="global_wrapper">
         <!-- Begin navigation -->
         <nav>
@@ -44,12 +44,15 @@
                 <div class="h1-head">
                     <a href="index.html">Rent Application</a>
                 </div>
+                <div class="title">
+                    <h2>Landlord Dashboard</h2>
+                </div>
                 <a id="touch-menu" class="mobile-menu" href="#">
                     <div class="square">
                         <div class="line"></div>
                     </div>
                 </a>
-                <ul class="menu">
+                <ul class="menu fullscreen">
                     <li>
                         <a href="#">
                             <p>Dashbord</p>
@@ -70,7 +73,29 @@
                             <img src="images/profile.svg" width="27" class="profile-image" alt="">
                             <p class="profile-name">johnsmith@email.com</p>
                         </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Landlord Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Switch to Applicant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
                     </li>
+                </ul>
+                <ul class="menu dropmobile">
+                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="#">Switch to Applicant Dashboard</a></li>
+                    <li><a href="#">My Payments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -95,210 +120,222 @@
                     </div>
                 </div>
             </div>
-        <div class="content form-content active">
-            <div class="content-head">
-                <h2>Form Name</h2>
-                <h2 class="reports">Reports Included
+            <div class="content form-content active">
+                <div class="content-head">
+                    <h2>Form Name</h2>
+                    <h2 class="reports">Reports Included
                 <div class="tooltip-reports">
                     <div class="plashka">
                         <p>Reports included with application</p>
                     </div>
                 </div>
                 </h2>
-                <a href="#popup1" class="fancybox-modal button">
-                    <img src="images/plus.svg" width="24" alt=""> New Form
-                </a>
-            </div>
-            <div class="content-body">
-            <div class="container">
+                    <a href="#popup1" class="fancybox-modal button">
+                        <img src="images/plus.svg" width="24" alt=""> New Form
+                    </a>
+                </div>
                 <div class="content-body">
-                    <div class="empty-block">
-                        <h3>Looks like you don’t have any forms yet.</h3>
-                        <h4>To create a new form click the “New Form” button above.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="content applicant-content">
-            <div class="content-head">
-                <h2 class="h2-Name">Name</h2>
-                <h2 class="Property">Property</h2>
-                <h2 class="Status">Status</h2>
-                <h2 class="Date">Date Received</h2>
-                <form action="">
-                    <input type="search" placeholder="Search">
-                </form>
-            </div>
-            <div class="content-body sent-to-applicant">
-                <div class="sent-block"></div>
-                <!-- a block on top of the text -->
-                <div class="name">
-                    <a href="#" class="link">Jake Evergreen</a>
-                </div>
-                <div class="property">
-                    <p>234 E Washington Street</p>
-                </div>
-                <div class="status">
-                    <p>Sent to Applicant</p>
-                </div>
-                <div class="date">
-                    <!-- <p>11/19/2016</p> -->
-                </div>
-                <div class="button">
-                    <a href="view.html">View</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body submitted">
-                <div class="name">
-                    <a href="#" class="link">Tyler Steele</a>
-                </div>
-                <div class="property">
-                    <p>100 Murphy Fork</p>
-                </div>
-                <div class="status">
-                    <p>Submitted</p>
-                </div>
-                <div class="date">
-                    <p>11/19/2016</p>
-                </div>
-                <div class="button">
-                    <a href="view.html">View</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body submitted">
-                <div class="name">
-                    <a href="#" class="link">Tillie Klein</a>
-                </div>
-                <div class="property">
-                    <p>881 Darron Wall</p>
-                </div>
-                <div class="status">
-                    <p>Submitted</p>
-                </div>
-                <div class="date">
-                    <p>10/04/2016</p>
-                </div>
-                <div class="button">
-                    <a href="view.html">View</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body rejected">
-                <div class="name">
-                    <a href="#" class="link">Jeffery Franklin</a>
-                </div>
-                <div class="property">
-                    <p>87 Lilyan Land Suite 951</p>
-                </div>
-                <div class="status">
-                    <p>Rejected</p>
-                </div>
-                <div class="date">
-                    <p>10/03/2016</p>
-                </div>
-                <div class="button">
-                    <a href="view.html">View</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-            <div class="content-body accepted">
-                <div class="name">
-                    <a href="#" class="link">Nellie Ramsey</a>
-                </div>
-                <div class="property">
-                    <p>964 Davis Cliff Apt. 376</p>
-                </div>
-                <div class="status">
-                    <p>Accepted</p>
-                </div>
-                <div class="date">
-                    <p>09/22/2016</p>
-                </div>
-                <div class="button">
-                    <a href="#">View</a>
-                    <a href="#" class="remove"></a>
-                </div>
-            </div>
-        </div>
-        <!-- End wrapper-main -->
-        <div id="popup1" class="modal_div new_form popup" style="display: none;">
-            <div class="header">
-                <h2>Send Application Link</h2>
-            </div>
-            <div class="modal_content">
-                <div class="fll">
-                    <h3>700 E Axis Ave</h3>
-                    <p>(Form name only visible to you)</p>
-                    <div class="hidden-link">
-                        <a href="#" class="copy-link">Copy Application Link</a>
-                        <p class="hidden">www.rentapplication.net/axisavenue</p>
-                    </div>
-                </div>
-                <form action="" method="">
-                    <div class="flr">
-                        <h4>Reports Included:</h4>
-                        <input type="checkbox" id="service1">
-                        <label for="service1">Credit</label>
-                        <div class="cf"></div>
-                        <input type="checkbox" id="service2">
-                        <label for="service2">Background</label>
-                        <div class="cf"></div>
-                        <input type="checkbox" id="service3">
-                        <label for="service3">Eviction</label>
-                    </div>
-                    <div class="cf"></div>
-                    <div class="visible">
-                        <a href="#" class="copy-link">Copy Application Link</a>
-                        <p class="hidden">www.rentapplication.net/axisavenue</p>
-                    </div>
-                    <div class="cf margin"></div>
-                    <div class="row tabs">
-                        <div class="fll">
-                            <h5>Applicant’s Email</h5>
+                    <div class="container">
+                        <div class="content-body">
+                            <div class="empty-block">
+                                <h3>Looks like you don’t have any forms yet.</h3>
+                                <h4>To create a new form click the “New Form” button above.</h4>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content applicant-content">
+                <div class="content-head">
+                    <h2 class="h2-Name">Name</h2>
+                    <h2 class="Property">Property</h2>
+                    <h2 class="Status">Status</h2>
+                    <h2 class="Date">Date Received</h2>
+                    <form action="">
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="content-body sent-to-applicant">
+                    <div class="sent-block"></div>
+                    <!-- a block on top of the text -->
+                    <div class="name">
+                        <a href="#" class="link">Jake Evergreen</a>
+                    </div>
+                    <div class="property">
+                        <p>234 E Washington Street</p>
+                    </div>
+                    <div class="status">
+                        <p>Sent to Applicant</p>
+                    </div>
+                    <div class="date">
+                        <!-- <p>11/19/2016</p> -->
+                    </div>
+                    <div class="button">
+                        <a href="view.html">View</a>
+                        <a href="#" class="remove"></a>
+                    </div>
+                </div>
+                <div class="content-body submitted">
+                    <div class="name">
+                        <a href="#" class="link">Tyler Steele</a>
+                    </div>
+                    <div class="property">
+                        <p>100 Murphy Fork</p>
+                    </div>
+                    <div class="status">
+                        <p>Submitted</p>
+                    </div>
+                    <div class="date">
+                        <p>11/19/2016</p>
+                    </div>
+                    <div class="button">
+                        <a href="view.html">View</a>
+                        <a href="#" class="remove"></a>
+                    </div>
+                </div>
+                <div class="content-body submitted">
+                    <div class="name">
+                        <a href="#" class="link">Tillie Klein</a>
+                    </div>
+                    <div class="property">
+                        <p>881 Darron Wall</p>
+                    </div>
+                    <div class="status">
+                        <p>Submitted</p>
+                    </div>
+                    <div class="date">
+                        <p>10/04/2016</p>
+                    </div>
+                    <div class="button">
+                        <a href="view.html">View</a>
+                        <a href="#" class="remove"></a>
+                    </div>
+                </div>
+                <div class="content-body rejected">
+                    <div class="name">
+                        <a href="#" class="link">Jeffery Franklin</a>
+                    </div>
+                    <div class="property">
+                        <p>87 Lilyan Land Suite 951</p>
+                    </div>
+                    <div class="status">
+                        <p>Rejected</p>
+                    </div>
+                    <div class="date">
+                        <p>10/03/2016</p>
+                    </div>
+                    <div class="button">
+                        <a href="view.html">View</a>
+                        <a href="#" class="remove"></a>
+                    </div>
+                </div>
+                <div class="content-body accepted">
+                    <div class="name">
+                        <a href="#" class="link">Nellie Ramsey</a>
+                    </div>
+                    <div class="property">
+                        <p>964 Davis Cliff Apt. 376</p>
+                    </div>
+                    <div class="status">
+                        <p>Accepted</p>
+                    </div>
+                    <div class="date">
+                        <p>09/22/2016</p>
+                    </div>
+                    <div class="button">
+                        <a href="#">View</a>
+                        <a href="#" class="remove"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End wrapper-main -->
+            <div id="popup1" class="modal_div new_form popup" style="display: none;">
+                <!-- <a class="fancybox-item fancybox-close" title="Close" href="javascript:;"></a> -->
+                <div class="header">
+                    <h2>Send Application Link</h2>
+                </div>
+                <div class="modal_content">
+                    <div class="fll">
+                        <h3>700 E Axis Ave</h3>
+                        <p>(Form name only visible to you)</p>
+                        <div class="hidden-link">
+                            <a href="#" class="copy-link">Copy Application Link</a>
+                            <p class="hidden">www.rentapplication.net/axisavenue</p>
+                        </div>
+                    </div>
+                    <form action="send.php" method="post" id="form1">
                         <div class="flr">
-                            <input type="checkbox" id="myself1" class="mycheck">
-                            <label for="myself1">CC myself</label>
+                            <h4>Reports Included:</h4>
+                            <!-- <input type="checkbox" id="service1"> -->
+                            <p class="check">Credit</p>
+                            <div class="cf"></div>
+                            <!-- <input type="checkbox" id="service2"> -->
+                            <p class="check">Background</p>
+                            <div class="cf"></div>
+                            <!-- <input type="checkbox" id="service3"> -->
+                            <p class="check">Eviction</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <input type="text">
-                    </div>
-                    <div class="row">
-                        <h5>Subject</h5>
-                        <input type="text" placeholder="Rental Application Link">
-                    </div>
-                    <div class="row">
-                        <h5>Message</h5>
-                        <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue"></textarea>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="button">Send Application Link</a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="cancel">Cancel</a>
-                    </div>
-                </form>
+                        <div class="cf"></div>
+                        <div class="visible">
+                            <a href="#" class="copy-link">Copy Application Link</a>
+                            <p class="hidden">www.rentapplication.net/axisavenue</p>
+                        </div>
+                        <div class="cf margin"></div>
+                        <div class="row tabs">
+                            <div class="fll">
+                                <h5>Applicant’s Email</h5>
+                            </div>
+                            <div class="flr">
+                                <input type="checkbox" id="myself1" class="mycheck">
+                                <label for="myself1">CC myself</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="text" name="name">
+                        </div>
+                        <div class="row">
+                            <h5>Subject</h5>
+                            <input type="text" placeholder="Rental Application Link" name="link">
+                        </div>
+                        <div class="row">
+                            <h5>Message</h5>
+                            <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue" name="message"></textarea>
+                        </div>
+                        <div class="row">
+                            <!-- <a href="#" class="button">Send Application Link</a> -->
+                            <input type="submit" class="button" value="Send Application Link">
+                        </div>
+                        <div class="row">
+                            <a href="#" class="cancel">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="popupThanks" class="popup thanks" style="display: none;">
+                <img src="images/form-sent-illustration.svg" width="223" alt="">
+                <h2>Success!</h2>
+                <p>Application link has been sent to
+                    <br>Jake23Evergreen@gmail.com</p>
+                <a href="index.html" class="backto">Back to Dashboard</a>
+            </div>
+            <div id="popupError" class="popup error" style="display: none;">
+                <h2>Sorry, please enter the correct data</h2>
             </div>
         </div>
-
-    </div>
-    <!--[if lt IE 9]>
+        <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>
 <script src="components/html5shiv/html5shiv.min.js"></script>
 <script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
 <script src="components/respond/respond.min.js"></script>
 <![endif]-->
-    <!-- Load Scripts -->
-    <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
-    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
-    <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script src="assets/js/common.js" type="text/javascript"></script>
+        <!-- Load Scripts -->
+        <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
+        <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
+        <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="components/forms/forms.js" type="text/javascript"></script>
+        <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="assets/js/common.js" type="text/javascript"></script>
 </body>
 
 </html>

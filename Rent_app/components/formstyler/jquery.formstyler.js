@@ -1,14 +1,3 @@
-/*
- * jQuery Form Styler v1.7.6
- * https://github.com/Dimox/jQueryFormStyler
- *
- * Copyright 2012-2016 Dimox (http://dimox.name/)
- * Released under the MIT license.
- *
- * Date: 2016.06.05
- *
- */
-
 ;(function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -26,8 +15,8 @@
 	var pluginName = 'styler',
 			defaults = {
 				idSuffix: '-styler',
-				filePlaceholder: 'Файл не выбран',
-				fileBrowse: 'Обзор...',
+				filePlaceholder: 'File is not selected',
+				fileBrowse: 'Attach File',
 				fileNumber: 'Выбрано файлов: %s',
 				selectPlaceholder: 'Выберите...',
 				selectSearch: false,
