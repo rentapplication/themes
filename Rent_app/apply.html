@@ -147,7 +147,7 @@
                 <p><span>You have used 1 of 3 permitted attempts to verify your idenitity.</span></p>
             </div>
             <div class="application active">
-                <form action="" method="">
+                <form action="" method="" onsubmit="return false;">
                     <div class="app-display">
                         <div class="right-side">
                             <img src="../images/wikipedia.png" alt="">
@@ -163,7 +163,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/paper-plane.png" alt="">
                                     </div>
                                     <h2>Application Information</h2>
                                 </div>
@@ -179,7 +179,7 @@
                             <div class="info">
                                 <div class="head required">
                                     <div class="image">
-
+                                        <img src="../images/real-estate.png" alt="">
                                     </div>
                                     <h2>Rental Property</h2>
                                 </div>
@@ -199,7 +199,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/user-female.png" alt="">
                                     </div>
                                     <h2>Applicant Information</h2>
                                 </div>
@@ -221,7 +221,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/add-user.png" alt="">
                                     </div>
                                     <h2>Co-Applicants & Occupants</h2>
                                 </div>
@@ -238,7 +238,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/cottage-61.png" alt="">
                                     </div>
                                     <h2>Current Address</h2>
                                 </div>
@@ -287,7 +287,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/exterior-61.png" alt="">
                                     </div>
                                     <h2>Previous Address</h2>
                                 </div>
@@ -333,7 +333,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/permanent-job.png" alt="">
                                     </div>
                                     <h2>Present Employer</h2>
                                 </div>
@@ -359,7 +359,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/employee-card.png" alt="">
                                     </div>
                                     <h2>Previous Employer</h2>
                                 </div>
@@ -385,7 +385,7 @@
                             <div class="info">
                                 <div class="head">
                                     <div class="image">
-
+                                        <img src="../images/money-box.png" alt="">
                                     </div>
                                     <h2>Assets & Income</h2>
                                 </div>
@@ -407,7 +407,7 @@
                             <div class="info">
                                 <div class="head different">
                                     <div class="image">
-
+                                        <img src="../images/car-61.png" alt="">
                                     </div>
                                     <h2 class="diffh2">Additional Information</h2>
                                 </div>
@@ -439,7 +439,7 @@
                             <div class="info">
                                 <div class="head different">
                                     <div class="image">
-
+                                        <img src="../images/detective-61.png" alt="">
                                     </div>
                                     <h2>Questionnaire</h2>
                                 </div>
@@ -528,7 +528,7 @@
                             <div class="info">
                                 <div class="head different">
                                     <div class="image">
-
+                                        <img src="../images/documents-61.png" alt="">
                                     </div>
                                     <h2>Attachments</h2>
                                 </div>
@@ -570,7 +570,7 @@
                             <div class="info">
                                 <div class="head different">
                                     <div class="image">
-
+                                        <img src="../images/hand-with.png" alt="">
                                     </div>
                                     <h2>Authorization</h2>
                                 </div>
@@ -582,7 +582,7 @@
                             <div class="cf"></div>
                             <div class="info">
                                 <div class="inputs">
-                                    <input type="submit" class="next" onclick="function1()" value="Submit Application">
+                                    <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application">
                                     <!-- <a href="#" class="apply-next1 next">Go to create account</a> -->
                                 </div>
                             </div>
@@ -920,7 +920,7 @@
                 </div>
                 <div class="step2 step2active question payment">
                     <h2>Payment Information</h2>
-                    <form method="#" action="#" name="form">
+                    <form method="#" action="#" name="form" onsubmit="return false;">
                         <p>You are now paying a non-refundable application fee for this rental application.</p>
                         <p>Note: It may take a few moments for your payment to process. Please do NOT press the back button or refresh this page.</p>
                         <div class="fullwidth">
@@ -950,8 +950,8 @@
                             </div>
                         </div>
                         <div class="cf"></div>
-                        <a href="#" class="create btn_next apply-next-step9">Submit Payment</a>
-                        <!-- <input type="submit" class="create btn_next apply-next-step9" value="Submit Payment"> -->
+                        <!-- <a href="#" class="create btn_next apply-next-step9">Submit Payment</a> -->
+                        <input type="submit" class="create btn_next apply-next-step9" value="Submit Payment">
                     </form>
                     <p class="paym">The payment does not depend on the outcome of the application process. The fee is for any required tenant screening reports and an application processing fee.</p>
                 </div>

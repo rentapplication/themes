@@ -261,6 +261,7 @@
 						$('<div class="jq-file">' +
 								'<div class="jq-file__name">' + placeholder + '</div>' +
 								'<div class="jq-file__browse">' + browse + '</div>' +
+								'<div class="jq-file__delete"><a class="delete-changed">delete</a></div>' +
 							'</div>')
 						.css({
 							display: 'inline-block',
