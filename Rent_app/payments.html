@@ -125,12 +125,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container payments-display">
+            <div class="container payments-display active">
                 <div class="right-side top">
                     <h3>Activation Fee</h3>
                     <h5><span>$34.95</span></h5>
                     <a href="#" class="activate display-activate-button">Activate</a>
                     <div class="cf"></div>
+                    <p class="payments">*By activating My Payments I agree to the <a href="#" class="terms">My Payments Terms of Use.</a></p>
                 </div>
                 <div class="left-side cf desktop">
                     <h2>How It Works</h2>
@@ -202,7 +203,7 @@
                 <div class="cf"></div>
             </div>
             <div class="cf"></div>
-            <div class="payments-activate">
+            <div class="payments-activate pay-active1">
                 <div class="secure">
                     <img src="images/secure.svg" width="18" alt="">
                     <p>Secure</p>
@@ -220,7 +221,7 @@
                     <h4>Routing Number <span>*</span></h4>
                     <input type="text" required>
                     <input type="submit" value="Next" class="next-payment" onsubmit="return false;">
-                    <a href="#">Why we are asking for this information</a>
+                    <a href="#popup2" class="fancybox-modal">Why we are asking for this information</a>
                 </form>
             </div>
             <div class="payments-activate pay-active2">
@@ -262,7 +263,7 @@
                     <a href="#" class="a-pay">My Payments Terms of Use.</a>
                 </form>
             </div>
-            <div class="pay-active2-success active">
+            <div class="pay-active2-success">
                 <div class="image-success"></div>
                 <h2>Success!</h2>
                 <p>You have successfully activated My Payments</p>
@@ -271,6 +272,9 @@
         </div>
         <div id="popup1" class="popup view-pop" style="display: none;">
             <p class="info">Your primary user email address will receive all notifications automatically, however if there are others in your office or company who would like to receive the emails as well, please enter their email address below.</p>
+        </div>
+        <div class="popup why-we" id="popup2" style="display: none;">
+            <p>Your ID and account verification is required for compliance purposes to help avoid criminal activity and money laundering. The name you send us should be the full legal name of the person or company receiving the transfers. If an individual account is used, it should match the SSN. If a company name is used, it should match the name for the EIN.</p>
         </div>
     </div>
     <!--[if lt IE 9]>
