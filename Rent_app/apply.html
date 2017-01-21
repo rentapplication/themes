@@ -27,6 +27,8 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox4.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
@@ -578,10 +580,12 @@
                                 </div>
                                 <div class="inputs">
                                     <h5>I hereby give my permission to communicate with my current and former landlord(s) or property manager(s) for the purpose of discussing any and all of the facts and circumstances of my current or former tenancy, as well as the other information listed above. I also give my permission to communicate with my current employer(s) and/or supervisor(s) for the purpose of verifying the employment information listed above. I understand there are no limitations or restrictions regarding what may be discussed or revealed.</h5>
-                                    <div class="sign">
-                                        <a href="#" class="typeto">Type your Signature</a>
-                                        <a href="#" class="clickto">Click to sign</a>
-                                    </div>
+                                    <a href="#popup-sign1" class="fancybox-modal2">
+                                        <div class="sign">
+                                            <p class="typeto">Type your Signature</p>
+                                            <p class="clickto">Click to sign</p>
+                                        </div>
+                                    </a>
                                     <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application">
                                 </div>
                             </div>
@@ -611,27 +615,21 @@
                         <h4>Email</h4>
                         <input type="text" class="rfield">
                         <h4>Password</h4>
-                        <input type="text" class="rfield" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
-                        <ul class="validate">
-                            <li class="checked">
-                                <p>One uppercase letter</p>
-                            </li>
-                            <li>
-                                <p>One number</p>
-                            </li>
-                            <li>
-                                <p>One lowercase letter</p>
-                            </li>
-                            <li>
-                                <p>8 character minimum</p>
-                            </li>
-                        </ul>
+                        <div class="field">
+                            <input type='password' class="password-input" name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                            <ul class='apply-field__rules'>
+                                <li class="val1">One lowercase character</li>
+                                <li class="val2">One uppercase character</li>
+                                <li class="val3">One number</li>
+                                <li class="val4">8 characters minimum</li>
+                            </ul>
+                        </div>
                         <div class="buttons">
                             <a href="#" class="create btn_next apply-next-step1 disabled">Create Account</a>
                             <a href="#" class="skip">Skip and Continue</a>
                             <div class="cf"></div>
                         </div>
-                        <a href="#" class="already">Already have an account? Log in</a>
+                        <a href="login.html" class="already">Already have an account? Log in</a>
                 </div>
                 <div class="step2 step2active st2a1">
                     <div class="secure">
@@ -1051,6 +1049,19 @@
             </div>
         </div>
     </div>
+    <div id="popup-sign1" class="popup-signature" style="display: none;">
+        <div class="head">
+            <h2>Signature</h2>
+        </div>
+        <div class="container">
+        <form action="#" method="#">
+            <div class="sign"></div>
+            <a href="#" class="clear-signature">Clear Signature</a>
+            <div class="cf"></div>
+            <input type="submit" value="Done">
+        </form>
+        </div>
+    </div>
     <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>
 <script src="components/html5shiv/html5shiv.min.js"></script>
@@ -1177,6 +1188,59 @@
         cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
         this.value = cardCvc;
     }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#check2-styler').click(function(){
+                if($(this).hasClass('checked') == false){
+                    $('.apply-next-step2').addClass("disabled");
+                } else {
+                    $('.apply-next-step2').removeClass("disabled");     
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.val1').ready(function(){
+                if($(".val1").hasClass('active') == false){
+                    $('.apply-field__rules').addClass("disable");
+                } else {
+                    $('.apply-field__rules').removeClass("disable");     
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(':password').on('input', onPasswordInput);
+        // Callbacks
+        function onPasswordInput(e) {
+          var $input = $(this),
+            value = this.value,
+            $rulesItems = $input.closest('.field').find('.apply-field__rules').find('li'),
+            rules = {
+              "one lowercase character": /[a-z]/,
+              "one uppercase character": /[A-Z]/,
+              "one number": /[0-9]/,
+              "8 characters minimum": /.{8,}/
+            };
+
+          // mark the input field if it has any value
+          this.classList.toggle('hasValue', this.value);
+
+          // itterate all the rules and validate them
+          $rulesItems.each((i, elm) => {
+            var valid,
+              ruleName = elm.innerText.toLowerCase();
+
+            console.log(rules, ruleName);
+            if (rules[ruleName]) {
+              valid = new RegExp(rules[ruleName]).test(value);
+              elm.classList.toggle('active', valid);
+            }
+          });
+        }
     </script>
 </body>
 
