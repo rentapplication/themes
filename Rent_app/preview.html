@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project title</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="(c)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox.css"> -->
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">
+    <!-- <link rel="stylesheet" type="text/css" href="components/textpreview/magicsuggest.css"> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+</head>
+
+<body style="background: #f8f8f8;">
+    <div class="global_wrapper preview-form">
+        <!-- Begin navigation -->
+        <nav>
+            <div class="menu-block cf">
+                <div class="image">
+                    <img src="images/logotype.svg" width="30" alt="">
+                </div>
+                <div class="h1-head">
+                    <a href="index.html">Rent Application</a>
+                </div>
+                <div class="title">
+                    <h2>Landlord Dashboard</h2>
+                </div>
+                <a id="touch-menu" class="mobile-menu" href="#">
+                    <div class="square">
+                        <div class="line"></div>
+                    </div>
+                </a>
+                <ul class="menu fullscreen">
+                    <li>
+                        <a href="#">
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Payments</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Help</p>
+                        </a>
+                    </li>
+                    <li class="profile">
+                        <a href="#">
+                            <img src="images/profile.svg" width="27" class="profile-image" alt="">
+                            <p class="profile-name">johnsmith@email.com</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Landlord Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Switch to Applicant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu dropmobile">
+                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="#">Switch to Applicant Dashboard</a></li>
+                    <li><a href="#">My Payments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End navigation -->
+        <!-- Begin wrapper-main -->
+        <div class="wrapper-main">
+            <div id="sticky" class="sticky-element">
+                <div class="sticky-anchor"></div>
+                <div class="sticky-content">
+                </div>
+            </div>
+            <div class="head">
+                <div class="container">
+                    <div class="prev-mode">
+                        <h3>Preview Mode</h3>
+                        <img src="../images/eye.png" width="30" alt="">
+                        <p>currently viewing as applicant</p>
+                    </div>
+                    <div class="info-container">
+                        <div class="edit">
+                            <div class="name">
+                                <h2>700 E Axis Avenue</h2>
+                                <p>www.rentapplication.net/axisavenue</p>
+                            </div>
+                            <a href="javascript:history.back();" class="return-to">Return to Dashboard</a>
+                            <div class="cf"></div>
+                            <a href="#" class="edit-button">Edit</a>
+                            <div class="cf"></div>
+                            <div class="buttons">
+                                <a href="#" class="moredetails">More details</a>
+                                <a href="#" class="lessdetails">Less details</a>
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <div class="list">
+                                <h3>Reports Included</h3>
+                                <ul>
+                                    <li class="active">
+                                        <p>Credit</p>
+                                    </li>
+                                    <li class="active">
+                                        <p>Background</p>
+                                    </li>
+                                    <li>
+                                        <p>Eviction</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="app-fee">
+                                <h3>Application Fee</h3>
+                                <h4>$39.95</h4>
+                                <p>Fee paid by applicant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cf"></div>
+                </div>
+            </div>
+            <div class="preview-body cf">
+                <div class="app-display">
+                    <div class="right-side">
+                        <img src="../images/wikipedia.png" alt="">
+                        <p>John Smith</p>
+                        <p>217-578-2819</p>
+                        <p>johnsmith@email.com</p>
+                        <div class="line"></div>
+                        <p class="left">Application Fee</p>
+                        <p class="right">$10.00</p>
+                        <div class="cf"></div>
+                    </div>
+                    <div class="left-side">
+                        <div class="info">
+                            <div class="head-apply">
+                                <div class="image">
+                                    <img src="../images/paper-plane.png" alt="">
+                                </div>
+                                <h2>Application Information</h2>
+                            </div>
+                            <div class="inputs">
+                                <h4>Email Address <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Property Address (that you are applying to) <span>*</span></h4>
+                                <input type="text" disabled>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <div class="line"></div>
+                        <div class="info">
+                            <div class="head-apply required">
+                                <div class="image">
+                                    <img src="../images/real-estate.png" alt="">
+                                </div>
+                                <h2>Rental Property</h2>
+                            </div>
+                            <div class="inputs">
+                                <h4>Property Address (that you are applying to) <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Proposed Rent amount <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Desired Move in date</h4>
+                                <input type="text" disabled>
+                                <p>Please list the earliest date you are able to move in</p>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <div class="line"></div>
+                        <div class="info">
+                            <div class="head-apply">
+                                <div class="image">
+                                    <img src="../images/user-female.png" alt="">
+                                </div>
+                                <h2>Applicant Information</h2>
+                            </div>
+                            <div class="inputs">
+                                <h4>First Name <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Last Name <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>SSN <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Date of Birth <span>*</span></h4>
+                                <input type="text" disabled>
+                                <h4>Phone Number</h4>
+                                <input type="text" disabled>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <div class="line"></div>
+                        <div class="info">
+                            <div class="head-apply different">
+                                <div class="image">
+                                    <img src="../images/detective-61.png" alt="">
+                                </div>
+                                <h2>Questionnaire</h2>
+                            </div>
+                            <div class="inputs">
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #1</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group2" id="radio2-1">
+                                        <label for="radio2-1">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group2" id="radio2-2">
+                                        <label for="radio2-2">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="cf"></div>
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #2</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group3" id="radio2-4">
+                                        <label for="radio2-4">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group3" id="radio2-5">
+                                        <label for="radio2-5">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="cf"></div>
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #3</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group4" id="radio2-6">
+                                        <label for="radio2-6">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group4" id="radio2-7">
+                                        <label for="radio2-7">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="cf"></div>
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #4</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group5" id="radio2-8">
+                                        <label for="radio2-8">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group5" id="radio2-9">
+                                        <label for="radio2-9">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="cf"></div>
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #5</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group6" id="radio2-10">
+                                        <label for="radio2-10">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group6" id="radio2-11">
+                                        <label for="radio2-11">Yes</label>
+                                    </div>
+                                </div>
+                                <div class="cf"></div>
+                                <div class="radio-buttons">
+                                    <h4 class="txtar">Have you ever been convicted of a crime? #6</h4>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group7" id="radio2-12">
+                                        <label for="radio2-12">No</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-container">
+                                        <input type="radio" disabled name="group7" id="radio2-13">
+                                        <label for="radio2-13">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <div class="line"></div>
+                        <div class="info">
+                            <div class="head-apply different">
+                                <div class="image">
+                                    <img src="../images/documents-61.png" alt="">
+                                </div>
+                                <h2>Attachments</h2>
+                            </div>
+                            <div class="inputs">
+                                <h4 class="txtar3">Upload Bank Statement</h4>
+                                <input type="file" disabled>
+                                <h4 class="txtar3">Upload Bank Statement</h4>
+                                <input type="file" disabled>
+                                <h4 class="txtar3">Upload Bank Statement</h4>
+                                <input type="file" disabled>
+                                <h4 class="txtar2">Dropdown</h4>
+                                <div class="dropdown-input">
+                                    <select disabled>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                    </select>
+                                </div>
+                                <h4>Long Paragraph Response</h4>
+                                <textarea disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quis ut maxime deleniti ipsam consequuntur odio libero nam harum, ad aut fugiat officia sunt asperiores soluta eum ducimus temporibus mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sunt placeat est esse illum molestiae numquam necessitatibus odit dolorem? Repudiandae dolorum soluta eligendi temporibus ullam minima, autem sed animi vel.</textarea>
+                                <div class="check-buttons">
+                                    <h4 class="txtar">Checkboxes</h4>
+                                    <div class="check-container">
+                                        <input type="checkbox" disabled name="check1" id="check1-1">
+                                        <label for="check1-1">Option 1</label>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="check-container">
+                                        <input type="checkbox" disabled name="check1" id="check1-2">
+                                        <label for="check1-2">Option 2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <div class="line"></div>
+                    
+                    </div>
+                    <div class="cf"></div>
+                </div>
+            </div>
+            
+        
+    </div>
+    <!--[if lt IE 9]>
+<script src="components/html5shiv/es5-shim.min.js"></script>
+<script src="components/html5shiv/html5shiv.min.js"></script>
+<script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="components/respond/respond.min.js"></script>
+<![endif]-->
+    <!-- Load Scripts -->
+    <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="components/formstyler/jquery.formstyler2.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack2.js" type="text/javascript"></script>
+    <script src="components/imagepreview/preview.js" type="text/javascript"></script>
+    <script src="components/forms/forms.js" type="text/javascript"></script>
+    <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+    <!-- <script src="components/textpreview/magicsuggest.js" type="text/javascript"></script> -->
+    <script src="assets/js/common.js" type="text/javascript"></script>
+
+</body>
+
+</html>
