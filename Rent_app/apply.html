@@ -625,7 +625,7 @@
                             </ul>
                         </div>
                         <div class="buttons">
-                            <a href="#" class="create btn_next apply-next-step1 disabled">Create Account</a>
+                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Create Account</a>
                             <a href="#" class="skip">Skip and Continue</a>
                             <div class="cf"></div>
                         </div>
@@ -1083,7 +1083,6 @@
             var form = $(this),
                 btn = form.find('.btn_next');
             form.find('.rfield').addClass('empty_field');
-            // form.find('.rfieldpass').addClass('empty_field');
 
             function checkInput() {
                 form.find('.rfield').each(function() {
@@ -1093,15 +1092,6 @@
                         $(this).addClass('empty_field');
                     }
                 });
-                // form.find('.rfieldpass').change(function() {
-                //     if (!$(this).filter(function() {
-                //             return this.value.match(/^(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]) [a-zA-Z0-9]{8,}$/);
-                //         })) {
-                //         $(this).removeClass('empty_field');
-                //     } else {
-                //         $(this).addClass('empty_field');
-                //     }
-                // });
             }
 
             function lightEmpty() {
@@ -1201,18 +1191,6 @@
         });
     </script>
     <script>
-        $(document).ready(function(){
-            $('.val1').ready(function(){
-                if($(".val1").hasClass('active') == false){
-                    $('.apply-field__rules').addClass("disable");
-                } else {
-                    $('.apply-field__rules').removeClass("disable");     
-                }
-            });
-        });
-    </script>
-
-    <script>
         $(':password').on('input', onPasswordInput);
         // Callbacks
         function onPasswordInput(e) {
@@ -1240,6 +1218,18 @@
               elm.classList.toggle('active', valid);
             }
           });
+          var activeItemCount = 0;
+            $.each($rulesItems, function() {
+                if ($(this).hasClass('active')){
+                    activeItemCount++;
+                }
+            });
+          if (activeItemCount == 4) {
+             $("a.apply-next-step1").removeClass('check-disabled');
+          }
+          else {
+            $("a.apply-next-step1").addClass('check-disabled');
+          }
         }
     </script>
 </body>

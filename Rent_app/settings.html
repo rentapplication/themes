@@ -227,9 +227,10 @@
                         <h3>Current Password</h3>
                         <input type="password">
                         <h3>New Password</h3>
-                        <input type="password">
-                        <h3>Confirm New Password</h3>
                         <div class="field">
+                        <input type='password' class="password-input" name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                        <h3>Confirm New Password</h3>
+                        
                             <input type='password' class="password-input" name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
                             <ul class='apply-field__rules'>
                                 <li class="val1">One lowercase character</li>
@@ -238,7 +239,7 @@
                                 <li class="val4">8 characters minimum</li>
                             </ul>
                         </div>
-                        <input type="submit" value="Update Password">
+                        <input type="submit" value="Update Password" class="check-disabled submit-button1">
                     </form>
                 </div>
             </div>
@@ -292,6 +293,18 @@
               elm.classList.toggle('active', valid);
             }
           });
+          var activeItemCount = 0;
+            $.each($rulesItems, function() {
+                if ($(this).hasClass('active')){
+                    activeItemCount++;
+                }
+            });
+          if (activeItemCount == 4) {
+             $(".submit-button1").removeClass('check-disabled');
+          }
+          else {
+            $(".submit-button1").addClass('check-disabled');
+          }
         }
     </script>
     <script type="text/javascript">

@@ -105,7 +105,7 @@
                           </ul>
                     </div>
                     <div class="cf"></div>
-                    <input type="submit" class="btn_next" value="Create account">
+                    <input type="submit" class="btn_next submit-button1 check-disabled" value="Create account">
                     <a href="login.html" class="account">Already have an account? Log in</a>
                 </form>
             </div>
@@ -157,6 +157,18 @@
               valid = new RegExp(rules[ruleName]).test(value);
 
               elm.classList.toggle('active', valid);
+            }
+            var activeItemCount = 0;
+              $.each($rulesItems, function() {
+                  if ($(this).hasClass('active')){
+                      activeItemCount++;
+                  }
+              });
+            if (activeItemCount == 4) {
+               $(".submit-button1").removeClass('check-disabled');
+            }
+            else {
+              $(".submit-button1").addClass('check-disabled');
             }
           });
         }
