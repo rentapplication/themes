@@ -376,25 +376,29 @@
                 </div>
             </div>
         </div>
-        <div class="content applicant-content">
-            <div class="search-row">
-                <form action="#" method="#" class="search-form-mobile">
-                    <input type="text" placeholder="Search...">
-                    <input type="submit" value="">
+        <div class="search-row-mobile-container">
+            <form action="#" method="#" class="search-form-mobile">
+                <input type="text" placeholder="Search...">
+                <input type="submit" value="">
+                <div class="cf"></div>
+            </form>
+            <div class="cf"></div>
+        </div>
+        <div class="button-blue">
+            <div class="container">
+                <div class="archive-buttons">
+                    <a href="#" class="archive-butt">Archive</a>
+                    <a href="#" class="delete-butt">Delete</a>
                     <div class="cf"></div>
-                </form>
-                <div class="cf"></div>
+                </div>
+                <div class="unarchive-buttons">
+                    <a href="#" class="unarchive-butt">Unarchive</a>
+                    <a href="#" class="delete-butt">Delete</a>
+                    <div class="cf"></div>
+                </div>
             </div>
-            <div class="archive-buttons">
-                <a href="#" class="archive-butt">Archive</a>
-                <a href="#" class="delete-butt">Delete</a>
-                <div class="cf"></div>
-            </div>
-            <div class="unarchive-buttons">
-                <a href="#" class="unarchive-butt">Unarchive</a>
-                <a href="#" class="delete-butt">Delete</a>
-                <div class="cf"></div>
-            </div>
+        </div>
+        <div class="content applicant-content">
             <ul class="app-buttons">
                 <li class="active">
                     <a href="#" class="active-app applicant-button">Active Applicants</a>
@@ -827,17 +831,32 @@
         $(document).on("click", ".not-archived .checkbox .jq-checkbox", function(){
             if($(this).hasClass("checked")){
                 $(".archive-buttons").addClass("active");
+                $(".button-blue").addClass("active");
             } else {
-                $(".archive-buttons").removeClass("active");     
+                $(".archive-buttons").removeClass("active");
+                $(".button-blue").removeClass("active");
             }
         });
     </script>
+    <!-- <script>
+        $(document).ready(function(){
+            $(".not-archived .checkbox .jq-checkbox").click(function(){
+                if($(".not-archived .checkbox .jq-checkbox").hasClass('checked')){
+                    $(".archive-buttons").addClass("active");
+                } else {
+                    $(".archive-buttons").removeClass("active");
+                }
+            });
+        });
+    </script> -->
     <script>
         $(document).on("click", ".archived-block .checkbox .jq-checkbox", function(){
             if($(this).hasClass("checked")){
                 $(".unarchive-buttons").addClass("active");
+                $(".button-blue").addClass("active");
             } else {
-                $(".unarchive-buttons").removeClass("active");     
+                $(".unarchive-buttons").removeClass("active");
+                $(".button-blue").removeClass("active");
             }
         });
     </script>
