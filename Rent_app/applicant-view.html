@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <div class="global_wrapper view-page">
+    <div class="global_wrapper view-page applicant-view">
         <!-- Begin navigation -->
         <nav>
             <div class="menu-block cf">
@@ -47,7 +47,7 @@
                     <a href="index.html">Rent Application</a>
                 </div>
                 <div class="title">
-                    <h2>Landlord Dashboard</h2>
+                    <h2>Applicant Dashboard</h2>
                 </div>
                 <a id="touch-menu" class="mobile-menu" href="#">
                     <div class="square">
@@ -67,11 +67,11 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#">
                             <p>Payments</p>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#">
                             <p>Help</p>
@@ -101,7 +101,7 @@
                 <ul class="menu dropmobile">
                     <li><a href="index.html">Landlord Dashboard</a></li>
                     <li><a href="#">Switch to Applicant Dashboard</a></li>
-                    <li><a href="#">My Payments</a></li>
+                    <!-- <li><a href="#">My Payments</a></li> -->
                     <li><a href="#">Help</a></li>
                     <li><a href="settings.html">Settings</a></li>
                     <li><a href="#">Logout</a></li>
@@ -110,64 +110,35 @@
         </nav>
         <!-- End navigation -->
         <!-- Begin content -->
-        <div class="view">
+        <div class="view applicant-view">
             <div class="block-shadow">
                 <div class="container">
+                    <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
+                    <div class="profile-success active">
+                        <p>Your application has been successfully updated.</p>
+                        <a class="close-butt"></a>
+                    </div>
+                    <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
                     <div class="row">
                         <a href="#" class="back">Return to Dashboard</a>
                     </div>
                     <div class="row">
-                        <div class="buttons">
-                            <div class="buttons-acc">
-                                <a href="#" class="button-butt">buttons /</a>
-                                <a href="#" class="button-acc">accept /</a>
-                                <a href="#" class="button-rej">reject</a>
+                        <div class="cont-view">
+                            <div class="buttons">
+                                <a href="applicant-apply.html">Edit</a>
+                                <div class="cf"></div>
+                                <p>Submitted</p>
                             </div>
-                            <!-- BEGIN ACCEPT CONTAINER -->
-                            <div class="accept-container acc-cont">
-                                <h3>Accepted</h3>
-                                <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
+                            <div class="about">
+                                <h2>John Smith</h2>
+                                <a href="#" class="download">
+                                    Download
+                                    <div class="arrow"></div>
+                                </a>
+                                <div class="cf"></div>
+                                <p>236-358-2470</p>
+                                <p>johnsmith@email.com</p>
                             </div>
-                            <!-- END ACCEPT CONTAINER -->
-                            <!-- BEGIN REJECT CONTAINER -->
-                            <div class="reject-container acc-cont">
-                                <h3>Rejected</h3>
-                                <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
-                            </div>
-                            <!-- END REJECT CONTAINER -->
-                            <!-- BEGIN BUTTONS CONTAINER -->
-                            <a href="#popup6-accept" class="fancybox-modal2 accept">Accept</a>
-                            <a href="#popup-consumer1" class="fancybox-modal2 reject">Reject</a>
-                            <!-- END BUTTONS CONTAINER -->
-                            <div class="cf"></div>
-                            <div class="bounce bounce-button-view">
-                                <div class="circle"></div>
-                                <div class="functions">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Archive</a>
-                                        </li>
-                                        <li class="line cf"></li>
-                                        <li class="cf">
-                                            <a href="#popup5-delete" class="fancybox-modal2">Delete</a>
-                                        </li>
-                                        <li class="line"></li>
-                                        <li class="cf">
-                                            <a href="#popup6-share" class="fancybox-modal2">Share</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about">
-                            <h2>Jessy Nikolaus</h2>
-                            <a href="#" class="download">
-                                Download
-                                <div class="arrow"></div>
-                            </a>
-                            <div class="cf"></div>
-                            <p>236-358-2470</p>
-                            <p>jessy_nikolaus@yahoo.com</p>
                         </div>
                         <div class="cf"></div>
                     </div>
@@ -2124,30 +2095,6 @@
             </div>
         </div>
     </div>
-    <div id="popup6-share" class="popup popup-share" style="display: none">
-        <div class="head">
-            <h2>Share Application</h2>
-        </div>
-        <div class="container">
-            <h3>Share Application</h3>
-            <p>To send this application, please enter in the email address of the recipients below:</p>
-            <form action="#" method="#" runat="server" id="form2">
-                <!-- <textarea></textarea> -->
-                <div id="boxTags">
-                    <input type="hidden" id="hiddenTags"/>
-                    <ul id="ulTags" style="clear:both;">
-                        <li id="newTagInput"><input type="text" id="inputTag"/></li>
-                    </ul>
-                    <div style="clear:both;"></div>
-                </div>
-            </form>
-            <div class="buttons">
-                <a href="#" class="delete">Send</a>
-                <a href="#" class="cancel view-delete-button">Cancel</a>
-                <div class="cf"></div>
-            </div>
-        </div>
-    </div>
     <div id="popup6-accept" class="popup popup-accept" style="display: none">
         <div class="head">
             <h2>Accept Applicant</h2>
@@ -2262,7 +2209,7 @@
     </div>
     <div id="yes-mail1" class="popup popup-accept" style="display: none">
         <div class="head">
-            <h2>Reject Applicant</h2>
+            <h2>Accept Applicant</h2>
         </div>
         <div class="container">
             <h3>Sorry that wasn’t the right candidate</h3>
@@ -2351,105 +2298,6 @@
         cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
         this.value = cardCvc;
     }
-    </script>
-    <script type="text/javascript">
-    var arrayTags = [""];
-    var index = 0;
-
-    function removeByValue(arr, val) {
-        for(var i=0; i<arr.length; i++) {
-            if(arr[i] == val) {
-                arr.splice(i, 1);
-                break;
-            }
-        }
-        index--;
-    }
-
-    function removeTag(el) {
-        tag = $(el).prev().html();
-        $("#tag-"+tag).remove();
-        removeByValue(arrayTags, tag);
-        $("#inputTag").focus();
-    }
-
-    $(document).ready(function() {
-        var inputWidth = 16;
-
-        function insertTag(tag) {
-            var liEl = '<li id="tag-'+tag+'" class="li_tags">'+
-                        '<span href="javascript://" class="a_tag">'+tag+'</span>&nbsp;'+
-                        '<a href="" onclick="removeTag(this); return false;"'+
-                        ' class="del" id="del_'+tag+'">&times;</strong></a>'+
-                        '</li>';
-            return liEl;
-        }
-
-        $("#inputTag").focus().val("");
-        $("#hiddenTags").val("");
-
-        $("#inputTag").keydown(function(event) {
-            var textVal = jQuery.trim($(this).val()).toLowerCase();
-            var keyCode = event.which;
-
-            // Сдвигаемся влево (нажата клавиша влево)
-            if (keyCode == 37 && textVal == '') {
-                $("#newTagInput").insertBefore($("#newTagInput").prev());
-                $("#inputTag").focus();
-            }
-
-            // Сдвигаемся вправо (нажата клавиша вправо)
-            if (keyCode == 39 && textVal == '') {
-                $("#newTagInput").insertAfter($("#newTagInput").next());
-                $("#inputTag").focus();
-            }
-
-            // Удаляем предыдущую метку (нажата клавиша backspace)
-            if (keyCode == 8 && textVal == '') {
-                deletedTag = $("#newTagInput").prev().find(".a_tag").html();
-                removeByValue(arrayTags, deletedTag);
-                $("#newTagInput").prev().remove();
-                $("#inputTag").focus();
-            }
-
-            // Удалаяем следующую закладку (нажата клавиша delete)
-            if (keyCode == 46 && textVal == '') {
-                deletedTag = $("#newTagInput").next().find(".a_tag").html();
-                removeByValue(arrayTags, deletedTag);
-                $("#newTagInput").next().remove();
-                $("#inputTag").focus();
-            }
-
-            if ((47 < keyCode && keyCode < 106) || (keyCode == 32)) {
-
-                if (keyCode != 32) {
-                    // Пользователь вводит метку
-                    inputWidth = inputWidth + 7;
-                    $(this).attr("style", "width:"+inputWidth+"px");
-                    $("#newTagInput").attr("style", "width:"+inputWidth+"px");
-                } else if (keyCode == 32 && (textVal != '')) {
-                    // Пользователь создает новую метку
-                    var isExist = jQuery.inArray(textVal, arrayTags);
-
-                    if (isExist == -1) {
-                        // Вставить новую метку (видимую пользователю)
-                        $(insertTag(textVal)).insertBefore("#newTagInput");
-
-                        // Вставить новую метку  в массив JavaScript
-                        arrayTags[index] = textVal;
-                        index++;
-                    }
-                    inputWidth = 16;
-                    $(this).attr("style", "width:"+inputWidth+"px");
-                    $("#newTagInput").attr("style", "width:23px")
-                    $(this).val("");
-                } else {
-                    $(this).val("");
-                }
-                console.log(arrayTags, arrayTags.length);
-            }
-        });
-    });
     </script>
 </body>
 

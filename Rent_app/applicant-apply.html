@@ -111,7 +111,7 @@
             <div class="sticky-anchor"></div>
             <div class="sticky-content"></div>
         </div>
-        <div class="row top">
+        <!-- <div class="row top">
             <ul>
                 <li class="form-step-1 active">
                     <div class="circle-block">
@@ -149,7 +149,7 @@
                     <h3>Payment</h3>
                 </li>
             </ul>
-        </div>
+        </div> -->
         <div class="wrapper">
             <div class="step2-error">
                 <p>Please check to make sure the information you have entered is correct. If you are unable to proceed, please contact support@rentapplication.net.</p>
@@ -169,7 +169,7 @@
                             <div class="cf"></div>
                         </div>
                         <div class="left-side">
-                            <!-- <div class="info">
+                            <div class="info">
                                 <div class="head">
                                     <div class="image">
                                         <img src="../images/paper-plane.png" alt="">
@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="cf"></div>
-                            <div class="line"></div> -->
+                            <div class="line"></div>
                             <div class="info">
                                 <div class="head required">
                                     <div class="image">
@@ -193,8 +193,8 @@
                                     <h2>Rental Property</h2>
                                 </div>
                                 <div class="inputs">
-                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
-                                    <input type="text">
+                                    <!-- <h4>Property Address (that you are applying to) <span>*</span></h4>
+                                    <input type="text"> -->
                                     <div class="required">
                                         <h4>Proposed Rent amount <span>*</span></h4>
                                         <input type="text">
@@ -593,7 +593,7 @@
                                             <p class="clickto">Click to sign</p>
                                         </div>
                                     </a>
-                                    <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application">
+                                    <input type="submit" class="next" onclick="" value="Submit Application">
                                 </div>
                             </div>
                             <div class="cf"></div>
@@ -607,418 +607,6 @@
                         <div class="cf"></div>
                     </div>
                 </form>
-            </div>
-            <div class="container apply-container">
-                <div class="fullwidth step1">
-                    <h2>Create Account</h2>
-                    <h3>(optional)</h3>
-                    <p>You have the option of creating an account. Creating an account allows you to:</p>
-                    <ul class="list">
-                        <li>Access or view your application later</li>
-                        <li>Modify the application</li>
-                        <li>Add additional attachments</li>
-                    </ul>
-                    <form action="#" method="" class="rf">
-                        <h4>Email</h4>
-                        <input type="text" class="rfield">
-                        <h4>Password</h4>
-                        <div class="field">
-                            <input type='password' class="password-input" name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
-                            <ul class='apply-field__rules'>
-                                <li class="val1">One lowercase character</li>
-                                <li class="val2">One uppercase character</li>
-                                <li class="val3">One number</li>
-                                <li class="val4">8 characters minimum</li>
-                            </ul>
-                        </div>
-                        <div class="buttons">
-                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Create Account</a>
-                            <a href="#" class="skip">Skip and Continue</a>
-                            <div class="cf"></div>
-                        </div>
-                        <a href="login.html" class="already">Already have an account? Log in</a>
-                </div>
-                <div class="step2 step2active st2a1">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <p class="head">Step 1 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requires us to verify your identity to run screening reports. Please read and agree to the terms and conditions below.</p>
-                    <textarea readonly>You understand that by selecting I AGREE immediately following this notice, you are authorizing Rent Application to provide your personal information to its third-party identity verification and credit reporting agency providers to verify your identity for the purpose of allowing you to view credit reports ordered by prospective tenants on Rent Application.&#13;&#10;&#13;&#10;You further acknowledge that you have read and agree to our Terms of Use and specifically represent and warrant:&#13;&#10;&#13;&#10;that you have never been involved, and will not become involved, in any credit fraud or other unethical business practice;&#13;&#10;&#13;&#10;that any request for a credit report, and your use of any report obtained through Rent Application, is solely for the purpose of evaluating a rental application; and&#13;&#10;&#13;&#10;that you will not provide a copy of any report obtained through Rent Application, or any information contained in such a report, to anyone else.
-                    </textarea>
-                    <div class="checkbox">
-                        <input type="checkbox" id="check2" class="rfield">
-                        <label for="check2">I understand that by checking and clicking on the "I Agree" button immediately following this notice, I am:</label>
-                    </div>
-                    <ul>
-                        <li>
-                            <p>Agreeing and consenting to Rent Application's Terms and Conditions</p>
-                        </li>
-                        <li>
-                            <p>Providing "written instructions" to Rent Application under the Fair Credit Reporting Act authorizing Rent Application to obtain information from my personal credit profile or other information from Experian, and</p>
-                        </li>
-                        <li>
-                            <p>Authorizing Rent Application to obtain such information solely to confirm my identity.</p>
-                        </li>
-                        <li>
-                            <p>Acknowledging that I have read, understand and received the Notice to Users of Consumer Reports</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="create btn_next apply-next-step2 disabled">Agree and Continue</a>
-                </div>
-                <div class="step2 step2active st2a2">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <a href="#" class="error-button">error</a>
-                    <p class="head">Step 2 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Please complete your personal details <span>using your most recent address.</span> If there is an identification error, try using a previous address that you may have more credit history or bills associated with.</p>
-                    <div class="row">
-                        <div class="half fll">
-                            <h4>First Name <span>*</span></h4>
-                            <input type="text" required>
-                        </div>
-                        <div class="half flr">
-                            <h4>Last Name <span>*</span></h4>
-                            <input type="text" required>
-                        </div>
-                        <div class="cf"></div>
-                    </div>
-                    <div class="row">
-                        <h4>Address <span>*</span></h4>
-                        <input type="text" required>
-                    </div>
-                    <div class="row">
-                        <div class="half">
-                            <h4>City <span>*</span></h4>
-                            <input type="text" required>
-                        </div>
-                        <div class="state">
-                            <h4>State <span>*</span></h4>
-                            <select required>
-                                <option value="state1">State 1</option>
-                                <option value="state2">State 2</option>
-                                <option value="state3">State 3</option>
-                                <option value="state4">State 4</option>
-                                <option value="state5">State 5</option>
-                            </select>
-                        </div>
-                        <div class="zip">
-                            <h4>Zip <span>*</span></h4>
-                            <input type="text" required="">
-                        </div>
-                    </div>
-                    <div class="cf"></div>
-                    <div class="row">
-                        <div class="half">
-                            <h4>Social Security No <span>*</span></h4>
-                            <input type="text" required>
-                        </div>
-                    </div>
-                    <div class="cf"></div>
-                    <a href="#" class="create btn_next apply-next-step3">Agree and Continue</a>
-                </div>
-                <div class="step2 step2active question st2q1">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <p class="head">Step 3 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
-                    <h6><span>Question 1 of 4</span></h6>
-                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
-                    <div class="input-container container-button">
-                        <label for="question1-1">
-                            <p>Heather</p>
-                        </label>
-                        <input type="radio" name="group-q1" id="question1-1">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question1-2">
-                            <p>Adam</p>
-                        </label>
-                        <input type="radio" name="group-q1" id="question1-2">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question1-3">
-                            <p>Janice</p>
-                        </label>
-                        <input type="radio" name="group-q1" id="question1-3">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question1-4">
-                            <p>Wes</p>
-                        </label>
-                        <input type="radio" name="group-q1" id="question1-4">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question1-5">
-                            <p>None of the above/Does not apply</p>
-                        </label>
-                        <input type="radio" name="group-q1" id="question1-5">
-                    </div>
-                    <div class="cf"></div>
-                    <!-- <a href="#" class="create btn_next apply-next-step4">Next</a> -->
-                    <div class="buttons-block">
-                        <!-- <a href="#" class="back btn_next apply-back-step4">Back</a> -->
-                        <a href="#" class="create btn_next apply-next-step4 disabled">Next</a>
-                        <div class="cf"></div>
-                    </div>
-                </div>
-                <div class="step2 step2active question st2q2">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <p class="head">Step 3 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
-                    <h6><span>Question 2 of 4</span></h6>
-                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
-                    <div class="input-container container-button">
-                        <label for="question2-1">
-                            <p>Heather</p>
-                        </label>
-                        <input type="radio" name="group-q2" id="question2-1">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question2-2">
-                            <p>Adam</p>
-                        </label>
-                        <input type="radio" name="group-q2" id="question2-2">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question2-3">
-                            <p>Janice</p>
-                        </label>
-                        <input type="radio" name="group-q2" id="question2-3">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question2-4">
-                            <p>Wes</p>
-                        </label>
-                        <input type="radio" name="group-q2" id="question2-4">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question2-5">
-                            <p>None of the above/Does not apply</p>
-                        </label>
-                        <input type="radio" name="group-q2" id="question2-5">
-                    </div>
-                    <div class="cf"></div>
-                    <div class="buttons-block">
-                        <a href="#" class="back btn_next apply-back-step5">Back</a>
-                        <a href="#" class="create btn_next apply-next-step5 disabled">Next</a>
-                        <div class="cf"></div>
-                    </div>
-                </div>
-                <div class="step2 step2active question st2q3">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <p class="head">Step 3 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
-                    <h6><span>Question 3 of 4</span></h6>
-                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
-                    <div class="input-container container-button">
-                        <label for="question3-1">
-                            <p>Heather</p>
-                        </label>
-                        <input type="radio" name="group-q3" id="question3-1">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question3-2">
-                            <p>Adam</p>
-                        </label>
-                        <input type="radio" name="group-q3" id="question3-2">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question3-3">
-                            <p>Janice</p>
-                        </label>
-                        <input type="radio" name="group-q3" id="question3-3">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question3-4">
-                            <p>Wes</p>
-                        </label>
-                        <input type="radio" name="group-q3" id="question3-4">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question3-5">
-                            <p>None of the above/Does not apply</p>
-                        </label>
-                        <input type="radio" name="group-q3" id="question3-5">
-                    </div>
-                    <div class="cf"></div>
-                    <div class="buttons-block">
-                        <a href="#" class="back btn_next apply-back-step6">Back</a>
-                        <a href="#" class="create btn_next apply-next-step6 disabled">Next</a>
-                        <div class="cf"></div>
-                    </div>
-                </div>
-                <div class="step2 step2active question st2q4">
-                    <div class="secure">
-                        <img src="images/secure.svg" width="18" alt="">
-                        <p>Secure</p>
-                    </div>
-                    <p class="head">Step 3 of 3</p>
-                    <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
-                    <h6><span>Question 4 of 4</span></h6>
-                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
-                    <div class="input-container container-button">
-                        <label for="question4-1">
-                            <p>Heather</p>
-                        </label>
-                        <input type="radio" name="group-q4" id="question4-1">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question4-2">
-                            <p>Adam</p>
-                        </label>
-                        <input type="radio" name="group-q4" id="question4-2">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question4-3">
-                            <p>Janice</p>
-                        </label>
-                        <input type="radio" name="group-q4" id="question4-3">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question4-4">
-                            <p>Wes</p>
-                        </label>
-                        <input type="radio" name="group-q4" id="question4-4">
-                    </div>
-                    <div class="input-container container-button">
-                        <label for="question4-5">
-                            <p>None of the above/Does not apply</p>
-                        </label>
-                        <input type="radio" name="group-q4" id="question4-5">
-                    </div>
-                    <div class="cf"></div>
-                    <div class="buttons-block">
-                        <a href="#" class="back btn_next apply-back-step7">Back</a>
-                        <a href="#" class="create btn_next apply-next-step7 disabled">Finish</a>
-                        <div class="cf"></div>
-                    </div>
-                    </form>
-                </div>
-                <div class="step2 step2active question success">
-                    <h2>Verify Your Identity with Experian</h2>
-                    <img src="../images/group-4.svg" width="130" alt="">
-                    <h2>Success!</h2>
-                    <p>Your identity has been verified</p>
-                    <div class="cf"></div>
-                    <a href="#" class="create btn_next success-next-step7">Next</a>
-                    <a href="#" class="create btn_next error-next-step7">Error</a>
-                </div>
-                <div class="step2 step2active question error">
-                    <h2>Verify Your Identity with Experian</h2>
-                    <img src="../images/error-illustration.svg" width="130" alt="">
-                    <h2>Experian couldn’t verify your identity!</h2>
-                    <p>Please continue and submit your payment, then send us an email at <a href="">support@rentapplication.net</a> to verify your account for credit reports.</p>
-                    <div class="cf"></div>
-                    <a href="#" class="create btn_next apply-next-step8">Continue</a>
-                </div>
-                <div class="step2 step2active question payment">
-                    <h2>Payment Information</h2>
-                    <form method="#" action="#" name="form" onsubmit="return false;">
-                        <p>You are now paying a non-refundable application fee for this rental application.</p>
-                        <p>Note: It may take a few moments for your payment to process. Please do NOT press the back button or refresh this page.</p>
-                        <div class="fullwidth">
-                            <h4>Full Name <span>*</span></h4>
-                            <input type="text" class="name" placeholder="Name Name">
-                            <div class="cf"></div>
-                            <h4>Card Number <span>*</span></h4>
-                            <input type="text" name="cardcode" class="card" id="card_number" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="1234 5678 0912 3456">
-                            <div class="cf"></div>
-                            <div class="row exdate">
-                                <div class="half">
-                                    <h4>Expiration Date <span>*</span></h4>
-                                    <input type="text" name="cardDate" class="date" placeholder="06/17">
-                                </div>
-                                <div class="half flr">
-                                    <h4>CVC <span>*</span></h4>
-                                    <input type="text" name="cardCvc" class="cvc" placeholder="456">
-                                </div>
-                            </div>
-                            <div class="row fee">
-                                <div class="half fll">
-                                    <p>Application Fee</p>
-                                </div>
-                                <div class="half flr">
-                                    <p>$10.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cf"></div>
-                        <!-- <a href="#" class="create btn_next apply-next-step9">Submit Payment</a> -->
-                        <input type="submit" class="create btn_next apply-next-step9" value="Submit Payment">
-                    </form>
-                    <p class="paym">The payment does not depend on the outcome of the application process. The fee is for any required tenant screening reports and an application processing fee.</p>
-                </div>
-                <div class="step2 step2active question submitted">
-                    <div class="circle">
-                        <div class="triangle-block">
-                            <div class="triangle"></div>
-                        </div>
-                    </div>
-                    <h2>Your application has been submitted</h2>
-                    <p>For your records, we have sent you an email notification to confirm that we have received and processed your application. We encourage you to print this information for your records.</p>
-                    <div class="table">
-                        <div class="table-row cf">
-                            <div class="fll">
-                                <p>Rental Property</p>
-                            </div>
-                            <div class="flr">
-                                <p>401 Clover Lane</p>
-                            </div>
-                        </div>
-                        <div class="table-row cf">
-                            <div class="fll">
-                                <p>Applicant</p>
-                            </div>
-                            <div class="flr">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="table-row cf">
-                            <div class="fll">
-                                <p>Email</p>
-                            </div>
-                            <div class="flr">
-                                <p>asmith@hello.com</p>
-                            </div>
-                        </div>
-                        <div class="table-row cf">
-                            <div class="fll">
-                                <p>Application ID</p>
-                            </div>
-                            <div class="flr">
-                                <p>fZd3123</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>What happens next?</h2>
-                    <p>Your application has been sent to the property manager, and once they have reviewed and evaluated your application, they will contact you directly concerning your tenancy.</p>
-                    <p>If you have any questions about the rental property or your application, you can contact the property manager directly:</p>
-                    <div class="cf"></div>
-                    <div class="about">
-                        <img src="../images/wikipedia.png" width="54" alt="">
-                        <p>John Smith</p>
-                        <p>217-578-2819</p>
-                        <p>johnsmith@email.com</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

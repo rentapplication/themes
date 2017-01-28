@@ -33,8 +33,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
 
-<body style="background: #fff;">
-    <div class="global_wrapper newform1 apply">
+<body style="background: #f8f8f8;">
+    <div class="global_wrapper newform1 apply applicant-verify">
         <!-- Begin navigation -->
         <nav>
             <div class="menu-block cf">
@@ -111,541 +111,20 @@
             <div class="sticky-anchor"></div>
             <div class="sticky-content"></div>
         </div>
-        <div class="row top">
-            <ul>
-                <li class="form-step-1 active">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>1</p>
-                        </div>
-                    </div>
-                    <h3>Application</h3>
-                </li>
-                <li class="line line-step-2"></li>
-                <li class="form-step-2">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>2</p>
-                        </div>
-                    </div>
-                    <h3>Create Account</h3>
-                </li>
-                <li class="line line-step-3"></li>
-                <li class="form-step-3">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>3</p>
-                        </div>
-                    </div>
-                    <h3>Verify</h3>
-                </li>
-                <li class="line line-step-4"></li>
-                <li class="form-step-4">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>4</p>
-                        </div>
-                    </div>
-                    <h3>Payment</h3>
-                </li>
-            </ul>
-        </div>
         <div class="wrapper">
             <div class="step2-error">
                 <p>Please check to make sure the information you have entered is correct. If you are unable to proceed, please contact support@rentapplication.net.</p>
                 <p><span>You have used 1 of 3 permitted attempts to verify your idenitity.</span></p>
             </div>
-            <div class="application active">
-                <form action="" method="" onsubmit="return false;">
-                    <div class="app-display">
-                        <div class="right-side">
-                            <img src="../images/wikipedia.png" alt="">
-                            <p>John Smith</p>
-                            <p>217-578-2819</p>
-                            <p>johnsmith@email.com</p>
-                            <div class="line"></div>
-                            <p class="left">Application Fee</p>
-                            <p class="right">$10.00</p>
-                            <div class="cf"></div>
-                        </div>
-                        <div class="left-side">
-                            <!-- <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/paper-plane.png" alt="">
-                                    </div>
-                                    <h2>Application Information</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Email Address <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div> -->
-                            <div class="info">
-                                <div class="head required">
-                                    <div class="image">
-                                        <img src="../images/real-estate.png" alt="">
-                                    </div>
-                                    <h2>Rental Property</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
-                                    <input type="text">
-                                    <div class="required">
-                                        <h4>Proposed Rent amount <span>*</span></h4>
-                                        <input type="text">
-                                        <p>This field is required</p>
-                                    </div>
-                                    <h4>Desired Move in date</h4>
-                                    <input type="text">
-                                    <p>Please list the earliest date you are able to move in</p>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/user-female.png" alt="">
-                                    </div>
-                                    <h2>Applicant Information</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>First Name <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>Last Name <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>SSN <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>Date of Birth <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>Phone Number</h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/add-user.png" alt="">
-                                    </div>
-                                    <h2>Co-Applicants & Occupants</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Co-Applicants (if any) <span>*</span></h4>
-                                    <input type="text"">
-                                    <h4>Occupants (if any) <span>*</span></h4>
-                                    <input type="text">
-                                    <p>Anyone else who will reside in the propert</p>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/cottage-61.png" alt="">
-                                    </div>
-                                    <h2>Current Address</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Address Line 1 <span>*</span></h4>
-                                    <input type="text"">
-                                    <h4>Address Line 1 <span>*</span></h4>
-                                    <input type="text">
-                                    <div class="row">
-                                        <div class="half">
-                                            <h4>City <span>*</span></h4>
-                                            <input type="text">
-                                        </div>
-                                        <div class="state">
-                                            <h4>State <span>*</span></h4>
-                                            <select>
-                                                <option value="state1">State 1</option>
-                                                <option value="state2">State 2</option>
-                                                <option value="state3">State 3</option>
-                                                <option value="state4">State 4</option>
-                                                <option value="state5">State 5</option>
-                                            </select>
-                                        </div>
-                                        <div class="zip">
-                                            <h4>Zip <span>*</span></h4>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <h4>Dates of Residence</h4>
-                                    <input type="text" placeholder="March 2010 - Present">
-                                    <h4>Current Landlord</h4>
-                                    <input type="text">
-                                    <p>If you were the owner, please leave this field blank</p>
-                                    <h4>Current Landlord’s Phone Number</h4>
-                                    <input type="text">
-                                    <h4>Current Landlord’s Email Address</h4>
-                                    <input type="text">
-                                    <h4>If you do not have a landlord, please explain below</h4>
-                                    <input type="text">
-                                    <p>mortgage, live with family, etc</p>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/exterior-61.png" alt="">
-                                    </div>
-                                    <h2>Previous Address</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Address Line 1 <span>*</span></h4>
-                                    <input type="text"">
-                                    <h4>Address Line 1 <span>*</span></h4>
-                                    <input type="text">
-                                    <div class="row">
-                                        <div class="half">
-                                            <h4>City <span>*</span></h4>
-                                            <input type="text">
-                                        </div>
-                                        <div class="state">
-                                            <h4>State <span>*</span></h4>
-                                            <select>
-                                                <option value="state1">State 1</option>
-                                                <option value="state2">State 2</option>
-                                                <option value="state3">State 3</option>
-                                                <option value="state4">State 4</option>
-                                                <option value="state5">State 5</option>
-                                            </select>
-                                        </div>
-                                        <div class="zip">
-                                            <h4>Zip <span>*</span></h4>
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <h4>Dates of Residence</h4>
-                                    <input type="text" placeholder="March 2010 - Present">
-                                    <h4>Current Landlord</h4>
-                                    <input type="text">
-                                    <p>If you were the owner, please leave this field blank</p>
-                                    <h4>Current Landlord’s Phone Number</h4>
-                                    <input type="text">
-                                    <h4>Current Landlord’s Email Address</h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/permanent-job.png" alt="">
-                                    </div>
-                                    <h2>Present Employer</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Employer</h4>
-                                    <input type="text">
-                                    <h4>Position</h4>
-                                    <input type="text">
-                                    <h4>Employed Since (Year)</h4>
-                                    <input type="text">
-                                    <h4>Business Address (Address, City, State, Zip)</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Name</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Phone Number</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Email Address</h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/employee-card.png" alt="">
-                                    </div>
-                                    <h2>Previous Employer</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Employer</h4>
-                                    <input type="text">
-                                    <h4>Position</h4>
-                                    <input type="text">
-                                    <h4>Employed Since (Year)</h4>
-                                    <input type="text">
-                                    <h4>Business Address (Address, City, State, Zip)</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Name</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Phone Number</h4>
-                                    <input type="text">
-                                    <h4>Supervisor’s Email Address</h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="../images/money-box.png" alt="">
-                                    </div>
-                                    <h2>Assets & Income</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Annual Salary</h4>
-                                    <input type="text">
-                                    <h4>Co-applicant’s Annual Salary (if applicable)</h4>
-                                    <input type="text">
-                                    <h4>Income from Assets</h4>
-                                    <input type="text">
-                                    <h4>Additional Income (Child & Parent, Alimony)</h4>
-                                    <input type="text">
-                                    <h4>Total Anticipated Annual Income</h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head different">
-                                    <div class="image">
-                                        <img src="../images/car-61.png" alt="">
-                                    </div>
-                                    <h2 class="diffh2">Additional Information</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Annual Salary</h4>
-                                    <textarea placeholder="Model, Make, Year, Color, License #, State"></textarea>
-                                    <p>One vehicle per row</p>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Do you have any pets?</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group1" id="radio1-1">
-                                            <label for="radio1-1">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group1" id="radio1-2">
-                                            <label for="radio1-2">Yes</label>
-                                        </div>
-                                    </div>
-                                    <h4 class="txtar">If so, please list each pet (Type, Weight, Color)</h4>
-                                    <textarea></textarea>
-                                    <p>One pet per row</p>
-                                    <h4 class="txtar">Is there any additional information you would like to add?</h4>
-                                    <textarea></textarea>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head different">
-                                    <div class="image">
-                                        <img src="../images/detective-61.png" alt="">
-                                    </div>
-                                    <h2>Questionnaire</h2>
-                                </div>
-                                <div class="inputs">
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #1</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group2" id="radio2-1">
-                                            <label for="radio2-1">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group2" id="radio2-2">
-                                            <label for="radio2-2">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #2</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group3" id="radio2-4">
-                                            <label for="radio2-4">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group3" id="radio2-5">
-                                            <label for="radio2-5">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #3</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group4" id="radio2-6">
-                                            <label for="radio2-6">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group4" id="radio2-7">
-                                            <label for="radio2-7">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #4</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group5" id="radio2-8">
-                                            <label for="radio2-8">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group5" id="radio2-9">
-                                            <label for="radio2-9">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #5</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group6" id="radio2-10">
-                                            <label for="radio2-10">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group6" id="radio2-11">
-                                            <label for="radio2-11">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="cf"></div>
-                                    <div class="radio-buttons">
-                                        <h4 class="txtar">Have you ever been convicted of a crime? #6</h4>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group7" id="radio2-12">
-                                            <label for="radio2-12">No</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="radio-container">
-                                            <input type="radio" name="group7" id="radio2-13">
-                                            <label for="radio2-13">Yes</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info">
-                                <div class="head different">
-                                    <div class="image">
-                                        <img src="../images/documents-61.png" alt="">
-                                    </div>
-                                    <h2>Attachments</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4 class="txtar3">Upload Bank Statement</h4>
-                                    <input type="file">
-                                    <h4 class="txtar3">Upload Bank Statement</h4>
-                                    <input type="file">
-                                    <h4 class="txtar3">Upload Bank Statement</h4>
-                                    <input type="file">
-                                    <h4 class="txtar2">Dropdown</h4>
-                                    <div class="dropdown-input">
-                                        <select>
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                            <option value="option4">Option 4</option>
-                                            <option value="option5">Option 5</option>
-                                        </select>
-                                    </div>
-                                    <h4>Long Paragraph Response</h4>
-                                    <textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quis ut maxime deleniti ipsam consequuntur odio libero nam harum, ad aut fugiat officia sunt asperiores soluta eum ducimus temporibus mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sunt placeat est esse illum molestiae numquam necessitatibus odit dolorem? Repudiandae dolorum soluta eligendi temporibus ullam minima, autem sed animi vel.</textarea>
-                                    <div class="check-buttons">
-                                        <h4 class="txtar">Checkboxes</h4>
-                                        <div class="check-container">
-                                            <input type="checkbox" name="check1" id="check1-1">
-                                            <label for="check1-1">Option 1</label>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <div class="check-container">
-                                            <input type="checkbox" name="check1" id="check1-2">
-                                            <label for="check1-2">Option 2</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div>
-                            <div class="info info-last">
-                                <div class="head different">
-                                    <div class="image">
-                                        <img src="../images/hand-with.png" alt="">
-                                    </div>
-                                    <h2>Authorization</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h5>I hereby give my permission to communicate with my current and former landlord(s) or property manager(s) for the purpose of discussing any and all of the facts and circumstances of my current or former tenancy, as well as the other information listed above. I also give my permission to communicate with my current employer(s) and/or supervisor(s) for the purpose of verifying the employment information listed above. I understand there are no limitations or restrictions regarding what may be discussed or revealed.</h5>
-                                    <a href="#popup-sign1" class="fancybox-modal2">
-                                        <div class="sign">
-                                            <p class="typeto">Type your Signature</p>
-                                            <p class="clickto">Click to sign</p>
-                                        </div>
-                                    </a>
-                                    <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="info">
-                                <!-- <div class="inputs"> -->
-                                    <!-- <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application"> -->
-                                    <!-- <a href="#" class="apply-next1 next">Go to create account</a> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                        <div class="cf"></div>
-                    </div>
-                </form>
-            </div>
-            <div class="container apply-container">
-                <div class="fullwidth step1">
-                    <h2>Create Account</h2>
-                    <h3>(optional)</h3>
-                    <p>You have the option of creating an account. Creating an account allows you to:</p>
-                    <ul class="list">
-                        <li>Access or view your application later</li>
-                        <li>Modify the application</li>
-                        <li>Add additional attachments</li>
-                    </ul>
-                    <form action="#" method="" class="rf">
-                        <h4>Email</h4>
-                        <input type="text" class="rfield">
-                        <h4>Password</h4>
-                        <div class="field">
-                            <input type='password' class="password-input" name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
-                            <ul class='apply-field__rules'>
-                                <li class="val1">One lowercase character</li>
-                                <li class="val2">One uppercase character</li>
-                                <li class="val3">One number</li>
-                                <li class="val4">8 characters minimum</li>
-                            </ul>
-                        </div>
-                        <div class="buttons">
-                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Create Account</a>
-                            <a href="#" class="skip">Skip and Continue</a>
-                            <div class="cf"></div>
-                        </div>
-                        <a href="login.html" class="already">Already have an account? Log in</a>
-                </div>
-                <div class="step2 step2active st2a1">
+            <div class="container apply-container active">
+                <div class="step2 step2active st2a1 active">
                     <div class="secure">
                         <img src="images/secure.svg" width="18" alt="">
                         <p>Secure</p>
                     </div>
                     <p class="head">Step 1 of 3</p>
                     <h2>Verify Your Identity with Experian</h2>
-                    <p>Experian requires us to verify your identity to run screening reports. Please read and agree to the terms and conditions below.</p>
+                    <p>To be able to request credit reports, you must first verify your identity with Experian. <span>This is NOT a credit check on you.</span> The entire process happens securely through <a href="http://www.experian.com/decision-analytics/identity-and-fraud/knowledge-based-authentication.html" target="_blank">Experian’s Knowledge Based Authentication system</a> and helps reduce fraud.</p>
                     <textarea readonly>You understand that by selecting I AGREE immediately following this notice, you are authorizing Rent Application to provide your personal information to its third-party identity verification and credit reporting agency providers to verify your identity for the purpose of allowing you to view credit reports ordered by prospective tenants on Rent Application.&#13;&#10;&#13;&#10;You further acknowledge that you have read and agree to our Terms of Use and specifically represent and warrant:&#13;&#10;&#13;&#10;that you have never been involved, and will not become involved, in any credit fraud or other unethical business practice;&#13;&#10;&#13;&#10;that any request for a credit report, and your use of any report obtained through Rent Application, is solely for the purpose of evaluating a rental application; and&#13;&#10;&#13;&#10;that you will not provide a copy of any report obtained through Rent Application, or any information contained in such a report, to anyone else.
                     </textarea>
                     <div class="checkbox">
@@ -915,11 +394,11 @@
                 <div class="step2 step2active question success">
                     <h2>Verify Your Identity with Experian</h2>
                     <img src="../images/group-4.svg" width="130" alt="">
-                    <h2>Success!</h2>
-                    <p>Your identity has been verified</p>
+                    <h2 class="head-success">Success!</h2>
+                    <p>Experian credit reports have been automatically added to forms you’ve created</p>
                     <div class="cf"></div>
-                    <a href="#" class="create btn_next success-next-step7">Next</a>
-                    <a href="#" class="create btn_next error-next-step7">Error</a>
+                    <a href="index.html" class="create btn_next">Return to Dashboard</a>
+                    <!-- <a href="#" class="create btn_next error-next-step7">Error</a> -->
                 </div>
                 <div class="step2 step2active question error">
                     <h2>Verify Your Identity with Experian</h2>
@@ -974,6 +453,40 @@
                     </div>
                     <h2>Your application has been submitted</h2>
                     <p>For your records, we have sent you an email notification to confirm that we have received and processed your application. We encourage you to print this information for your records.</p>
+                    <!-- <table>
+                        <tr>
+                            <td class="left">
+                                <p>Rental Property</p>
+                            </td>
+                            <td class="right">
+                                <p>401 Clover Lane</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left">
+                                <p>Applicant</p>
+                            </td>
+                            <td class="right">
+                                <p>Adam Smith</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left">
+                                <p>Email</p>
+                            </td>
+                            <td class="right">
+                                <p>asmith@hello.com</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left">
+                                <p>Application ID</p>
+                            </td>
+                            <td class="right">
+                                <p>fZd3123</p>
+                            </td>
+                        </tr>
+                    </table> -->
                     <div class="table">
                         <div class="table-row cf">
                             <div class="fll">

@@ -29,11 +29,17 @@
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox.css"> -->
     <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">    
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">    
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox4.css">    
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 
 <body style="background: #fff">
+    <div id="preloader">
+        <img src="6.gif" width="114" alt="">
+        <p>Loading...</p>
+    </div>
     <div class="global_wrapper">
         <!-- Begin navigation -->
         <nav>
@@ -52,6 +58,13 @@
                         <div class="line"></div>
                     </div>
                 </a>
+                <div class="title-info">
+                    <div class="image-container">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <h3>John Smith</h3>
+                    <h4>johnsmith@email.com</h4>
+                </div>
                 <ul class="menu fullscreen">
                     <li class="active-page">
                         <a href="#">
@@ -75,13 +88,13 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">Landlord Dashboard</a>
+                                <a href="index.html">Landlord Dashboard</a>
                             </li>
                             <li>
                                 <a href="#">Switch to Applicant Dashboard</a>
                             </li>
                             <li>
-                                <a href="#">Settings</a>
+                                <a href="settings.html">Settings</a>
                             </li>
                             <li>
                                 <a href="#">Logout</a>
@@ -90,11 +103,11 @@
                     </li>
                 </ul>
                 <ul class="menu dropmobile">
-                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="index.html">Landlord Dashboard</a></li>
                     <li><a href="#">Switch to Applicant Dashboard</a></li>
                     <li><a href="#">My Payments</a></li>
                     <li><a href="#">Help</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="settings.html">Settings</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </div>
@@ -121,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner cf">
+        <div class="banner active cf">
             <img src="../images/experian.png" width="181" alt="">
             <div class="info">
                 <h2>Verify Your Account Now</h2>
@@ -136,6 +149,19 @@
             </div>
             <a href="#" class="closeit"></a>
         </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXYslSfCTdA" frameborder="0" allowfullscreen></iframe>
+         -->
         <div class="content form-content active">
             <div class="content-head">
                 <h2>Form Name</h2>
@@ -150,6 +176,18 @@
                     <img src="images/plus.svg" width="24" alt="">New Form
                 </a>
             </div>
+            <!-- BEGIN EMPTY FORM CONTAINER -->
+            <div class="content-body empty-container">
+                <div class="container">
+                    <div class="content-body">
+                        <div class="empty-block">
+                            <h3>Looks like you don’t have any forms yet.</h3>
+                            <h4>To create a new form click the “New Form” button above.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END EMPTY FORM CONTAINER -->
             <div class="content-body">
                 <div class="name">
                     <h3>
@@ -388,12 +426,14 @@
             <div class="container">
                 <div class="archive-buttons">
                     <a href="#" class="archive-butt">Archive</a>
-                    <a href="#" class="delete-butt">Delete</a>
+                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
+                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
                     <div class="cf"></div>
                 </div>
                 <div class="unarchive-buttons">
                     <a href="#" class="unarchive-butt">Unarchive</a>
-                    <a href="#" class="delete-butt">Delete</a>
+                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
+                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
                     <div class="cf"></div>
                 </div>
             </div>
@@ -487,7 +527,7 @@
                             <input type="checkbox">
                         </form>
                         <div class="name">
-                            <a href="#" class="link">Tyler Steele</a>
+                            <a href="view.html" class="link">Tyler Steele</a>
                         </div>
                         <div class="property">
                             <p>100 Murphy Fork</p>
@@ -537,7 +577,7 @@
                             <input type="checkbox">
                         </form>
                         <div class="name">
-                            <a href="#" class="link">Tillie Klein</a>
+                            <a href="view.html" class="link">Tillie Klein</a>
                         </div>
                         <div class="property">
                             <p>881 Darron Wall</p>
@@ -587,7 +627,7 @@
                             <input type="checkbox">
                         </form>
                         <div class="name">
-                            <a href="#" class="link">Jeffery Franklin</a>
+                            <a href="view.html" class="link">Jeffery Franklin</a>
                         </div>
                         <div class="property">
                             <p>87 Lilyan Land Suite 951</p>
@@ -637,7 +677,7 @@
                             <input type="checkbox">
                         </form>
                         <div class="name">
-                            <a href="#" class="link">Nellie Ramsey</a>
+                            <a href="view.html" class="link">Nellie Ramsey</a>
                         </div>
                         <div class="property">
                             <p>964 Davis Cliff Apt. 376</p>
@@ -689,7 +729,7 @@
                             <input type="checkbox">
                         </form>
                         <div class="name">
-                            <a href="#" class="link">Nellie Ramsey</a>
+                            <a href="view.html" class="link">Nellie Ramsey</a>
                         </div>
                         <div class="property">
                             <p>964 Davis Cliff Apt. 376</p>
@@ -810,6 +850,43 @@
         <div id="popupError" class="popup error" style="display: none;">
             <h2>Sorry, please enter the correct data</h2>
         </div>
+        <div id="popup5-delete" class="popup popup-delete" style="display: none">
+            <div class="head">
+                <h2>Delete Form</h2>
+            </div>
+            <div class="container">
+                <p>Are you sure you want to delete this form?</p>
+                <div class="buttons">
+                    <a href="#" class="cancel view-delete-button">Cancel</a>
+                    <a href="#" class="delete delete-item-button">Delete</a>
+                    <div class="cf"></div>
+                </div>
+            </div>
+        </div>
+        <div id="popup6-share" class="popup popup-share" style="display: none">
+            <div class="head">
+                <h2>Share Application</h2>
+            </div>
+            <div class="container">
+                <h3>Share Application</h3>
+                <p>To send this application, please enter in the email address of the recipients below:</p>
+                <form action="#" method="#" runat="server" id="form2">
+                    <!-- <textarea></textarea> -->
+                    <div id="boxTags">
+                        <input type="hidden" id="hiddenTags"/>
+                        <ul id="ulTags" style="clear:both;">
+                            <li id="newTagInput"><input type="text" id="inputTag"/></li>
+                        </ul>
+                        <div style="clear:both;"></div>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <a href="#" class="delete">Send</a>
+                    <a href="#" class="cancel view-delete-button">Cancel</a>
+                    <div class="cf"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>
@@ -832,32 +909,35 @@
             if($(this).hasClass("checked")){
                 $(".archive-buttons").addClass("active");
                 $(".button-blue").addClass("active");
+                $(".content.applicant-content").addClass("content-bottom");
             } else {
                 $(".archive-buttons").removeClass("active");
                 $(".button-blue").removeClass("active");
+                $(".content.applicant-content").removeClass("content-bottom");
             }
         });
     </script>
-    <!-- <script>
-        $(document).ready(function(){
-            $(".not-archived .checkbox .jq-checkbox").click(function(){
-                if($(".not-archived .checkbox .jq-checkbox").hasClass('checked')){
-                    $(".archive-buttons").addClass("active");
-                } else {
-                    $(".archive-buttons").removeClass("active");
-                }
-            });
-        });
-    </script> -->
     <script>
         $(document).on("click", ".archived-block .checkbox .jq-checkbox", function(){
             if($(this).hasClass("checked")){
                 $(".unarchive-buttons").addClass("active");
                 $(".button-blue").addClass("active");
+                $(".content.applicant-content").addClass("content-bottom");
             } else {
                 $(".unarchive-buttons").removeClass("active");
                 $(".button-blue").removeClass("active");
+                $(".content.applicant-content").removeClass("content-bottom");
             }
+        });
+    </script>
+    <script>
+        $(document).ready(function($) {
+          $(window).load(function() {
+            setTimeout(function() {
+              $('#preloader').fadeOut('slow', function() {});
+            }, 5);
+
+          });
         });
     </script>
 </body>
