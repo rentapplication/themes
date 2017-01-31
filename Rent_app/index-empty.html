@@ -28,12 +28,18 @@
     <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
     <!-- <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox.css"> -->
-    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox2.css">    
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">    
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox4.css">    
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 
 <body style="background: #fff">
+    <div id="preloader">
+        <img src="6.gif" width="114" alt="">
+        <p>Loading...</p>
+    </div>
     <div class="global_wrapper">
         <!-- Begin navigation -->
         <nav>
@@ -52,8 +58,15 @@
                         <div class="line"></div>
                     </div>
                 </a>
+                <div class="title-info">
+                    <div class="image-container">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <h3>John Smith</h3>
+                    <h4>johnsmith@email.com</h4>
+                </div>
                 <ul class="menu fullscreen">
-                    <li>
+                    <li class="active-page">
                         <a href="#">
                             <p>Dashboard</p>
                         </a>
@@ -75,13 +88,13 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">Landlord Dashboard</a>
+                                <a href="index.html">Landlord Dashboard</a>
                             </li>
                             <li>
                                 <a href="#">Switch to Applicant Dashboard</a>
                             </li>
                             <li>
-                                <a href="#">Settings</a>
+                                <a href="settings.html">Settings</a>
                             </li>
                             <li>
                                 <a href="#">Logout</a>
@@ -90,18 +103,18 @@
                     </li>
                 </ul>
                 <ul class="menu dropmobile">
-                    <li><a href="#">Landlord Dashboard</a></li>
+                    <li><a href="index.html">Landlord Dashboard</a></li>
                     <li><a href="#">Switch to Applicant Dashboard</a></li>
                     <li><a href="#">My Payments</a></li>
                     <li><a href="#">Help</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="settings.html">Settings</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </div>
         </nav>
         <!-- End navigation -->
         <!-- Begin wrapper-main -->
-        <div class="wrapper-main empty">
+        <div class="wrapper-main main-page">
             <div id="sticky" class="sticky-element">
                 <div class="sticky-anchor"></div>
                 <div class="sticky-content">
@@ -120,222 +133,590 @@
                     </div>
                 </div>
             </div>
-            <div class="content form-content active">
-                <div class="content-head">
-                    <h2>Form Name</h2>
-                    <h2 class="reports">Reports Included
+        </div>
+        <div class="banner active cf">
+            <img src="../images/experian.png" width="181" alt="">
+            <div class="info">
+                <h2>Verify Your Account Now</h2>
+                <p>To be able to request credit reports, you must first verify your identity with Experian.</p>
+                <div class="butt-container">
+                    <a href="#" class="notnow">Not Now</a>
+                    <a href="#" class="getstarted">Get Started</a>
+                </div>
+            </div>
+            <div class="estimate">
+                <h3>Estimate: 1-2 Minutes</h3>
+            </div>
+            <a href="#" class="closeit"></a>
+        </div>
+        <div class="content form-content active">
+            <div class="content-head">
+                <h2>Form Name</h2>
+                <h2 class="reports">Reports Included
                 <div class="tooltip-reports">
                     <div class="plashka">
                         <p>Reports included with application</p>
                     </div>
                 </div>
                 </h2>
-                    <a href="#popup1" class="fancybox-modal button">
-                        <img src="images/plus.svg" width="24" alt=""> New Form
-                    </a>
-                </div>
-                <div class="content-body">
-                    <div class="container">
-                        <div class="content-body">
-                            <div class="empty-block">
-                                <h3>Looks like you don’t have any forms yet.</h3>
-                                <h4>To create a new form click the “New Form” button above.</h4>
-                            </div>
+                <a href="newform1.html" class="button">
+                    <img src="images/plus.svg" width="24" alt="">New Form
+                </a>
+            </div>
+            <div class="content-body empty-container">
+                <div class="container">
+                    <div class="content-body">
+                        <div class="empty-block">
+                            <h3>Looks like you don’t have any forms yet.</h3>
+                            <h4>To create a new form click the “New Form” button above.</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content applicant-content">
+        </div>
+        <div class="search-row-mobile-container">
+            <form action="#" method="#" class="search-form-mobile">
+                <input type="text" placeholder="Search...">
+                <input type="submit" value="">
+                <div class="cf"></div>
+            </form>
+            <div class="cf"></div>
+        </div>
+        <div class="button-blue">
+            <div class="container">
+                <div class="archive-buttons">
+                    <a href="#" class="archive-butt">Archive</a>
+                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
+                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
+                    <div class="cf"></div>
+                </div>
+                <div class="unarchive-buttons">
+                    <a href="#" class="unarchive-butt">Unarchive</a>
+                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
+                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
+                    <div class="cf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content applicant-content">
+            <ul class="app-buttons">
+                <li class="active">
+                    <a href="#" class="active-app applicant-button">Active Applicants</a>
+                </li>
+                <li>
+                    <a href="#" class="archive-app archive-button">Archived Applicants</a>
+                </li>
+            </ul>
+            <div class="pagin-block">
+                <div class="quantity">
+                    <p>Showing <span class="quanQu">1</span> to <span class="quanTo">5</span> of <span class="quanOf">5</span></p>
+                </div>
+                <div class="pagination-block">
+                    <!-- <div id="page"></div> -->
+                    <div id="pagination"></div>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="full-content cf">
                 <div class="content-head">
                     <h2 class="h2-Name">Name</h2>
                     <h2 class="Property">Property</h2>
                     <h2 class="Status">Status</h2>
                     <h2 class="Date">Date Received</h2>
-                    <form action="">
-                        <input type="search" placeholder="Search">
+                    <form action="#" method="post" class="search-form">
+                        <input type="text" placeholder="Search...">
+                        <input type="submit" value="">
                     </form>
+                    <div class="bounce"></div>
                 </div>
-                <div class="content-body sent-to-applicant">
-                    <div class="sent-block"></div>
-                    <!-- a block on top of the text -->
-                    <div class="name">
-                        <a href="#" class="link">Jake Evergreen</a>
+                <div class="not-archived active">
+                    <div class="content-body sent-to-applicant">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="sent-block"></div>
+                        <!-- a block on top of the text -->
+                        <div class="name">
+                            <a href="#" class="link">Jake Evergreen</a>
+                        </div>
+                        <div class="property">
+                            <p>234 E Washington Street</p>
+                        </div>
+                        <div class="status">
+                            <p>Sent to Applicant</p>
+                        </div>
+                        <div class="date">
+                            <!-- <p>11/19/2016</p> -->
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link"></a>
+                        </div>
+                        <div class="more-func">
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
-                    <div class="property">
-                        <p>234 E Washington Street</p>
+                    <div class="content-body submitted">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="name">
+                            <a href="view.html" class="link">Tyler Steele</a>
+                        </div>
+                        <div class="property">
+                            <p>100 Murphy Fork</p>
+                        </div>
+                        <div class="status">
+                            <p>Submitted</p>
+                        </div>
+                        <div class="date">
+                            <p>11/19/2016</p>
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link active"></a>
+                        </div>
+                        <div class="more-func">
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
-                    <div class="status">
-                        <p>Sent to Applicant</p>
+                    <div class="content-body submitted">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="name">
+                            <a href="view.html" class="link">Tillie Klein</a>
+                        </div>
+                        <div class="property">
+                            <p>881 Darron Wall</p>
+                        </div>
+                        <div class="status">
+                            <p>Submitted</p>
+                        </div>
+                        <div class="date">
+                            <p>10/04/2016</p>
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link active"></a>
+                        </div>
+                        <div class="more-func">
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
-                    <div class="date">
-                        <!-- <p>11/19/2016</p> -->
+                    <div class="content-body rejected">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="name">
+                            <a href="view.html" class="link">Jeffery Franklin</a>
+                        </div>
+                        <div class="property">
+                            <p>87 Lilyan Land Suite 951</p>
+                        </div>
+                        <div class="status">
+                            <p>Rejected</p>
+                        </div>
+                        <div class="date">
+                            <p>10/03/2016</p>
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link"></a>
+                        </div>
+                        <div class="more-func">
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
-                    <div class="button">
-                        <a href="view.html">View</a>
-                        <a href="#" class="remove"></a>
+                    <div class="content-body accepted">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="name">
+                            <a href="view.html" class="link">Nellie Ramsey</a>
+                        </div>
+                        <div class="property">
+                            <p>964 Davis Cliff Apt. 376</p>
+                        </div>
+                        <div class="status">
+                            <p>Accepted</p>
+                        </div>
+                        <div class="date">
+                            <p>09/22/2016</p>
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link"></a>
+                        </div>
+                        <div class="more-func">
+                            <!-- <a href="" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Archive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
                 </div>
-                <div class="content-body submitted">
-                    <div class="name">
-                        <a href="#" class="link">Tyler Steele</a>
-                    </div>
-                    <div class="property">
-                        <p>100 Murphy Fork</p>
-                    </div>
-                    <div class="status">
-                        <p>Submitted</p>
-                    </div>
-                    <div class="date">
-                        <p>11/19/2016</p>
-                    </div>
-                    <div class="button">
-                        <a href="view.html">View</a>
-                        <a href="#" class="remove"></a>
-                    </div>
-                </div>
-                <div class="content-body submitted">
-                    <div class="name">
-                        <a href="#" class="link">Tillie Klein</a>
-                    </div>
-                    <div class="property">
-                        <p>881 Darron Wall</p>
-                    </div>
-                    <div class="status">
-                        <p>Submitted</p>
-                    </div>
-                    <div class="date">
-                        <p>10/04/2016</p>
-                    </div>
-                    <div class="button">
-                        <a href="view.html">View</a>
-                        <a href="#" class="remove"></a>
-                    </div>
-                </div>
-                <div class="content-body rejected">
-                    <div class="name">
-                        <a href="#" class="link">Jeffery Franklin</a>
-                    </div>
-                    <div class="property">
-                        <p>87 Lilyan Land Suite 951</p>
-                    </div>
-                    <div class="status">
-                        <p>Rejected</p>
-                    </div>
-                    <div class="date">
-                        <p>10/03/2016</p>
-                    </div>
-                    <div class="button">
-                        <a href="view.html">View</a>
-                        <a href="#" class="remove"></a>
-                    </div>
-                </div>
-                <div class="content-body accepted">
-                    <div class="name">
-                        <a href="#" class="link">Nellie Ramsey</a>
-                    </div>
-                    <div class="property">
-                        <p>964 Davis Cliff Apt. 376</p>
-                    </div>
-                    <div class="status">
-                        <p>Accepted</p>
-                    </div>
-                    <div class="date">
-                        <p>09/22/2016</p>
-                    </div>
-                    <div class="button">
-                        <a href="#">View</a>
-                        <a href="#" class="remove"></a>
+                <div class="archived-block">
+                    <div class="content-body accepted">
+                        <form action="#" method="#" class="checkbox">
+                            <input type="checkbox">
+                        </form>
+                        <div class="name">
+                            <a href="view.html" class="link">Nellie Ramsey</a>
+                        </div>
+                        <div class="property">
+                            <p>964 Davis Cliff Apt. 376</p>
+                        </div>
+                        <div class="status">
+                            <p>Accepted</p>
+                        </div>
+                        <div class="date">
+                            <p>09/22/2016</p>
+                        </div>
+                        <div class="button">
+                            <a href="view.html">View</a>
+                            <!-- <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Unarchive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a> -->
+                            <a href="#popup10-note" class="fancybox-modal2 note-link"></a>
+                        </div>
+                        <!-- <div class="more-func mob">
+                            <a href="#" class="bounce bounce-button">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <p>Unarchive</p>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li>
+                                            <p>Delete</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <!-- End wrapper-main -->
-            <div id="popup1" class="modal_div new_form popup" style="display: none;">
-                <!-- <a class="fancybox-item fancybox-close" title="Close" href="javascript:;"></a> -->
-                <div class="header">
-                    <h2>Send Application Link</h2>
-                </div>
-                <div class="modal_content">
-                    <div class="fll">
-                        <h3>700 E Axis Ave</h3>
-                        <p>(Form name only visible to you)</p>
-                        <div class="hidden-link">
-                            <a href="#" class="copy-link">Copy Application Link</a>
-                            <p class="hidden">www.rentapplication.net/axisavenue</p>
-                        </div>
+            <div class="cf"></div>
+        </div>
+        <!-- End wrapper-main -->
+
+        <div id="popup1" class="modal_div new_form popup" style="display: none;">
+            <div class="header">
+                <h2>Send Application Link</h2>
+            </div>
+            <div class="modal_content">
+                <div class="fll">
+                    <h3>700 E Axis Ave</h3>
+                    <p>(Form name only visible to you)</p>
+                    <div class="hidden-link">
+                        <a href="#" class="copy-link">Copy Application Link</a>
+                        <p class="hidden">www.rentapplication.net/axisavenue</p>
                     </div>
-                    <form action="send.php" method="post" id="form1">
-                        <div class="flr">
-                            <h4>Reports Included:</h4>
-                            <!-- <input type="checkbox" id="service1"> -->
-                            <p class="check">Credit</p>
-                            <div class="cf"></div>
-                            <!-- <input type="checkbox" id="service2"> -->
-                            <p class="check">Background</p>
-                            <div class="cf"></div>
-                            <!-- <input type="checkbox" id="service3"> -->
-                            <p class="check">Eviction</p>
-                        </div>
+                </div>
+                <form action="send.php" method="post" id="form1">
+                    <div class="flr">
+                        <h4>Reports Included:</h4>
+                        <!-- <input type="checkbox" id="service1"> -->
+                        <p class="check">Credit</p>
                         <div class="cf"></div>
-                        <div class="visible">
-                            <a href="#" class="copy-link">Copy Application Link</a>
-                            <p class="hidden">www.rentapplication.net/axisavenue</p>
+                        <!-- <input type="checkbox" id="service2"> -->
+                        <p class="check">Background</p>
+                        <div class="cf"></div>
+                        <!-- <input type="checkbox" id="service3"> -->
+                        <p class="check">Eviction</p>
+                    </div>
+                    <div class="cf"></div>
+                    <div class="visible">
+                        <a href="#" class="copy-link">Copy Application Link</a>
+                        <p class="hidden">www.rentapplication.net/axisavenue</p>
+                    </div>
+                    <div class="cf margin"></div>
+                    <div class="row tabs">
+                        <div class="fll">
+                            <h5>Applicant’s Email</h5>
                         </div>
-                        <div class="cf margin"></div>
-                        <div class="row tabs">
-                            <div class="fll">
-                                <h5>Applicant’s Email</h5>
-                            </div>
-                            <div class="flr">
-                                <input type="checkbox" id="myself1" class="mycheck">
-                                <label for="myself1">CC myself</label>
-                            </div>
+                        <div class="flr">
+                            <input type="checkbox" id="myself1" class="mycheck">
+                            <label for="myself1">CC myself</label>
                         </div>
-                        <div class="row">
-                            <input type="text" name="name">
-                        </div>
-                        <div class="row">
-                            <h5>Subject</h5>
-                            <input type="text" placeholder="Rental Application Link" name="link">
-                        </div>
-                        <div class="row">
-                            <h5>Message</h5>
-                            <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue" name="message"></textarea>
-                        </div>
-                        <div class="row">
-                            <!-- <a href="#" class="button">Send Application Link</a> -->
-                            <input type="submit" class="button" value="Send Application Link">
-                        </div>
-                        <div class="row">
-                            <a href="#" class="cancel">Cancel</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div id="popupThanks" class="popup thanks" style="display: none;">
-                <img src="images/form-sent-illustration.svg" width="223" alt="">
-                <h2>Success!</h2>
-                <p>Application link has been sent to
-                    <br>Jake23Evergreen@gmail.com</p>
-                <a href="index.html" class="backto">Back to Dashboard</a>
-            </div>
-            <div id="popupError" class="popup error" style="display: none;">
-                <h2>Sorry, please enter the correct data</h2>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="name">
+                    </div>
+                    <div class="row">
+                        <h5>Subject</h5>
+                        <input type="text" placeholder="Rental Application Link" name="link">
+                    </div>
+                    <div class="row">
+                        <h5>Message</h5>
+                        <textarea placeholder="Here’s a link to apply: www.rentapplication.net/axisavenue" name="message"></textarea>
+                    </div>
+                    <div class="row">
+                        <!-- <a href="#" class="button">Send Application Link</a> -->
+                        <input type="submit" class="button" value="Send Application Link">
+                    </div>
+                    <div class="row">
+                        <a href="#" class="cancel">Cancel</a>
+                    </div>
+                </form>
             </div>
         </div>
-        <!--[if lt IE 9]>
+        <div id="popupThanks" class="popup thanks" style="display: none;">
+            <img src="images/form-sent-illustration.svg" width="223" alt="">
+            <h2>Success!</h2>
+            <p>Application link has been sent to<br>Jake23Evergreen@gmail.com</p>
+            <a href="index.html" class="backto">Back to Dashboard</a>
+        </div>
+        <div id="popupError" class="popup error" style="display: none;">
+            <h2>Sorry, please enter the correct data</h2>
+        </div>
+        <div id="popup5-delete" class="popup popup-delete" style="display: none">
+            <div class="head">
+                <h2>Delete Form</h2>
+            </div>
+            <div class="container">
+                <p>Are you sure you want to delete this form?</p>
+                <div class="buttons">
+                    <a href="#" class="cancel view-delete-button">Cancel</a>
+                    <a href="#" class="delete delete-item-button">Delete</a>
+                    <div class="cf"></div>
+                </div>
+            </div>
+        </div>
+        <div id="popup6-share" class="popup popup-share" style="display: none">
+            <div class="head">
+                <h2>Share Application</h2>
+            </div>
+            <div class="container">
+                <h3>Share Application</h3>
+                <p>To send this application, please enter in the email address of the recipients below:</p>
+                <form action="#" method="#" runat="server" id="form2">
+                    <!-- <textarea></textarea> -->
+                    <div id="boxTags">
+                        <input type="hidden" id="hiddenTags"/>
+                        <ul id="ulTags" style="clear:both;">
+                            <li id="newTagInput"><input type="text" id="inputTag"/></li>
+                        </ul>
+                        <div style="clear:both;"></div>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <a href="#" class="delete">Send</a>
+                    <a href="#" class="cancel view-delete-button">Cancel</a>
+                    <div class="cf"></div>
+                </div>
+            </div>
+        </div>
+        <div id="popup10-note" class="popup popup-notes" style="display: none">
+            <div class="head">
+                <h2>Notes</h2>
+            </div>
+            <div class="container">
+                <form action="#" method="#">
+                    <textarea placeholder="This is a note..."></textarea>
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
 <script src="components/html5shiv/es5-shim.min.js"></script>
 <script src="components/html5shiv/html5shiv.min.js"></script>
 <script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
 <script src="components/respond/respond.min.js"></script>
 <![endif]-->
-        <!-- Load Scripts -->
-        <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
-        <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
-        <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-        <script src="components/forms/forms.js" type="text/javascript"></script>
-        <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="assets/js/common.js" type="text/javascript"></script>
+    <!-- Load Scripts -->
+    <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack2.js" type="text/javascript"></script>
+    <script src="components/forms/forms.js" type="text/javascript"></script>
+    <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/js/common.js" type="text/javascript"></script>
+    <script src="components/pagination/pagination.js" type="text/javascript"></script>
+    <script>
+        $(document).on("click", ".not-archived .checkbox .jq-checkbox", function(){
+            if($(this).hasClass("checked")){
+                $(".archive-buttons").addClass("active");
+                $(".button-blue").addClass("active");
+                $(".content.applicant-content").addClass("content-bottom");
+            } else {
+                $(".archive-buttons").removeClass("active");
+                $(".button-blue").removeClass("active");
+                $(".content.applicant-content").removeClass("content-bottom");
+            }
+        });
+    </script>
+    <script>
+        $(document).on("click", ".archived-block .checkbox .jq-checkbox", function(){
+            if($(this).hasClass("checked")){
+                $(".unarchive-buttons").addClass("active");
+                $(".button-blue").addClass("active");
+                $(".content.applicant-content").addClass("content-bottom");
+            } else {
+                $(".unarchive-buttons").removeClass("active");
+                $(".button-blue").removeClass("active");
+                $(".content.applicant-content").removeClass("content-bottom");
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function($) {
+          $(window).load(function() {
+            setTimeout(function() {
+              $('#preloader').fadeOut('slow', function() {});
+            }, 5);
+
+          });
+        });
+    </script>
 </body>
 
 </html>
