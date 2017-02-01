@@ -63,12 +63,12 @@
                 </div>
                 <ul class="menu fullscreen">
                     <li class="active-page">
-                        <a href="#">
+                        <a href="index.html">
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="dash-payments.html">
                             <p>Payments</p>
                         </a>
                     </li>
@@ -114,7 +114,7 @@
             <div class="block-shadow">
                 <div class="container">
                     <div class="row">
-                        <a href="#" class="back">Return to Dashboard</a>
+                        <a href="index.html" class="back return-to-dashboard">Return to Dashboard</a>
                     </div>
                     <div class="row">
                         <div class="buttons">
@@ -2174,9 +2174,9 @@
                     <label for="cc-myself">CC myself</label>
                     <div class="cf"></div>
                 </div>
-                <input type="text" placeholder="Application for 1865 Novi Manor Accepted!">
+                <input type="text" value="Application for 1865 Novi Manor Accepted!">
                 <h4>Message</h4>
-                <textarea placeholder="Congratulations, Jessy Nikolaus! Your application to live at 1865 Novi Manor has been accepted."></textarea>
+                <textarea placeholder="">Congratulations, Jessy Nikolaus! Your application to live at 1865 Novi Manor has been accepted.</textarea>
                 <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="accept-close-popup">No Thanks, Don’t Send Email</a>
                 <div class="cf"></div>
@@ -2195,8 +2195,8 @@
         </div>
         <div class="buttons-container">
                 <h4>Is this rejection due to information found in consumer reports?</h4>
-                <a href="#yes-mail1" class="yes-mail fancybox-modal2">Yes</a>
-                <a href="#other-reason2" class="other-reason fancybox-modal2">No, There are other reasons</a>
+                <a href="#other-reason2" class="yes-mail fancybox-modal2">Yes1</a>
+                <a href="#yes-mail1" class="other-reason fancybox-modal2">No, There are other reasons</a>
                 <div class="cf"></div>
             </div>
     </div>
@@ -2267,11 +2267,13 @@
             </div>
         </div>
         <div class="buttons-container">
-                <a href="#yes-mail1" class="yes-mail fancybox-modal2">Send mail</a>
+                <!-- <a href="#yes-mail1" class="yes-mail fancybox-modal2">Send mail</a> -->
+                <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="other-reason oth-reason-button">Cancel</a>
                 <div class="cf"></div>
             </div>
     </div>
+
     <div id="yes-mail1" class="popup popup-accept" style="display: none">
         <div class="head">
             <h2>Reject Applicant</h2>
@@ -2286,9 +2288,9 @@
                     <label for="cc-myself">CC myself</label>
                     <div class="cf"></div>
                 </div>
-                <input type="text" placeholder="Application for 1865 Novi Manor Rejected">
+                <input type="text" value="Application for 1865 Novi Manor Rejected">
                 <h4>Message</h4>
-                <textarea placeholder="Dear Jessy Nikolaus, Unfortunately, we regret to inform you that your application to live at 1239 Oluvo Boulevard was not accepted."></textarea>
+                <textarea placeholder="">Dear Jessy Nikolaus, Unfortunately, we regret to inform you that your application to live at 1239 Oluvo Boulevard was not accepted.</textarea>
                 <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="accept-close-popup">No Thanks, Don’t Send Email</a>
                 <div class="cf"></div>
