@@ -103,7 +103,7 @@
 	height: 25px;
 	cursor: pointer;
 	z-index: 8040;
-	background: url(../../images/close-boot.png) center center no-repeat !important;
+	background: url(../../images/close-boot.svg) center center no-repeat !important;
 }
 
 .fancybox-nav {
