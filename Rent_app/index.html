@@ -636,10 +636,13 @@
                 <div class="cf"></div>
             </div>
         </div>
-        <div id="popup-time2" class="popup-time" style="display: none">
+        <div id="popup-time2" class="popup-time popup-time2" style="display: none">
             <h2>Schedule a Time</h2>
             <p>Choose a time slot and we’ll call to guide you through the app or answer any questions— It should only take about 15 minutes of your time!</p>
             <h3>(Please choose a time when you have access to a computer)</h3>
+            <div class="buttons">
+                <a href="#popup-time3" class="fancybox-modal hvbutt hide-button only-button next-button disabled">Continue</a>
+            </div>
             <div class="line"></div>
             <div class="hidden-container">
                 <ul class="table-container">
@@ -739,10 +742,9 @@
                     </select>
                 </div>
             </div>
-            <div class="buttons">
-                <!-- <a href="#" class="back-button fancy-time-close">No Thanks</a> -->
+            <!-- <div class="buttons">
                 <a href="#popup-time3" class="fancybox-modal hvbutt hide-button only-button next-button">Continue</a>
-            </div>
+            </div> -->
         </div>
         <div id="popup-time3" class="popup-time" style="display: none">
             <h2>Phone Number</h2>
@@ -826,6 +828,17 @@
     <script>
         $(document).ready(function() {
             $("input[name=phone]").mask("(999) 9999-9999");
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.table-container label').click(function(){
+                if($(this).hasClass('checked') == false){
+                    $(".hvbutt").addClass("disabled");
+                } else {
+                    $(".hvbutt").removeClass("disabled");  
+                }
+            });
         });
     </script>
 </body>
