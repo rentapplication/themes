@@ -226,9 +226,14 @@
             <div class="cf"></div>
             <div class="container">
                 <div class="row content">
+                    <div id="preloader2">
+                        <img src="6.gif" width="114" alt="">
+                        <p>Loading...</p>
+                    </div>
                     <div class="frame-block active">
                         <!-- <iframe src="Application_Display/applicant_iformation.html" width="96%" height="100%" scrolling="auto" frameborder=0 onload="resizeIframeLoad(this)"></iframe> -->
                         <div class="application-information">
+
                             <div class="wrapper-main">
                                 <div class="info_row">
                                     <div class="container">
@@ -2464,6 +2469,16 @@
             }
         });
     });
+    </script>
+    <script>
+        $(document).ready(function($) {
+          $(window).load(function() {
+            setTimeout(function() {
+              $('#preloader2').fadeOut('slow', function() {});
+            }, 5);
+
+          });
+        });
     </script>
 </body>
 
