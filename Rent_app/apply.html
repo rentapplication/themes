@@ -1134,6 +1134,16 @@
             </div>
         </div>
     </div>
+    <a href="#lookslike" id="lkl1" class="fancybox-modal2"></a>
+    <div id="lookslike" class="popup-signature" style="display: none;">
+        <div class="head">
+            <h2>Notice</h2>
+        </div>
+        <div class="container">
+        <p>Looks like you’re logged in as johnsmith@email.com and applying to http://rentapplication.net/Newform1. Please note that this will submit the application to yourself.</p>
+        <a href="#" class="accept-close-popup button">Continue anyway</a>
+        </div>
+    </div>
     <div id="popup-sign1" class="popup-signature" style="display: none;">
         <div class="head">
             <h2>Signature</h2>
@@ -1327,6 +1337,11 @@
             $("a.apply-next-step1").addClass('check-disabled');
           }
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+             $('#lkl1').trigger('click');
+        });
     </script>
 </body>
 
