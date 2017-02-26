@@ -113,6 +113,24 @@
         <div class="view">
             <div class="block-shadow">
                 <div class="container">
+                    <div class="arch-error">
+                        <p>Applicant could not be archived</p>
+                        <a href="#" class="close-it"></a>
+                        <div class="cf"></div>
+                    </div>
+                    <div class="arch-succ">
+                        <p>Applicant successfully archived. Go to “Archived Applicants” to view</p>
+                        <a href="#" class="close-it"></a>
+                        <div class="cf"></div>
+                    </div>
+
+                    <!-- REMOVE THIS BLOCK -->
+                    <ul class="remove-button" style="position: absolute; left: 0; top: 0; z-index: 100">
+                        <li><a href="#" class="open-success-state">open-success-state</a></li>
+                        <li><a href="#" class="open-error-state">open-error-state</a></li>
+                    </ul>
+                    <!-- REMOVE THIS BLOCK -->
+
                     <div class="row">
                         <a href="index.html" class="back return-to-dashboard">Return to Dashboard</a>
                     </div>
@@ -202,12 +220,12 @@
                                         <li class="libutton">
                                             <p>Eviction</p>
                                         </li>
-                                        <!-- <li class="libutton">
-                                            <p>Eviction2</p>
+                                        <li class="libutton">
+                                            <p>Landlord</p>
                                         </li>
                                         <li class="libutton">
-                                            <p>Eviction3</p>
-                                        </li> -->
+                                            <p>Employment</p>
+                                        </li>
                                     </ul>
                                     <div class="right">
                                         <button id="right-button" class="btn btn--link">
@@ -2020,28 +2038,43 @@
                                 <div class="line"></div>
                                 <h2><span>Purchase Eviction Report</span></h2>
                                 <p class="rep">The report will take 3-4 minutes to run. We'll notify you by email as soon as it's ready or you can just refresh this page to view it in this tab.</p>
-                                <form action="" method="" name="form">
+                                <form action="" method="" name="form" onsubmit="return false;">
                                     <div class="fullwidth">
-                                        <h4>Full Name <span>*</span></h4>
-                                        <input type="text" name="" placeholder="Name Name" class="name">
-                                        <h4>Card Number <span>*</span></h4>
-                                        <input type="text" id="card_number" placeholder="1234 5678 9012 3456" name="cardcode">
-                                        <div class="row2">
-                                            <div class="half fll">
-                                                <h4>Expiration Date <span>*</span></h4>
-                                                <input type="text" class="date" placeholder="06/17" name="cardDate">
-                                            </div>
-                                            <div class="half flr">
-                                                <h4>CVC <span>*</span></h4>
-                                                <input type="text" class="cvc" placeholder="456" name="cardCvc">
-                                            </div>
+                                        <div class="input-container container-button">
+                                            <label for="eviction1-1" class="use-normal-card">
+                                                <img src="../images/visa.jpg" alt="">
+                                                <p>ending in <span>8293</span></p>
+                                            </label>
+                                            <input type="radio" name="group-e1" id="eviction1-1">
                                         </div>
-                                        <div class="cf"></div>
-                                        <div class="check">
-                                            <input type="checkbox" id="check2">
-                                            <label for="check2">Save this card for future use</label>
+                                        <div class="input-container container-button">
+                                            <label for="eviction1-2" class="use-dif-card">
+                                                <p>Use a different card</p>
+                                            </label>
+                                            <input type="radio" name="group-e1" id="eviction1-2">
                                         </div>
-                                        <div class="cf"></div>
+                                        <div class="another-card">
+                                            <h4>Full Name <span>*</span></h4>
+                                            <input type="text" name="" placeholder="Name Name" class="name">
+                                            <h4>Card Number <span>*</span></h4>
+                                            <input type="text" id="card_number" placeholder="1234 5678 9012 3456" name="cardcode">
+                                            <div class="row2">
+                                                <div class="half fll">
+                                                    <h4>Expiration Date <span>*</span></h4>
+                                                    <input type="text" class="date" placeholder="06/17" name="cardDate">
+                                                </div>
+                                                <div class="half flr">
+                                                    <h4>CVC <span>*</span></h4>
+                                                    <input type="text" class="cvc" placeholder="456" name="cardCvc">
+                                                </div>
+                                            </div>
+                                            <div class="cf"></div>
+                                            <div class="check">
+                                                <input type="checkbox" id="check2">
+                                                <label for="check2">Save this card for future use</label>
+                                            </div>
+                                            <div class="cf"></div>
+                                        </div>
                                         <div class="row2 fee">
                                             <div class="half fll">
                                                 <p>Total Fee</p>
@@ -2228,6 +2261,12 @@
                         <option value="Reason1-4">Reason for Rejection 1-4</option>
                         <option value="Reason1-5">Reason for Rejection 1-5</option>
                     </select>
+                    <select class="select-other">
+                        <option value="Reason1-11">Other 1-1</option>
+                        <option value="Reason1-12">Other 1-2</option>
+                        <option value="Reason1-13">Other 1-3</option>
+                    </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason2">Add another reason…</a>
                 </div>
                 <div class="reason-content reason-content2">
@@ -2238,6 +2277,12 @@
                         <option value="Reason2-4">Reason for Rejection 2-4</option>
                         <option value="Reason2-5">Reason for Rejection 2-5</option>
                     </select>
+                    <select class="select-other">
+                        <option value="Reason2-11">Other 2-1</option>
+                        <option value="Reason2-12">Other 2-2</option>
+                        <option value="Reason2-13">Other 2-3</option>
+                    </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason3">Add another reason…</a>
                 </div>
                 <div class="reason-content reason-content3">
@@ -2248,26 +2293,13 @@
                         <option value="Reason3-4">Reason for Rejection 3-4</option>
                         <option value="Reason3-5">Reason for Rejection 3-5</option>
                     </select>
+                    <select class="select-other">
+                        <option value="Reason3-11">Other 3-1</option>
+                        <option value="Reason3-12">Other 3-2</option>
+                        <option value="Reason3-13">Other 3-3</option>
+                    </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason4">Add another reason…</a>
-                </div>
-                <div class="reason-content reason-content4">
-                    <select>
-                        <option value="Reason4-1">Reason for Rejection 4-1</option>
-                        <option value="Reason4-2">Reason for Rejection 4-2</option>
-                        <option value="Reason4-3">Reason for Rejection 4-3</option>
-                        <option value="Reason4-4">Reason for Rejection 4-4</option>
-                        <option value="Reason4-5">Reason for Rejection 4-5</option>
-                    </select>
-                    <a href="#" class="addreason addreason5">Add another reason…</a>
-                </div>
-                <div class="reason-content reason-content5">
-                    <select>
-                        <option value="Reason5-1">Reason for Rejection 5-1</option>
-                        <option value="Reason5-2">Reason for Rejection 5-2</option>
-                        <option value="Reason5-3">Reason for Rejection 5-3</option>
-                        <option value="Reason5-4">Reason for Rejection 5-4</option>
-                        <option value="Reason5-5">Reason for Rejection 5-5</option>
-                    </select>
                 </div>
             </div>
         </div>

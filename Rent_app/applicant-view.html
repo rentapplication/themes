@@ -113,10 +113,29 @@
         <div class="view applicant-view">
             <div class="block-shadow">
                 <div class="container">
+                    <div class="arch-error">
+                        <p>Applicant could not be archived</p>
+                        <a href="#" class="close-it"></a>
+                        <div class="cf"></div>
+                    </div>
+                    <div class="arch-succ">
+                        <p>Applicant successfully archived. Go to “Archived Applicants” to view</p>
+                        <a href="#" class="close-it"></a>
+                        <div class="cf"></div>
+                    </div>
+
+                    <!-- REMOVE THIS BLOCK -->
+                    <ul class="remove-button" style="position: absolute; left: 0; top: 0; z-index: 100">
+                        <li><a href="#" class="open-success-state">open-success-state</a></li>
+                        <li><a href="#" class="open-error-state">open-error-state</a></li>
+                        <li><a href="#" class="open-app-update">open-application-update</a></li>
+                    </ul>
+                    <!-- REMOVE THIS BLOCK -->
+
                     <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
-                    <div class="profile-success active">
+                    <div class="app-update">
                         <p>Your application has been successfully updated.</p>
-                        <a class="close-butt"></a>
+                        <a href="#" class="close-it"></a>
                     </div>
                     <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
                     <div class="row">
@@ -170,12 +189,12 @@
                                         <li class="libutton">
                                             <p>Eviction</p>
                                         </li>
-                                        <!-- <li class="libutton">
-                                            <p>Eviction2</p>
+                                        <li class="libutton">
+                                            <p>Landlord</p>
                                         </li>
                                         <li class="libutton">
-                                            <p>Eviction3</p>
-                                        </li> -->
+                                            <p>Employment</p>
+                                        </li>
                                     </ul>
                                     <div class="right">
                                         <button id="right-button" class="btn btn--link">
@@ -1987,28 +2006,43 @@
                                 <div class="line"></div>
                                 <h2><span>Purchase Eviction Report</span></h2>
                                 <p class="rep">The report will take 3-4 minutes to run. We'll notify you by email as soon as it's ready or you can just refresh this page to view it in this tab.</p>
-                                <form action="" method="" name="form">
+                                <form action="" method="" name="form" onsubmit="return false;">
                                     <div class="fullwidth">
-                                        <h4>Full Name <span>*</span></h4>
-                                        <input type="text" name="" placeholder="Name Name" class="name">
-                                        <h4>Card Number <span>*</span></h4>
-                                        <input type="text" id="card_number" placeholder="1234 5678 9012 3456" name="cardcode">
-                                        <div class="row2">
-                                            <div class="half fll">
-                                                <h4>Expiration Date <span>*</span></h4>
-                                                <input type="text" class="date" placeholder="06/17" name="cardDate">
-                                            </div>
-                                            <div class="half flr">
-                                                <h4>CVC <span>*</span></h4>
-                                                <input type="text" class="cvc" placeholder="456" name="cardCvc">
-                                            </div>
+                                        <div class="input-container container-button">
+                                            <label for="eviction1-1" class="use-normal-card">
+                                                <img src="../images/visa.jpg" alt="">
+                                                <p>ending in <span>8293</span></p>
+                                            </label>
+                                            <input type="radio" name="group-e1" id="eviction1-1">
                                         </div>
-                                        <div class="cf"></div>
-                                        <div class="check">
-                                            <input type="checkbox" id="check2">
-                                            <label for="check2">Save this card for future use</label>
+                                        <div class="input-container container-button">
+                                            <label for="eviction1-2" class="use-dif-card">
+                                                <p>Use a different card</p>
+                                            </label>
+                                            <input type="radio" name="group-e1" id="eviction1-2">
                                         </div>
-                                        <div class="cf"></div>
+                                        <div class="another-card">
+                                            <h4>Full Name <span>*</span></h4>
+                                            <input type="text" name="" placeholder="Name Name" class="name">
+                                            <h4>Card Number <span>*</span></h4>
+                                            <input type="text" id="card_number" placeholder="1234 5678 9012 3456" name="cardcode">
+                                            <div class="row2">
+                                                <div class="half fll">
+                                                    <h4>Expiration Date <span>*</span></h4>
+                                                    <input type="text" class="date" placeholder="06/17" name="cardDate">
+                                                </div>
+                                                <div class="half flr">
+                                                    <h4>CVC <span>*</span></h4>
+                                                    <input type="text" class="cvc" placeholder="456" name="cardCvc">
+                                                </div>
+                                            </div>
+                                            <div class="cf"></div>
+                                            <div class="check">
+                                                <input type="checkbox" id="check2">
+                                                <label for="check2">Save this card for future use</label>
+                                            </div>
+                                            <div class="cf"></div>
+                                        </div>
                                         <div class="row2 fee">
                                             <div class="half fll">
                                                 <p>Total Fee</p>
