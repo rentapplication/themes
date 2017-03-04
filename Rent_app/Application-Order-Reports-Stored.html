@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <div class="global_wrapper view-page applicant-view">
+    <div class="global_wrapper view-page">
         <!-- Begin navigation -->
         <nav>
             <div class="menu-block cf">
@@ -47,7 +47,7 @@
                     <a href="index.html">Rent Application</a>
                 </div>
                 <div class="title">
-                    <h2>Applicant Dashboard</h2>
+                    <h2>Landlord Dashboard</h2>
                 </div>
                 <a id="touch-menu" class="mobile-menu" href="#">
                     <div class="square">
@@ -67,11 +67,11 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#">
+                    <li>
+                        <a href="dash-payments.html">
                             <p>Payments</p>
                         </a>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="#">
                             <p>Help</p>
@@ -101,7 +101,7 @@
                 <ul class="menu dropmobile">
                     <li><a href="index.html">Landlord Dashboard</a></li>
                     <li><a href="#">Switch to Applicant Dashboard</a></li>
-                    <!-- <li><a href="#">My Payments</a></li> -->
+                    <li><a href="#">My Payments</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="settings.html">Settings</a></li>
                     <li><a href="#">Logout</a></li>
@@ -110,7 +110,7 @@
         </nav>
         <!-- End navigation -->
         <!-- Begin content -->
-        <div class="view applicant-view">
+        <div class="view">
             <div class="block-shadow">
                 <div class="container">
                     <div class="arch-error">
@@ -128,36 +128,67 @@
                     <ul class="remove-button" style="position: absolute; left: 0; top: 0; z-index: 100">
                         <li><a href="#" class="open-success-state">open-success-state</a></li>
                         <li><a href="#" class="open-error-state">open-error-state</a></li>
-                        <li><a href="#" class="open-app-update">open-application-update</a></li>
                     </ul>
                     <!-- REMOVE THIS BLOCK -->
 
-                    <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
-                    <div class="app-update">
-                        <p>Your application has been successfully updated.</p>
-                        <a href="#" class="close-it"></a>
-                    </div>
-                    <!-- CLASS "ACTIVE" -> DISPLAY: BLOCK -->
                     <div class="row">
-                        <a href="index.html" class="back">Return to Dashboard</a>
+                        <a href="index.html" class="back return-to-dashboard">Return to Dashboard</a>
                     </div>
-                    <div class="row">
-                        <div class="cont-view">
-                            <div class="buttons">
-                                <a href="applicant-apply.html">Edit</a>
-                                <div class="cf"></div>
-                                <p>Submitted</p>
+                    <div class="row row-parent">
+                        <div class="buttons">
+                            <div class="buttons-acc">
+                                <a href="#" class="button-butt">buttons /</a>
+                                <a href="#" class="button-acc">accept /</a>
+                                <a href="#" class="button-rej">reject</a>
                             </div>
-                            <div class="about">
-                                <h2>John Smith</h2>
-                                <a href="#" class="download">
-                                    Download
-                                    <div class="arrow"></div>
-                                </a>
-                                <div class="cf"></div>
-                                <p>236-358-2470</p>
-                                <p>johnsmith@email.com</p>
+                            <!-- BEGIN ACCEPT CONTAINER -->
+                            <div class="accept-container acc-cont">
+                                <h3>Accepted</h3>
+                                <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
                             </div>
+                            <!-- END ACCEPT CONTAINER -->
+                            <!-- BEGIN REJECT CONTAINER -->
+                            <div class="reject-container acc-cont">
+                                <h3>Rejected</h3>
+                                <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
+                            </div>
+                            <!-- END REJECT CONTAINER -->
+                            <!-- BEGIN BUTTONS CONTAINER -->
+                            <a href="#popup6-accept" class="fancybox-modal2 accept">Accept</a>
+                            <a href="#popup-consumer1" class="fancybox-modal2 reject">Reject</a>
+                            <!-- END BUTTONS CONTAINER -->
+                            <div class="cf"></div>
+                            <a href="#" class="note-button">
+                                <!-- <img src="images/notes-icon.svg" alt=""> -->
+                            </a>
+                            <div class="bounce bounce-button-view">
+                                <div class="circle"></div>
+                                <div class="functions">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Archive</a>
+                                        </li>
+                                        <li class="line cf"></li>
+                                        <li class="cf">
+                                            <a href="#popup5-delete" class="fancybox-modal2">Delete</a>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li class="cf">
+                                            <a href="#popup6-share" class="fancybox-modal2">Share</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <h2>Jessy Nikolaus</h2>
+                            <a href="#" class="download">
+                                Download
+                                <div class="arrow"></div>
+                            </a>
+                            <div class="cf"></div>
+                            <p>236-358-2470</p>
+                            <p>jessy_nikolaus@yahoo.com</p>
                         </div>
                         <div class="cf"></div>
                     </div>
@@ -220,6 +251,7 @@
                     <div class="frame-block active">
                         <!-- <iframe src="Application_Display/applicant_iformation.html" width="96%" height="100%" scrolling="auto" frameborder=0 onload="resizeIframeLoad(this)"></iframe> -->
                         <div class="application-information">
+
                             <div class="wrapper-main">
                                 <div class="info_row">
                                     <div class="container">
@@ -2067,6 +2099,15 @@
             </div>
         </div>
     </div>
+    <div class="view-notes">
+        <a href="#" class="note-close"></a>
+        <h2>Notes</h2>
+        <p>Last Saved: 10/23/16 12:34 pm</p>
+        <form action="#" method="#">
+            <textarea></textarea>
+            <input type="submit" value="Save">
+        </form>
+    </div>
     </div>
     <div id="popup1" class="popup view-pop" style="display: none;">
         <img src="images/credit/zip-reports-logo.png">
@@ -2133,6 +2174,30 @@
             </div>
         </div>
     </div>
+    <div id="popup6-share" class="popup popup-share" style="display: none">
+        <div class="head">
+            <h2>Share Application</h2>
+        </div>
+        <div class="container">
+            <h3>Share Application</h3>
+            <p>To send this application, please enter in the email address of the recipients below:</p>
+            <form action="#" method="#" runat="server" id="form2">
+                <!-- <textarea></textarea> -->
+                <div id="boxTags">
+                    <input type="hidden" id="hiddenTags"/>
+                    <ul id="ulTags" style="clear:both;">
+                        <li id="newTagInput"><input type="text" id="inputTag"/></li>
+                    </ul>
+                    <div style="clear:both;"></div>
+                </div>
+            </form>
+            <div class="buttons">
+                <a href="#" class="delete">Send</a>
+                <a href="#" class="cancel view-delete-button">Cancel</a>
+                <div class="cf"></div>
+            </div>
+        </div>
+    </div>
     <div id="popup6-accept" class="popup popup-accept" style="display: none">
         <div class="head">
             <h2>Accept Applicant</h2>
@@ -2147,9 +2212,9 @@
                     <label for="cc-myself">CC myself</label>
                     <div class="cf"></div>
                 </div>
-                <input type="text" placeholder="Application for 1865 Novi Manor Accepted!">
+                <input type="text" value="Application for 1865 Novi Manor Accepted!">
                 <h4>Message</h4>
-                <textarea placeholder="Congratulations, Jessy Nikolaus! Your application to live at 1865 Novi Manor has been accepted."></textarea>
+                <textarea placeholder="">Congratulations, Jessy Nikolaus! Your application to live at 1865 Novi Manor has been accepted.</textarea>
                 <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="accept-close-popup">No Thanks, Don’t Send Email</a>
                 <div class="cf"></div>
@@ -2168,8 +2233,8 @@
         </div>
         <div class="buttons-container">
                 <h4>Is this rejection due to information found in consumer reports?</h4>
-                <a href="#yes-mail1" class="yes-mail fancybox-modal2">Yes</a>
-                <a href="#other-reason2" class="other-reason fancybox-modal2">No, There are other reasons</a>
+                <a href="#other-reason2" class="yes-mail fancybox-modal2">Yes</a>
+                <a href="#yes-mail1" class="other-reason fancybox-modal2">No, There are other reasons</a>
                 <div class="cf"></div>
             </div>
     </div>
@@ -2194,8 +2259,9 @@
                         <option value="Reason1-2">Reason for Rejection 1-2</option>
                         <option value="Reason1-3">Reason for Rejection 1-3</option>
                         <option value="Reason1-4">Reason for Rejection 1-4</option>
-                        <option value="Reason1-5">Reason for Rejection 1-5</option>
+                        <option value="Reason1-5" class="add-other-reason">Other</option>
                     </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason2">Add another reason…</a>
                 </div>
                 <div class="reason-content reason-content2">
@@ -2204,8 +2270,9 @@
                         <option value="Reason2-2">Reason for Rejection 2-2</option>
                         <option value="Reason2-3">Reason for Rejection 2-3</option>
                         <option value="Reason2-4">Reason for Rejection 2-4</option>
-                        <option value="Reason2-5">Reason for Rejection 2-5</option>
+                        <option value="Reason2-5" class="add-other-reason">Other</option>
                     </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason3">Add another reason…</a>
                 </div>
                 <div class="reason-content reason-content3">
@@ -2214,40 +2281,34 @@
                         <option value="Reason3-2">Reason for Rejection 3-2</option>
                         <option value="Reason3-3">Reason for Rejection 3-3</option>
                         <option value="Reason3-4">Reason for Rejection 3-4</option>
-                        <option value="Reason3-5">Reason for Rejection 3-5</option>
+                        <option value="Reason3-5" class="add-other-reason">Other</option>
                     </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                     <a href="#" class="addreason addreason4">Add another reason…</a>
                 </div>
                 <div class="reason-content reason-content4">
                     <select>
-                        <option value="Reason4-1">Reason for Rejection 4-1</option>
-                        <option value="Reason4-2">Reason for Rejection 4-2</option>
-                        <option value="Reason4-3">Reason for Rejection 4-3</option>
-                        <option value="Reason4-4">Reason for Rejection 4-4</option>
-                        <option value="Reason4-5">Reason for Rejection 4-5</option>
+                        <option value="Reason4-1">Reason for Rejection 3-1</option>
+                        <option value="Reason4-2">Reason for Rejection 3-2</option>
+                        <option value="Reason4-3">Reason for Rejection 3-3</option>
+                        <option value="Reason4-4">Reason for Rejection 3-4</option>
+                        <option value="Reason4-5" class="add-other-reason">Other</option>
                     </select>
-                    <a href="#" class="addreason addreason5">Add another reason…</a>
-                </div>
-                <div class="reason-content reason-content5">
-                    <select>
-                        <option value="Reason5-1">Reason for Rejection 5-1</option>
-                        <option value="Reason5-2">Reason for Rejection 5-2</option>
-                        <option value="Reason5-3">Reason for Rejection 5-3</option>
-                        <option value="Reason5-4">Reason for Rejection 5-4</option>
-                        <option value="Reason5-5">Reason for Rejection 5-5</option>
-                    </select>
+                    <input class="reject-input" type="text" placeholder="Please explain your reason">
                 </div>
             </div>
         </div>
         <div class="buttons-container">
-                <a href="#yes-mail1" class="yes-mail fancybox-modal2">Send mail</a>
+                <!-- <a href="#yes-mail1" class="yes-mail fancybox-modal2">Send mail</a> -->
+                <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="other-reason oth-reason-button">Cancel</a>
                 <div class="cf"></div>
             </div>
     </div>
+
     <div id="yes-mail1" class="popup popup-accept" style="display: none">
         <div class="head">
-            <h2>Accept Applicant</h2>
+            <h2>Reject Applicant</h2>
         </div>
         <div class="container">
             <h3>Sorry that wasn’t the right candidate</h3>
@@ -2259,9 +2320,9 @@
                     <label for="cc-myself">CC myself</label>
                     <div class="cf"></div>
                 </div>
-                <input type="text" placeholder="Application for 1865 Novi Manor Rejected">
+                <input type="text" value="Application for 1865 Novi Manor Rejected">
                 <h4>Message</h4>
-                <textarea placeholder="Dear Jessy Nikolaus, Unfortunately, we regret to inform you that your application to live at 1239 Oluvo Boulevard was not accepted."></textarea>
+                <textarea placeholder="">Dear Jessy Nikolaus, Unfortunately, we regret to inform you that your application to live at 1239 Oluvo Boulevard was not accepted.</textarea>
                 <input type="submit" class="accept-send-mail" value="Send Email">
                 <a href="#" class="accept-close-popup">No Thanks, Don’t Send Email</a>
                 <div class="cf"></div>
@@ -2336,6 +2397,105 @@
         cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
         this.value = cardCvc;
     }
+    </script>
+    <script type="text/javascript">
+    var arrayTags = [""];
+    var index = 0;
+
+    function removeByValue(arr, val) {
+        for(var i=0; i<arr.length; i++) {
+            if(arr[i] == val) {
+                arr.splice(i, 1);
+                break;
+            }
+        }
+        index--;
+    }
+
+    function removeTag(el) {
+        tag = $(el).prev().html();
+        $("#tag-"+tag).remove();
+        removeByValue(arrayTags, tag);
+        $("#inputTag").focus();
+    }
+
+    $(document).ready(function() {
+        var inputWidth = 16;
+
+        function insertTag(tag) {
+            var liEl = '<li id="tag-'+tag+'" class="li_tags">'+
+                        '<span href="javascript://" class="a_tag">'+tag+'</span>&nbsp;'+
+                        '<a href="" onclick="removeTag(this); return false;"'+
+                        ' class="del" id="del_'+tag+'">&times;</strong></a>'+
+                        '</li>';
+            return liEl;
+        }
+
+        $("#inputTag").focus().val("");
+        $("#hiddenTags").val("");
+
+        $("#inputTag").keydown(function(event) {
+            var textVal = jQuery.trim($(this).val()).toLowerCase();
+            var keyCode = event.which;
+
+            // Сдвигаемся влево (нажата клавиша влево)
+            if (keyCode == 37 && textVal == '') {
+                $("#newTagInput").insertBefore($("#newTagInput").prev());
+                $("#inputTag").focus();
+            }
+
+            // Сдвигаемся вправо (нажата клавиша вправо)
+            if (keyCode == 39 && textVal == '') {
+                $("#newTagInput").insertAfter($("#newTagInput").next());
+                $("#inputTag").focus();
+            }
+
+            // Удаляем предыдущую метку (нажата клавиша backspace)
+            if (keyCode == 8 && textVal == '') {
+                deletedTag = $("#newTagInput").prev().find(".a_tag").html();
+                removeByValue(arrayTags, deletedTag);
+                $("#newTagInput").prev().remove();
+                $("#inputTag").focus();
+            }
+
+            // Удалаяем следующую закладку (нажата клавиша delete)
+            if (keyCode == 46 && textVal == '') {
+                deletedTag = $("#newTagInput").next().find(".a_tag").html();
+                removeByValue(arrayTags, deletedTag);
+                $("#newTagInput").next().remove();
+                $("#inputTag").focus();
+            }
+
+            if ((47 < keyCode && keyCode < 106) || (keyCode == 32)) {
+
+                if (keyCode != 32) {
+                    // Пользователь вводит метку
+                    inputWidth = inputWidth + 7;
+                    $(this).attr("style", "width:"+inputWidth+"px");
+                    $("#newTagInput").attr("style", "width:"+inputWidth+"px");
+                } else if (keyCode == 32 && (textVal != '')) {
+                    // Пользователь создает новую метку
+                    var isExist = jQuery.inArray(textVal, arrayTags);
+
+                    if (isExist == -1) {
+                        // Вставить новую метку (видимую пользователю)
+                        $(insertTag(textVal)).insertBefore("#newTagInput");
+
+                        // Вставить новую метку  в массив JavaScript
+                        arrayTags[index] = textVal;
+                        index++;
+                    }
+                    inputWidth = 16;
+                    $(this).attr("style", "width:"+inputWidth+"px");
+                    $("#newTagInput").attr("style", "width:23px")
+                    $(this).val("");
+                } else {
+                    $(this).val("");
+                }
+                console.log(arrayTags, arrayTags.length);
+            }
+        });
+    });
     </script>
     <script>
         $(document).ready(function($) {
