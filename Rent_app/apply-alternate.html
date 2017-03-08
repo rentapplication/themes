@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project title</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="(c)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"> -->
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">
+    <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox4.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+</head>
+
+<body style="background: #fff;">
+    <div class="global_wrapper newform1 apply apply-help">
+        <!-- Begin navigation -->
+        <nav>
+            <div class="menu-block cf">
+                <div class="image">
+                    <img src="images/logotype.svg" width="30" alt="">
+                </div>
+                <div class="h1-head">
+                    <a href="index.html">Rent Application</a>
+                </div>
+                <div class="title">
+                    <h2>Apply</h2>
+                </div>
+                <a id="touch-menu" class="mobile-menu" href="#">
+                    <div class="square">
+                        <div class="line"></div>
+                    </div>
+                </a>
+                <div class="title-info">
+                    <div class="image-container">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <h3>John Smith</h3>
+                    <h4>johnsmith@email.com</h4>
+                </div>
+                <ul class="menu fullscreen">
+                    <!-- <li>
+                        <a href="#">
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Payments</p>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            <p>Help</p>
+                        </a>
+                    </li>
+                    <!-- <li class="profile">
+                        <a href="#">
+                            <img src="images/profile.svg" width="27" class="profile-image" alt="">
+                            <p class="profile-name">johnsmith@email.com</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Landlord Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Switch to Applicant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="settings.html">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <ul class="menu dropmobile">
+                    <!-- <li><a href="index.html">Landlord Dashboard</a></li>
+                    <li><a href="#">Switch to Applicant Dashboard</a></li>
+                    <li><a href="#">My Payments</a></li> -->
+                    <li><a href="#">Help</a></li>
+                    <!-- <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#">Logout</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- End navigation -->
+        <div id="sticky" class="sticky-element">
+            <div class="sticky-anchor"></div>
+            <div class="sticky-content"></div>
+        </div>
+        <div class="row top apply-alternate">
+            <ul>
+                <li class="form-step-1 active">
+                    <div class="circle-block">
+                        <div class="circle">
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <h3>Application</h3>
+                </li>
+                <li class="line line-step-2"></li>
+                <li class="form-step-2">
+                    <div class="circle-block">
+                        <div class="circle">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <h3>Create Account</h3>
+                </li>
+                <!-- <li class="line line-step-3"></li>
+                <li class="form-step-3">
+                    <div class="circle-block">
+                        <div class="circle">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <h3>Verify</h3>
+                </li> -->
+                <li class="line line-step-4"></li>
+                <li class="form-step-4">
+                    <div class="circle-block">
+                        <div class="circle">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <h3>Success</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="step2-error">
+                <p>Please check to make sure the information you have entered is correct. If you are unable to proceed, please contact support@rentapplication.net.</p>
+                <p><span>You have used 1 of 3 permitted attempts to verify your idenitity.</span></p>
+            </div>
+            <!-- Begin error window -->
+            <div class="reset-error">
+                <p>Sorry, unfortunately we don’t have a user with that email address in our records! Are you sure that’s the right email address?</p>
+                <a href="#" class="closeit-reset"></a>
+            </div>
+            <!-- End error window -->
+            <!-- Begin success window -->
+            <div class="reset-success">
+                <p>You will receive an email with instructions on how to reset your password. If you don’t receive it within 5 minutes, check your spam or junk folder, or contact customer support.</p>
+                <a href="#" class="closeit-reset"></a>
+            </div>
+            <div class="separate-mess active">
+                <p>Please fill out only one application per applicant. If you are applying with a roommate or spouse, please have them submit a separate application.</p>
+                <a href="#" class="closeit-reset"></a>
+            </div>
+            <!-- End success window -->
+            <div class="application active">
+                <form action="" method="" onsubmit="return false;">
+                    <div class="app-display">
+                        <div class="right-side">
+
+                            <!-- DELETE IT -->
+                            <a href="#" class="open-separate" style="position: absolute; left: 0; top: 0;">Open separate mess</a>
+                            <!-- DELETE IT -->
+
+                            <img src="images/wikipedia.png" alt="">
+                            <p>John Smith</p>
+                            <p>217-578-2819</p>
+                            <p>johnsmith@email.com</p>
+                            <div class="line"></div>
+                            <p class="left">Application Fee</p>
+                            <p class="right">$10.00</p>
+                            <div class="cf"></div>
+                        </div>
+                        <div class="left-side">
+                            <!-- <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/paper-plane.png" alt="">
+                                    </div>
+                                    <h2>Application Information</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Email Address <span>*</span></h4>
+                                    <input type="text">
+                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div> -->
+                            <div class="info">
+                                <div class="head required">
+                                    <div class="image">
+                                        <img src="images/real-estate.png" alt="">
+                                    </div>
+                                    <h2>Rental Property</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
+                                    <input type="text">
+                                    <div class="required">
+                                        <h4>Proposed Rent amount <span>*</span></h4>
+                                        <input type="text">
+                                        <p>This field is required</p>
+                                    </div>
+                                    <h4>Desired Move in date</h4>
+                                    <input type="text">
+                                    <p>Please list the earliest date you are able to move in</p>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/user-female.png" alt="">
+                                    </div>
+                                    <h2>Applicant Information</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Email Address <span>*</span></h4>
+                                    <input type="text">
+                                    <div class="note active">
+                                        <p>Note: This should be your first name only, exactly as it would appear on a legal document</p>
+                                        <label class="label-understand" for="note1"><input type="radio" id="note1">I understand</label>
+                                        <h4>First Name <span>*</span></h4>
+                                        <input type="text">
+                                    </div>
+                                    <h4>Last Name <span>*</span></h4>
+                                    <input type="text">
+                                    <h4>SSN <span>*</span></h4>
+                                    <input type="text">
+                                    <div class="note active note2">
+                                        <p class="middle">Are you sure you were born in 2016?</p>
+                                        <label class="label-understand another" for="note2"><input type="radio" id="note2">Yes, I am 1 years old</label>
+                                        <label class="label-understand note2-label" for="note3"><input type="radio" id="note3">Oops! Let me do that again</label>
+                                        <div class="cf"></div>
+                                        <h4>Date of Birth <span>*</span></h4>
+                                        <!-- <input type="text"> -->
+                                        <div class="cf"></div>
+                                        <div class="half fll">
+                                            <select class="month">
+                                                <option value="january">January</option>
+                                                <option value="february">February</option>
+                                                <option value="march">March</option>
+                                                <option value="april">April</option>
+                                                <option value="may">May</option>
+                                                <option value="june">June</option>
+                                                <option value="july">July</option>
+                                                <option value="august">August</option>
+                                                <option value="september">September</option>
+                                                <option value="october">October</option>
+                                                <option value="november">November</option>
+                                                <option value="december">December</option>
+                                            </select>
+                                        </div>
+                                        <div class="half flr">
+                                            <select class="day">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+                                            <input type="text" class="year" placeholder="1990">
+                                        </div>
+                                        <div class="cf"></div>
+                                    </div>
+                                    <h4>Phone Number</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/add-user.png" alt="">
+                                    </div>
+                                    <h2>Co-Applicants & Occupants</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Co-Applicants (if any) <span>*</span></h4>
+                                    <input type="text"">
+                                    <h4>Occupants (if any) <span>*</span></h4>
+                                    <input type="text">
+                                    <p>Anyone else who will reside in the propert</p>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/cottage-61.png" alt="">
+                                    </div>
+                                    <h2>Current Address</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Address Line 1 <span>*</span></h4>
+                                    <input type="text"">
+                                    <h4>Address Line 1 <span>*</span></h4>
+                                    <input type="text">
+                                    <div class="row">
+                                        <div class="half">
+                                            <h4>City <span>*</span></h4>
+                                            <input type="text">
+                                        </div>
+                                        <div class="state">
+                                            <h4>State <span>*</span></h4>
+                                            <select>
+                                                <option value="state1">State 1</option>
+                                                <option value="state2">State 2</option>
+                                                <option value="state3">State 3</option>
+                                                <option value="state4">State 4</option>
+                                                <option value="state5">State 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="zip">
+                                            <h4>Zip <span>*</span></h4>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <h4>Dates of Residence</h4>
+                                    <input type="text" placeholder="March 2010 - Present">
+                                    <h4>Current Landlord</h4>
+                                    <input type="text">
+                                    <p>If you were the owner, please leave this field blank</p>
+                                    <h4>Current Landlord’s Phone Number</h4>
+                                    <input type="text">
+                                    <h4>Current Landlord’s Email Address</h4>
+                                    <input type="text">
+                                    <h4>If you do not have a landlord, please explain below</h4>
+                                    <input type="text">
+                                    <p>mortgage, live with family, etc</p>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/exterior-61.png" alt="">
+                                    </div>
+                                    <h2>Previous Address</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Address Line 1 <span>*</span></h4>
+                                    <input type="text"">
+                                    <h4>Address Line 1 <span>*</span></h4>
+                                    <input type="text">
+                                    <div class="row">
+                                        <div class="half">
+                                            <h4>City <span>*</span></h4>
+                                            <input type="text">
+                                        </div>
+                                        <div class="state">
+                                            <h4>State <span>*</span></h4>
+                                            <select>
+                                                <option value="state1">State 1</option>
+                                                <option value="state2">State 2</option>
+                                                <option value="state3">State 3</option>
+                                                <option value="state4">State 4</option>
+                                                <option value="state5">State 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="zip">
+                                            <h4>Zip <span>*</span></h4>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <h4>Dates of Residence</h4>
+                                    <input type="text" placeholder="March 2010 - Present">
+                                    <h4>Current Landlord</h4>
+                                    <input type="text">
+                                    <p>If you were the owner, please leave this field blank</p>
+                                    <h4>Current Landlord’s Phone Number</h4>
+                                    <input type="text">
+                                    <h4>Current Landlord’s Email Address</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/permanent-job.png" alt="">
+                                    </div>
+                                    <h2>Present Employer</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Employer</h4>
+                                    <input type="text">
+                                    <h4>Position</h4>
+                                    <input type="text">
+                                    <h4>Employed Since (Year)</h4>
+                                    <input type="text">
+                                    <h4>Business Address (Address, City, State, Zip)</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Name</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Phone Number</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Email Address</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/employee-card.png" alt="">
+                                    </div>
+                                    <h2>Previous Employer</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Employer</h4>
+                                    <input type="text">
+                                    <h4>Position</h4>
+                                    <input type="text">
+                                    <h4>Employed Since (Year)</h4>
+                                    <input type="text">
+                                    <h4>Business Address (Address, City, State, Zip)</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Name</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Phone Number</h4>
+                                    <input type="text">
+                                    <h4>Supervisor’s Email Address</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="images/money-box.png" alt="">
+                                    </div>
+                                    <h2>Assets & Income</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Annual Salary</h4>
+                                    <input type="text">
+                                    <h4>Co-applicant’s Annual Salary (if applicable)</h4>
+                                    <input type="text">
+                                    <h4>Income from Assets</h4>
+                                    <input type="text">
+                                    <h4>Additional Income (Child & Parent, Alimony)</h4>
+                                    <input type="text">
+                                    <h4>Total Anticipated Annual Income</h4>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head different">
+                                    <div class="image">
+                                        <img src="images/car-61.png" alt="">
+                                    </div>
+                                    <h2 class="diffh2">Additional Information</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4>Annual Salary</h4>
+                                    <textarea placeholder="Model, Make, Year, Color, License #, State"></textarea>
+                                    <p>One vehicle per row</p>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Do you have any pets?</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group1" id="radio1-1">
+                                            <label for="radio1-1">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group1" id="radio1-2">
+                                            <label for="radio1-2">Yes</label>
+                                        </div>
+                                    </div>
+                                    <h4 class="txtar">If so, please list each pet (Type, Weight, Color)</h4>
+                                    <textarea></textarea>
+                                    <p>One pet per row</p>
+                                    <h4 class="txtar">Is there any additional information you would like to add?</h4>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head different">
+                                    <div class="image">
+                                        <img src="images/detective-61.png" alt="">
+                                    </div>
+                                    <h2>Questionnaire</h2>
+                                </div>
+                                <div class="inputs">
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #1</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group2" id="radio2-1">
+                                            <label for="radio2-1">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group2" id="radio2-2">
+                                            <label for="radio2-2">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #2</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group3" id="radio2-4">
+                                            <label for="radio2-4">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group3" id="radio2-5">
+                                            <label for="radio2-5">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #3</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group4" id="radio2-6">
+                                            <label for="radio2-6">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group4" id="radio2-7">
+                                            <label for="radio2-7">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #4</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group5" id="radio2-8">
+                                            <label for="radio2-8">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group5" id="radio2-9">
+                                            <label for="radio2-9">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #5</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group6" id="radio2-10">
+                                            <label for="radio2-10">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group6" id="radio2-11">
+                                            <label for="radio2-11">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="cf"></div>
+                                    <div class="radio-buttons">
+                                        <h4 class="txtar">Have you ever been convicted of a crime? #6</h4>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group7" id="radio2-12">
+                                            <label for="radio2-12">No</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="radio-container">
+                                            <input type="radio" name="group7" id="radio2-13">
+                                            <label for="radio2-13">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info">
+                                <div class="head different">
+                                    <div class="image">
+                                        <img src="images/documents-61.png" alt="">
+                                    </div>
+                                    <h2>Attachments</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h4 class="txtar3">Upload Bank Statement</h4>
+                                    <input type="file">
+                                    <h4 class="txtar3">Upload Bank Statement</h4>
+                                    <input type="file">
+                                    <h4 class="txtar3">Upload Bank Statement</h4>
+                                    <input type="file">
+                                    <h4 class="txtar2">Dropdown</h4>
+                                    <div class="dropdown-input">
+                                        <select>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                            <option value="option4">Option 4</option>
+                                            <option value="option5">Option 5</option>
+                                        </select>
+                                    </div>
+                                    <h4>Long Paragraph Response</h4>
+                                    <textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quis ut maxime deleniti ipsam consequuntur odio libero nam harum, ad aut fugiat officia sunt asperiores soluta eum ducimus temporibus mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sunt placeat est esse illum molestiae numquam necessitatibus odit dolorem? Repudiandae dolorum soluta eligendi temporibus ullam minima, autem sed animi vel.</textarea>
+                                    <div class="check-buttons">
+                                        <h4 class="txtar">Checkboxes</h4>
+                                        <div class="check-container">
+                                            <input type="checkbox" name="check1" id="check1-1">
+                                            <label for="check1-1">Option 1</label>
+                                        </div>
+                                        <div class="cf"></div>
+                                        <div class="check-container">
+                                            <input type="checkbox" name="check1" id="check1-2">
+                                            <label for="check1-2">Option 2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="line"></div>
+                            <div class="info info-last">
+                                <div class="head different">
+                                    <div class="image">
+                                        <img src="images/hand-with.png" alt="">
+                                    </div>
+                                    <h2>Authorization</h2>
+                                </div>
+                                <div class="inputs">
+                                    <h5>I hereby give my permission to communicate with my current and former landlord(s) or property manager(s) for the purpose of discussing any and all of the facts and circumstances of my current or former tenancy, as well as the other information listed above. I also give my permission to communicate with my current employer(s) and/or supervisor(s) for the purpose of verifying the employment information listed above. I understand there are no limitations or restrictions regarding what may be discussed or revealed.</h5>
+                                    <a href="#popup-sign1" class="fancybox-modal2">
+                                        <div class="sign">
+                                            <p class="typeto">Draw your Signature</p>
+                                            <p class="clickto">Click to sign</p>
+                                        </div>
+                                        <input type="text" >
+                                    </a>
+                                    <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application">
+                                </div>
+                            </div>
+                            <div class="cf"></div>
+                            <div class="info">
+                                <!-- <div class="inputs"> -->
+                                    <!-- <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application"> -->
+                                    <!-- <a href="#" class="apply-next1 next">Go to create account</a> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="container apply-container">
+                <div class="fullwidth step1">
+                    <h2>Create Account</h2>
+                    <h3>(optional)</h3>
+                    <p>You have the option of creating an account. Creating an account allows you to:</p>
+                    <ul class="list">
+                        <li>Access or view your application later</li>
+                        <li>Modify the application</li>
+                        <li>Add additional attachments</li>
+                    </ul>
+                    <form action="#" method="" class="rf">
+                        <h4>Email</h4>
+                        <input type="text" class="rfield">
+                        <div class="field">
+                        <div class="pass-error active">
+                            <h4>Password</h4>
+                            <input type='password' name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                            <p>inline error</p>
+                        </div>
+                            <ul class='apply-field__rules'>
+                                <li class="val1">One lowercase character</li>
+                                <li class="val2">One uppercase character</li>
+                                <li class="val3">One number</li>
+                                <li class="val4">8 characters minimum</li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Create Account</a>
+                            <a href="#" class="skip apply-next-step1">Skip and Continue</a>
+                            <div class="cf"></div>
+                        </div>
+                        <a href="#" class="link already-apply-login">Already have an account? Log in</a>
+                </div>
+                <div class="step2 step2active apply-login">
+                    <h2>Log In</h2>
+                    <div class="max-width">
+                    <form action="#" method="#">
+                        <h4>Email</h4>
+                        <input type="text" placeholder="johnsmith@email.com">
+                        <div class="login-container">
+                            <a href="#" class="link reset-pass">Forgot Password?</a>
+                            <h4>Password</h4>
+                            <input type="password">
+                        </div>
+                        <input type="submit" value="Log In">
+                        <a href="#" class="link apply-next1">Don’t have an account? Sign Up</a>
+                    </form>
+                    </div>
+                </div>
+                <div class="step2 step2active apply-reset">
+                    <a href="#" class="open-error">error-state</a>
+                    <a href="#" class="open-success">success-state</a>
+                    <h2>Reset Your Password</h2>
+                    <p class="head">Enter your email address and we’ll send you an email with instructions for resetting your password.</p>
+                    <div class="max-width">
+                    <form action="#" method="#">
+                        <h4>Email</h4>
+                        <input type="text" placeholder="johnsmith@email.com">
+                        <input type="submit" value="Send me Instructions">
+                        <a href="#" class="link already-apply-login">Back to Login</a>
+                        <a href="#" class="link apply-next1">Don’t have an account? Sign Up</a>
+                    </form>
+                    </div>
+                </div>
+                <div class="step2 step2active st2a1">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <p class="head-p">Step 1 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Experian requires us to verify your identity to run screening reports. Please read and agree to the terms and conditions below.</p>
+                    <textarea readonly>You understand that by selecting I AGREE immediately following this notice, you are authorizing Rent Application to provide your personal information to its third-party identity verification and credit reporting agency providers to verify your identity for the purpose of allowing you to view credit reports ordered by prospective tenants on Rent Application.&#13;&#10;&#13;&#10;You further acknowledge that you have read and agree to our Terms of Use and specifically represent and warrant:&#13;&#10;&#13;&#10;that you have never been involved, and will not become involved, in any credit fraud or other unethical business practice;&#13;&#10;&#13;&#10;that any request for a credit report, and your use of any report obtained through Rent Application, is solely for the purpose of evaluating a rental application; and&#13;&#10;&#13;&#10;that you will not provide a copy of any report obtained through Rent Application, or any information contained in such a report, to anyone else.
+                    </textarea>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check2" class="rfield">
+                        <label for="check2">I understand that by checking and clicking on the "I Agree" button immediately following this notice, I am:</label>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Agreeing and consenting to Rent Application's Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p>Providing "written instructions" to Rent Application under the Fair Credit Reporting Act authorizing Rent Application to obtain information from my personal credit profile or other information from Experian, and</p>
+                        </li>
+                        <li>
+                            <p>Authorizing Rent Application to obtain such information solely to confirm my identity.</p>
+                        </li>
+                        <li>
+                            <p>Acknowledging that I have read, understand and received the Notice to Users of Consumer Reports</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="create btn_next apply-next-step2 disabled">Agree and Continue</a>
+                </div>
+                <div class="step2 step2active st2a2">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <a href="#" class="error-button">error</a>
+                    <p class="head-p">Step 2 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Please complete your personal details <span>using your most recent address.</span> If there is an identification error, try using a previous address that you may have more credit history or bills associated with.</p>
+                    <div class="row">
+                        <div class="half fll">
+                            <h4>First Name <span>*</span></h4>
+                            <input type="text" required>
+                        </div>
+                        <div class="half flr">
+                            <h4>Last Name <span>*</span></h4>
+                            <input type="text" required>
+                        </div>
+                        <div class="cf"></div>
+                    </div>
+                    <div class="row">
+                        <h4>Address <span>*</span></h4>
+                        <input type="text" required>
+                    </div>
+                    <div class="row">
+                        <div class="half">
+                            <h4>City <span>*</span></h4>
+                            <input type="text" required>
+                        </div>
+                        <div class="state">
+                            <h4>State <span>*</span></h4>
+                            <select required>
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <option value="state3">State 3</option>
+                                <option value="state4">State 4</option>
+                                <option value="state5">State 5</option>
+                            </select>
+                        </div>
+                        <div class="zip">
+                            <h4>Zip <span>*</span></h4>
+                            <input type="text" required="">
+                        </div>
+                    </div>
+                    <div class="cf"></div>
+                    <div class="row">
+                        <div class="half">
+                            <h4>Social Security No <span>*</span></h4>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="cf"></div>
+                    <a href="#" class="create btn_next apply-next-step3">Agree and Continue</a>
+                </div>
+                <div class="step2 step2active question st2q1">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <p class="head-p">Step 3 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
+                    <h6><span>Question 1 of 4</span></h6>
+                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
+                    <div class="input-container container-button">
+                        <label for="question1-1">
+                            <p>Heather</p>
+                        </label>
+                        <input type="radio" name="group-q1" id="question1-1">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question1-2">
+                            <p>Adam</p>
+                        </label>
+                        <input type="radio" name="group-q1" id="question1-2">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question1-3">
+                            <p>Janice</p>
+                        </label>
+                        <input type="radio" name="group-q1" id="question1-3">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question1-4">
+                            <p>Wes</p>
+                        </label>
+                        <input type="radio" name="group-q1" id="question1-4">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question1-5">
+                            <p>None of the above/Does not apply</p>
+                        </label>
+                        <input type="radio" name="group-q1" id="question1-5">
+                    </div>
+                    <div class="cf"></div>
+                    <!-- <a href="#" class="create btn_next apply-next-step4">Next</a> -->
+                    <div class="buttons-block">
+                        <!-- <a href="#" class="back btn_next apply-back-step4">Back</a> -->
+                        <a href="#" class="create btn_next apply-next-step4 disabled">Next</a>
+                        <div class="cf"></div>
+                    </div>
+                </div>
+                <div class="step2 step2active question st2q2">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <p class="head-p">Step 3 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
+                    <h6><span>Question 2 of 4</span></h6>
+                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
+                    <div class="input-container container-button">
+                        <label for="question2-1">
+                            <p>Heather</p>
+                        </label>
+                        <input type="radio" name="group-q2" id="question2-1">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question2-2">
+                            <p>Adam</p>
+                        </label>
+                        <input type="radio" name="group-q2" id="question2-2">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question2-3">
+                            <p>Janice</p>
+                        </label>
+                        <input type="radio" name="group-q2" id="question2-3">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question2-4">
+                            <p>Wes</p>
+                        </label>
+                        <input type="radio" name="group-q2" id="question2-4">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question2-5">
+                            <p>None of the above/Does not apply</p>
+                        </label>
+                        <input type="radio" name="group-q2" id="question2-5">
+                    </div>
+                    <div class="cf"></div>
+                    <div class="buttons-block">
+                        <a href="#" class="back btn_next apply-back-step5">Back</a>
+                        <a href="#" class="create btn_next apply-next-step5 disabled">Next</a>
+                        <div class="cf"></div>
+                    </div>
+                </div>
+                <div class="step2 step2active question st2q3">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <p class="head-p">Step 3 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
+                    <h6><span>Question 3 of 4</span></h6>
+                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
+                    <div class="input-container container-button">
+                        <label for="question3-1">
+                            <p>Heather</p>
+                        </label>
+                        <input type="radio" name="group-q3" id="question3-1">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question3-2">
+                            <p>Adam</p>
+                        </label>
+                        <input type="radio" name="group-q3" id="question3-2">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question3-3">
+                            <p>Janice</p>
+                        </label>
+                        <input type="radio" name="group-q3" id="question3-3">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question3-4">
+                            <p>Wes</p>
+                        </label>
+                        <input type="radio" name="group-q3" id="question3-4">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question3-5">
+                            <p>None of the above/Does not apply</p>
+                        </label>
+                        <input type="radio" name="group-q3" id="question3-5">
+                    </div>
+                    <div class="cf"></div>
+                    <div class="buttons-block">
+                        <a href="#" class="back btn_next apply-back-step6">Back</a>
+                        <a href="#" class="create btn_next apply-next-step6 disabled">Next</a>
+                        <div class="cf"></div>
+                    </div>
+                </div>
+                <div class="step2 step2active question st2q4">
+                    <div class="secure">
+                        <img src="images/secure.svg" width="18" alt="">
+                        <p>Secure</p>
+                    </div>
+                    <p class="head-p">Step 3 of 3</p>
+                    <h2>Verify Your Identity with Experian</h2>
+                    <p>Experian requres us to ask you a few questions to verify your identity. <span>Your information is not stored or shared.</span></p>
+                    <h6><span>Question 4 of 4</span></h6>
+                    <p>Which of the following people live or previously lived with you at the address you provided?</p>
+                    <div class="input-container container-button">
+                        <label for="question4-1">
+                            <p>Heather</p>
+                        </label>
+                        <input type="radio" name="group-q4" id="question4-1">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question4-2">
+                            <p>Adam</p>
+                        </label>
+                        <input type="radio" name="group-q4" id="question4-2">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question4-3">
+                            <p>Janice</p>
+                        </label>
+                        <input type="radio" name="group-q4" id="question4-3">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question4-4">
+                            <p>Wes</p>
+                        </label>
+                        <input type="radio" name="group-q4" id="question4-4">
+                    </div>
+                    <div class="input-container container-button">
+                        <label for="question4-5">
+                            <p>None of the above/Does not apply</p>
+                        </label>
+                        <input type="radio" name="group-q4" id="question4-5">
+                    </div>
+                    <div class="cf"></div>
+                    <div class="buttons-block">
+                        <a href="#" class="back btn_next apply-back-step7">Back</a>
+                        <a href="#" class="create btn_next apply-next-step7 disabled">Finish</a>
+                        <div class="cf"></div>
+                    </div>
+                    </form>
+                </div>
+                <div class="step2 step2active question success">
+                    <h2>Verify Your Identity with Experian</h2>
+                    <img src="images/group-4.svg" width="130" alt="">
+                    <h2>Success!</h2>
+                    <p>Your identity has been verified</p>
+                    <div class="cf"></div>
+                    <a href="#" class="create btn_next success-next-step7">Next</a>
+                    <a href="#" class="create btn_next error-next-step7">Error</a>
+                </div>
+                <div class="step2 step2active question error">
+                    <h2>Verify Your Identity with Experian</h2>
+                    <img src="images/error-illustration.svg" width="130" alt="">
+                    <h2>Experian couldn’t verify your identity!</h2>
+                    <p>Please continue and submit your payment, then send us an email at <a href="">support@rentapplication.net</a> to verify your account for credit reports.</p>
+                    <div class="cf"></div>
+                    <a href="#" class="create btn_next apply-next-step8">Continue</a>
+                </div>
+                <div class="step2 step2active question payment">
+                    <h2>Payment Information</h2>
+                    <form method="#" action="#" name="form" onsubmit="return false;">
+                        <p>You are now paying a non-refundable application fee for this rental application.</p>
+                        <p>Note: It may take a few moments for your payment to process. Please do NOT press the back button or refresh this page.</p>
+                        <div class="fullwidth">
+                            <h4>Full Name <span>*</span></h4>
+                            <input type="text" class="name" placeholder="Name Name">
+                            <div class="cf"></div>
+                            <h4>Card Number <span>*</span></h4>
+                            <input type="text" name="cardcode" class="card" id="card_number" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="1234 5678 0912 3456">
+                            <div class="cf"></div>
+                            <div class="row exdate">
+                                <div class="half">
+                                    <h4>Expiration Date <span>*</span></h4>
+                                    <input type="text" name="cardDate" class="date" placeholder="06/17">
+                                </div>
+                                <div class="half flr">
+                                    <h4>CVC <span>*</span></h4>
+                                    <input type="text" name="cardCvc" class="cvc" placeholder="456">
+                                </div>
+                            </div>
+                            <div class="row fee">
+                                <div class="half fll">
+                                    <p>Application Fee</p>
+                                </div>
+                                <div class="half flr">
+                                    <p>$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf"></div>
+                        <!-- <a href="#" class="create btn_next apply-next-step9">Submit Payment</a> -->
+                        <input type="submit" class="create btn_next apply-next-step9" value="Submit Payment">
+                    </form>
+                    <p class="paym">The payment does not depend on the outcome of the application process. The fee is for any required tenant screening reports and an application processing fee.</p>
+                </div>
+                <div class="step2 step2active question submitted">
+                    <div class="circle">
+                        <div class="triangle-block">
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                    <h2>Your application has been submitted</h2>
+                    <p>For your records, we have sent you an email notification to confirm that we have received and processed your application. We encourage you to print this information for your records.</p>
+                    <div class="table">
+                        <div class="table-row cf">
+                            <div class="fll">
+                                <p>Rental Property</p>
+                            </div>
+                            <div class="flr">
+                                <p>401 Clover Lane</p>
+                            </div>
+                        </div>
+                        <div class="table-row cf">
+                            <div class="fll">
+                                <p>Applicant</p>
+                            </div>
+                            <div class="flr">
+                                <p>Adam Smith</p>
+                            </div>
+                        </div>
+                        <div class="table-row cf">
+                            <div class="fll">
+                                <p>Email</p>
+                            </div>
+                            <div class="flr">
+                                <p>asmith@hello.com</p>
+                            </div>
+                        </div>
+                        <div class="table-row cf">
+                            <div class="fll">
+                                <p>Application ID</p>
+                            </div>
+                            <div class="flr">
+                                <p>fZd3123</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>What happens next?</h2>
+                    <p>Your application has been sent to the property manager, and once they have reviewed and evaluated your application, they will contact you directly concerning your tenancy.</p>
+                    <p>If you have any questions about the rental property or your application, you can contact the property manager directly:</p>
+                    <div class="cf"></div>
+                    <div class="about">
+                        <img src="images/wikipedia.png" width="54" alt="">
+                        <p>John Smith</p>
+                        <p>217-578-2819</p>
+                        <p>johnsmith@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#lookslike" id="lkl1" class="fancybox-modal2"></a>
+    <div id="lookslike" class="popup-signature" style="display: none;">
+        <div class="head">
+            <h2>Notice</h2>
+        </div>
+        <div class="container">
+        <p>Looks like you’re logged in as johnsmith@email.com and applying to http://rentapplication.net/Newform1. Please note that this will submit the application to yourself.</p>
+        <a href="#" class="accept-close-popup button">Continue anyway</a>
+        </div>
+    </div>
+    <div id="popup-sign1" class="popup-signature" style="display: none;">
+        <div class="head">
+            <h2>Signature</h2>
+        </div>
+        <div class="container">
+        <form action="#" method="#">
+            <div class="sign"></div>
+            <a href="#" class="clear-signature">Clear Signature</a>
+            <div class="cf"></div>
+            <input type="submit" value="Done">
+        </form>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+<script src="components/html5shiv/es5-shim.min.js"></script>
+<script src="components/html5shiv/html5shiv.min.js"></script>
+<script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="components/respond/respond.min.js"></script>
+<![endif]-->
+    <!-- Load Scripts -->
+    <script src="components/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="components/formstyler/jquery.formstyler.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="components/fancybox/jquery.fancybox.pack2.js" type="text/javascript"></script>
+    <script src="components/forms/forms.js" type="text/javascript"></script>
+    <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/js/common.js" type="text/javascript"></script>
+    <script>
+    $(function() {
+        $('.rf').each(function() {
+            var form = $(this),
+                btn = form.find('.btn_next');
+            form.find('.rfield').addClass('empty_field');
+
+            function checkInput() {
+                form.find('.rfield').each(function() {
+                    if ($(this).val() != '') {
+                        $(this).removeClass('empty_field');
+                    } else {
+                        $(this).addClass('empty_field');
+                    }
+                });
+            }
+
+            function lightEmpty() {
+                form.find('.empty_field').css({
+                    'border-color': '#d8512d'
+                });
+
+                setTimeout(function() {
+                    form.find('.empty_field').removeAttr('style');
+                }, 400);
+            }
+
+            setInterval(function() {
+                checkInput();
+                var sizeEmpty = form.find('.empty_field').size();
+                if (sizeEmpty > 0) {
+                    if (btn.hasClass('disabled')) {
+                        return false
+                    } else {
+                        btn.addClass('disabled')
+                    }
+                } else {
+                    btn.removeClass('disabled')
+                }
+            }, 500);
+
+
+            btn.click(function() {
+                if ($(this).hasClass('disabled')) {
+                    lightEmpty();
+                    return false
+                } else {}
+            });
+        });
+    });
+    </script>
+    <script src="components/cardvalidator/jquery.creditCardValidator.js"></script>
+    <script>
+    $(function() {
+        $('#card_number').validateCreditCard(function(result) {
+            if (result.card_type == null) {
+                $('#card_number').removeClass();
+            } else {
+                $('#card_number').addClass(result.card_type.name);
+            }
+
+            if (!result.valid) {
+                $('#card_number').removeClass("valid");
+            } else {
+                $('#card_number').addClass("valid");
+            }
+
+        });
+    });
+    </script>
+    <script>
+    var cc = form.cardcode;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cc.addEventListener('input', formatCardCode, false);
+    }
+
+    function formatCardCode() {
+        var cardCode = this.value.replace(/[^\d]/g, '').substring(0, 16);
+        cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
+        this.value = cardCode;
+    }
+    var cd = form.cardDate;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cd.addEventListener('input', formatCardDate, false);
+    }
+
+    function formatCardDate() {
+        var cardDate = this.value.replace(/[^\d]/g, '').substring(0, 4);
+        cardDate = cardDate != '' ? cardDate.match(/.{1,2}/g).join('/') : '';
+        this.value = cardDate;
+    }
+    var cv = form.cardCvc;
+    for (var i in ['input', 'change', 'blur', 'keyup']) {
+        cv.addEventListener('input', formatCardCvc, false);
+    }
+
+    function formatCardCvc() {
+        var cardCvc = this.value.replace(/[^\d]/g, '').substring(0, 4);
+        cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
+        this.value = cardCvc;
+    }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#check2-styler').click(function(){
+                if($(this).hasClass('checked') == false){
+                    $('.apply-next-step2').addClass("disabled");
+                } else {
+                    $('.apply-next-step2').removeClass("disabled");     
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.container-button .jq-radio').click(function(){
+                if($(this).hasClass('checked') == false){
+                    $(this).parent().parent().find(".buttons-block .btn_next").addClass("disabled");
+                } else {
+                    $(this).parent().parent().find(".buttons-block .btn_next").removeClass("disabled");  
+                }
+            });
+        });
+    </script>
+    <script>
+        $(':password').on('input', onPasswordInput);
+        // Callbacks
+        function onPasswordInput(e) {
+          var $input = $(this),
+            value = this.value,
+            $rulesItems = $input.closest('.field').find('.apply-field__rules').find('li'),
+            rules = {
+              "one lowercase character": /[a-z]/,
+              "one uppercase character": /[A-Z]/,
+              "one number": /[0-9]/,
+              "8 characters minimum": /.{8,}/
+            };
+
+          // mark the input field if it has any value
+          this.classList.toggle('hasValue', this.value);
+
+          // itterate all the rules and validate them
+          $rulesItems.each((i, elm) => {
+            var valid,
+              ruleName = elm.innerText.toLowerCase();
+
+            console.log(rules, ruleName);
+            if (rules[ruleName]) {
+              valid = new RegExp(rules[ruleName]).test(value);
+              elm.classList.toggle('active', valid);
+            }
+          });
+          var activeItemCount = 0;
+            $.each($rulesItems, function() {
+                if ($(this).hasClass('active')){
+                    activeItemCount++;
+                }
+            });
+          if (activeItemCount == 4) {
+             $("a.apply-next-step1").removeClass('check-disabled');
+          }
+          else {
+            $("a.apply-next-step1").addClass('check-disabled');
+          }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+             $('#lkl1').trigger('click');
+        });
+    </script>
+</body>
+
+</html>
