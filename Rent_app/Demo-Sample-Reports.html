@@ -35,7 +35,7 @@
 </head>
 
 <body style="background: #fff;">
-    <div class="global_wrapper view-page">
+    <div class="global_wrapper view-page demo-page">
         <!-- Begin navigation -->
         <nav>
             <div class="menu-block cf">
@@ -47,21 +47,21 @@
                     <a href="index.html">Rent Application</a>
                 </div>
                 <div class="title">
-                    <h2>Landlord Dashboard</h2>
+                    <h2>Rent Application</h2>
                 </div>
                 <a id="touch-menu" class="mobile-menu" href="#">
                     <div class="square">
                         <div class="line"></div>
                     </div>
                 </a>
-                <div class="title-info">
+                <!-- <div class="title-info">
                     <div class="image-container">
                         <img src="images/profile.svg" alt="">
                     </div>
                     <h3>John Smith</h3>
                     <h4>johnsmith@email.com</h4>
-                </div>
-                <ul class="menu fullscreen">
+                </div> -->
+                <!-- <ul class="menu fullscreen">
                     <li class="active-page">
                         <a href="index.html">
                             <p>Dashboard</p>
@@ -97,7 +97,7 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
                 <ul class="menu dropmobile">
                     <li><a href="index.html">Landlord Dashboard</a></li>
                     <li><a href="#">Switch to Applicant Dashboard</a></li>
@@ -106,62 +106,67 @@
                     <li><a href="settings.html">Settings</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
+                <div class="desktop">
+                    <div class="view-demo">
+                        <h2>Viewing Demo:</h2>
+                        <select name="view-demo">
+                            <option value="#" class="sample-rep">Sample Reports</option>
+                            <option value="#" class="inter-app">Interactive Application</option>
+                            <option value="#">Sample Reports #3</option>
+                        </select>
+                        <div class="cf"></div>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- End navigation -->
         <!-- Begin content -->
         <div class="view">
+            <div class="demo-footer">
+                <div class="container">
+                    <div class="desktop">
+                        <h2>Rent Application is FREE for Landlords</h2>
+                        <a href="#" class="footer-button">Try it for FREE</a>
+                    </div>
+                    <div class="mobile">
+                        <div class="view-demo">
+                            <h2>Viewing Demo:</h2>
+                            <select name="view-demo">
+                                <option value="#" class="sample-rep">Sample Reports</option>
+                                <option value="#" class="inter-app">Interactive Application</option>
+                                <option value="#">Sample Reports #3</option>
+                            </select>
+                            <div class="cf"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="block-shadow">
                 <div class="container">
-                    <div class="arch-error">
-                        <p>Applicant could not be archived</p>
-                        <a href="#" class="close-it"></a>
-                        <div class="cf"></div>
-                    </div>
-                    <div class="arch-succ">
-                        <p>Applicant successfully archived. Go to “Archived Applicants” to view</p>
-                        <a href="#" class="close-it"></a>
-                        <div class="cf"></div>
-                    </div>
-
-                    <!-- REMOVE THIS BLOCK -->
-                    <ul class="remove-button" style="position: absolute; left: 0; top: 0; z-index: 100">
-                        <li><a href="#" class="open-success-state">open-success-state</a></li>
-                        <li><a href="#" class="open-error-state">open-error-state</a></li>
-                    </ul>
-                    <!-- REMOVE THIS BLOCK -->
-
                     <div class="row">
                         <a href="index.html" class="back return-to-dashboard">Return to Dashboard</a>
                     </div>
                     <div class="row row-parent">
                         <div class="buttons">
-                            <div class="buttons-acc">
-                                <a href="#" class="button-butt">buttons /</a>
-                                <a href="#" class="button-acc">accept /</a>
-                                <a href="#" class="button-rej">reject</a>
-                            </div>
                             <!-- BEGIN ACCEPT CONTAINER -->
-                            <div class="accept-container acc-cont">
+                            <!-- <div class="accept-container acc-cont">
                                 <h3>Accepted</h3>
                                 <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
-                            </div>
+                            </div> -->
                             <!-- END ACCEPT CONTAINER -->
                             <!-- BEGIN REJECT CONTAINER -->
-                            <div class="reject-container acc-cont">
+                            <!-- <div class="reject-container acc-cont">
                                 <h3>Rejected</h3>
                                 <h3><span class="time">2:36pm</span> <span class="date">12/5/16</span></h3>
-                            </div>
+                            </div> -->
                             <!-- END REJECT CONTAINER -->
                             <!-- BEGIN BUTTONS CONTAINER -->
-                            <a href="#popup6-accept" class="fancybox-modal2 accept">Accept</a>
-                            <a href="#popup-consumer1" class="fancybox-modal2 reject">Reject</a>
+                            <!-- <a href="#popup6-accept" class="fancybox-modal2 accept">Accept</a> -->
+                            <!-- <a href="#popup-consumer1" class="fancybox-modal2 reject">Reject</a> -->
                             <!-- END BUTTONS CONTAINER -->
-                            <div class="cf"></div>
-                            <a href="#" class="note-button">
-                                <!-- <img src="images/notes-icon.svg" alt=""> -->
-                            </a>
-                            <div class="bounce bounce-button-view">
+                            <!-- <div class="cf"></div> -->
+                            <!-- <a href="#" class="note-button"></a> -->
+                            <!-- <div class="bounce bounce-button-view">
                                 <div class="circle"></div>
                                 <div class="functions">
                                     <ul>
@@ -178,7 +183,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="about">
                             <h2>Jessy Nikolaus</h2>
@@ -1408,139 +1413,121 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-menu">
-                                    <div class="public-records-container active">
-                                        <div class="row">
-                                            <div class="col-md-6 top">
-                                                <table class="table-bn3 data_3">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2">Court
-                                                                <br>
-                                                                <div class="td-text2">U.S. Bankruptcy Court</div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="col-md-6 top">
-                                                <table class="table-bn3 data_3">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td colspan="2">Action Type
-                                                                <br>
-                                                                <div class="td-text2">Chapter 7 backrupty discharged</div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-6 top">
+                                            <table class="table-bn3 data_3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">Court
+                                                            <br>
+                                                            <div class="td-text2">U.S. Bankruptcy Court</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="row top">
-                                            <div class="col-md-6 nopadding">
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <table class="table table-bn3 data_3">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="2">Reported By
-                                                                    <br>
-                                                                    <div class="bold-text2">TU</div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="2">Ref #
-                                                                    <br>
-                                                                    <div class="bold-text2">1922041</div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <table class="table table-bn3 data_3">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="2">Status
-                                                                    <br>
-                                                                    <div class="bold-text2">Discharged</div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="2">Amount
-                                                                    <br>
-                                                                    <div class="bold-text2">$5000</div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 nopadding">
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <table class="table table-bn3 data_3">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="2">Consumer
-                                                                    <br>
-                                                                    <div class="bold-text2">PC</div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="2">File Date
-                                                                    <br>
-                                                                    <div class="bold-text2">02/25/2016</div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                                    <table class="table table-bn3 data_3">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="2">Status Date
-                                                                    <br>
-                                                                    <div class="bold-text2">05/13/2016</div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td colspan="2">Plaintiff
-                                                                    <br>
-                                                                    <div class="bold-text2">ADVANCED CHECK CASHING LLC</div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <table class="table table-bn3 data_3">
-                                                    <tbody>
-                                                        <tr></tr>
-                                                        <tr>
-                                                            <td class="left55">Remarks<br>
-                                                                <div class="bold-text2">Dispute resolved reported by grantor</div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                        <div class="col-md-6 top">
+                                            <table class="table-bn3 data_3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">Action Type
+                                                            <br>
+                                                            <div class="td-text2">Chapter 7 backrupty discharged</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    <div class="public-found-container active">
-                                        <div class="row">
-                                            <div class="col-xs-12">
+                                    <div class="row top">
+                                        <div class="col-md-6 nopadding">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <table class="table table-bn3 data_3">
                                                     <tbody>
                                                         <tr>
+                                                            <td colspan="2">Reported By
+                                                                <br>
+                                                                <div class="bold-text2">TU</div>
+                                                            </td>
+                                                        </tr>
                                                         <tr>
-                                                            <td class="left55">
-                                                                <div class="light-text2">No Public Records found</div>
+                                                            <td colspan="2">Ref #
+                                                                <br>
+                                                                <div class="bold-text2">1922041</div>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <table class="table table-bn3 data_3">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2">Status
+                                                                <br>
+                                                                <div class="bold-text2">Discharged</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">Amount
+                                                                <br>
+                                                                <div class="bold-text2">$5000</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 nopadding">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <table class="table table-bn3 data_3">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2">Consumer
+                                                                <br>
+                                                                <div class="bold-text2">PC</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">File Date
+                                                                <br>
+                                                                <div class="bold-text2">02/25/2016</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <table class="table table-bn3 data_3">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2">Status Date
+                                                                <br>
+                                                                <div class="bold-text2">05/13/2016</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">Plaintiff
+                                                                <br>
+                                                                <div class="bold-text2">ADVANCED CHECK CASHING LLC</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <table class="table table-bn3 data_3">
+                                                <tbody>
+                                                    <tr></tr>
+                                                    <tr>
+                                                        <td class="left55">Remarks<br>
+                                                            <div class="bold-text2">Dispute resolved reported by grantor</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -2191,10 +2178,6 @@
                                 <p>Secure</p>
                             </div>
                             <div class="eviction-payment active">
-
-                                <!-- DELETE IT -->
-                                <a href="#" class="report-error-button" style="position: absolute; left: 0; top: 0;">report-error</a>
-                                <!-- DELETE IT -->
 
                                 <h2>Oops! This Eviction Report Has Not Been Ordered Yet.</h2>
                                 <p>Don't worry. It's still not too late to get it.</p>
