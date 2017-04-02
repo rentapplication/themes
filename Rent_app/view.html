@@ -112,7 +112,7 @@
         <!-- Begin content -->
         <div class="view">
             <div class="block-shadow">
-                <div class="container">
+                <div class="container" style="overflow: visible;">
                     <div class="arch-error">
                         <p>Applicant could not be archived</p>
                         <a href="#" class="close-it"></a>
@@ -182,10 +182,51 @@
                         </div>
                         <div class="about">
                             <h2>Jessy Nikolaus</h2>
-                            <a href="#" class="download">
-                                Download
-                                <div class="arrow"></div>
-                            </a>
+                            <div class="download-container">
+                                <a href="#" class="download">
+                                    Download
+                                    <div class="arrow"></div>
+                                </a>
+                                <form action="#" method="#">
+                                    <ul class="dropdown-download">
+                                        <li class="mask-container"></li>
+                                        <li>
+                                            <div class="li-container">
+                                                <input type="checkbox" id="checkbox-butt1" class="download-all-files check-input">
+                                                <label for="checkbox-butt1" class="download-all-files">Download All Files</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-container">
+                                                <input type="checkbox" id="checkbox-butt2" class="check-input">
+                                                <label for="checkbox-butt2">Download Application</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-container">
+                                                <input type="checkbox" id="checkbox-butt3" class="check-input">
+                                                <label for="checkbox-butt3">Download Credit Report</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-container">
+                                                <input type="checkbox" id="checkbox-butt4" class="check-input">
+                                                <label for="checkbox-butt4">Download Criminal Report</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-container">
+                                                <input type="checkbox" id="checkbox-butt5" class="check-input">
+                                                <label for="checkbox-butt5">Download Eviction Report</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- <a href="#" class="button">Download</a> -->
+                                            <input type="submit" class="button submit-button-download" value="Download">
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
                             <div class="cf"></div>
                             <p>236-358-2470</p>
                             <p>jessy_nikolaus@yahoo.com</p>
