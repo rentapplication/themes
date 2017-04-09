@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox3.css">
     <link rel="stylesheet" type="text/css" href="components/fancybox/jquery.fancybox4.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/editable04.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 </head>
 
@@ -2225,90 +2226,11 @@
                 </div>
                 <div class="frame-block">
                     <!-- <iframe src="Email_RentApp/mail.html" width="96%" height="100%" scrolling="auto" frameborder=0></iframe> -->
-                    <div class="eviction-information">
+                    <div class="eviction-information report-expired">
                         <div class="wrapper-main">
-                            <div class="secure">
-                                <img src="images/secure.svg" width="18" alt="">
-                                <p>Secure</p>
-                            </div>
-                            <div class="eviction-payment active">
-
-                                <!-- DELETE IT -->
-                                <a href="#" class="report-error-button" style="position: absolute; left: 0; top: 0;">report-error</a>
-                                <!-- DELETE IT -->
-
-                                <h2>Oops! This Eviction Report Has Not Been Ordered Yet.</h2>
-                                <p>Don't worry. It's still not too late to get it.</p>
-                                <div class="line"></div>
-                                <h2><span>Purchase Eviction Report</span></h2>
-                                <p class="rep">The report will take 3-4 minutes to run. We'll notify you by email as soon as it's ready or you can just refresh this page to view it in this tab.</p>
-                                <form action="" method="" name="form" onsubmit="return false;">
-                                    <div class="fullwidth">
-                                        <!-- <div class="input-container container-button">
-                                            <label for="eviction1-1" class="use-normal-card">
-                                                <img src="images/visa.jpg" alt="">
-                                                <p>ending in <span>8293</span></p>
-                                            </label>
-                                            <input type="radio" name="group-e1" id="eviction1-1">
-                                        </div>
-                                        <div class="input-container container-button">
-                                            <label for="eviction1-2" class="use-dif-card">
-                                                <p>Use a different card</p>
-                                            </label>
-                                            <input type="radio" name="group-e1" id="eviction1-2">
-                                        </div> -->
-                                        <!-- <div class="another-card"> -->
-                                            <h4>Full Name <span>*</span></h4>
-                                            <input type="text" name="" placeholder="Name Name" class="name">
-                                            <h4>Card Number <span>*</span></h4>
-                                            <input type="text" id="card_number" placeholder="1234 5678 9012 3456" name="cardcode">
-                                            <div class="row2">
-                                                <div class="half fll">
-                                                    <h4>Expiration Date <span>*</span></h4>
-                                                    <input type="text" class="date" placeholder="06/17" name="cardDate">
-                                                </div>
-                                                <div class="half flr">
-                                                    <h4>CVC <span>*</span></h4>
-                                                    <input type="text" class="cvc" placeholder="456" name="cardCvc">
-                                                </div>
-                                            </div>
-                                            <div class="cf"></div>
-                                            <div class="check">
-                                                <input type="checkbox" id="check2">
-                                                <label for="check2">Save this card for future use</label>
-                                            </div>
-                                            <div class="cf"></div>
-                                        <!-- </div> -->
-                                        <div class="row2 fee">
-                                            <div class="half fll">
-                                                <p>Total Fee</p>
-                                            </div>
-                                            <div class="half flr">
-                                                <p>$10.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="cf"></div>
-                                        <input type="submit" class="next eviction-success" value="Submit Payment">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="eviction-processed">
-                                <img src="images/truck-illustration.svg" width="157" alt="">
-                                <h2>Your Eviction Report has been ordered and is being processed</h2>
-                                <p>Criminal Reports may sometimes require manual review by an investigator. During business hours processing takes less than 10 minutes. On weekends or evenings, this report may be delayed while waiting for an investigator review.</p>
-                            </div>
-                            <div class="eviction-error">
-                                <img src="../images/ev-error.svg" alt="">
-                                <h2>There was an error while processing this report</h2>
-                                <h3>To help us get this fixed for you asap, please email us at <a href="#">support@rentapplication.net</a> with the following information:</h3>
-                                <ol>
-                                    <li>Email Address used for logging in: <span>johnsmith@email.com</span></li>
-                                    <li>Application ID: <span>Zn2vUR</span></li>
-                                    <li>Report Type: <span>Eviction</span></li>
-                                    <li>Approximate time application was completed or report was ordered</li>
-                                    <li>Applicant Name: <span>Jessy Nikolaus</span></li>
-                                </ol>
-                            </div>
+                            <img src="images/hourglass.svg" width="47">
+                            <h2>This Report is Expired </h2>
+                            <p>Unfortunately, this report has expired and is no longer available. Experian reports are available to view for 30 days from the time of purchase. If you'd like to upgrade your account to use reports that do not expire, please contact <a href="#">support@rentapplication.net.</a></p>
                         </div>
                     </div>
                 </div>
@@ -2563,57 +2485,6 @@
     <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
     <script src="components/scrolltab/scrolltab.js" type="text/javascript"></script>
     <script src="assets/js/common.js" type="text/javascript"></script>
-    <script src="components/cardvalidator/jquery.creditCardValidator.js"></script>
-    <script>
-    $(function() {
-        $('#card_number').validateCreditCard(function(result) {
-            if (result.card_type == null) {
-                $('#card_number').removeClass();
-            } else {
-                $('#card_number').addClass(result.card_type.name);
-            }
-
-            if (!result.valid) {
-                $('#card_number').removeClass("valid");
-            } else {
-                $('#card_number').addClass("valid");
-            }
-
-        });
-    });
-    </script>
-    <script>
-    var cc = form.cardcode;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cc.addEventListener('input', formatCardCode, false);
-    }
-
-    function formatCardCode() {
-        var cardCode = this.value.replace(/[^\d]/g, '').substring(0, 16);
-        cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
-        this.value = cardCode;
-    }
-    var cd = form.cardDate;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cd.addEventListener('input', formatCardDate, false);
-    }
-
-    function formatCardDate() {
-        var cardDate = this.value.replace(/[^\d]/g, '').substring(0, 4);
-        cardDate = cardDate != '' ? cardDate.match(/.{1,2}/g).join('/') : '';
-        this.value = cardDate;
-    }
-    var cv = form.cardCvc;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cv.addEventListener('input', formatCardCvc, false);
-    }
-
-    function formatCardCvc() {
-        var cardCvc = this.value.replace(/[^\d]/g, '').substring(0, 4);
-        cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
-        this.value = cardCvc;
-    }
-    </script>
     <script type="text/javascript">
     var arrayTags = [""];
     var index = 0;
