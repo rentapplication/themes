@@ -279,7 +279,7 @@
                     <div class="container-block">
                         <h4>Share Your Form Link</h4>
                         <p>You can access your form using your form link. Click to copy your form link below and start sharing it with your applicants!</p>
-                        <div class="input-container">
+                        <div class="input-container btn" data-clipboard-target="#div1">
                             <span id="div1">http://www.rentapplication.net/form1</span>
                         </div>
                         <h5 class="h5-copy">Copied!</h5>
@@ -304,7 +304,13 @@
     <script src="components/fancybox/jquery.fancybox.pack2.js" type="text/javascript"></script>
     <script src="components/forms/forms.js" type="text/javascript"></script>
     <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="components/clipboard/clipboard.min.js" type="text/javascript"></script>
     <script src="assets/js/common.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            new Clipboard('.btn');
+        });
+    </script>
 
 
 </body>
