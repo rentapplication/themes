@@ -60,49 +60,14 @@
                     <h4>johnsmith@email.com</h4>
                 </div>
                 <ul class="menu fullscreen">
-                    <!-- <li>
-                        <a href="#">
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>Payments</p>
-                        </a>
-                    </li> -->
                     <li>
                         <a href="#">
                             <p>Help</p>
                         </a>
                     </li>
-                    <!-- <li class="profile">
-                        <a href="#">
-                            <img src="images/profile.svg" width="27" class="profile-image" alt="">
-                            <p class="profile-name">johnsmith@email.com</p>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="index.html">Landlord Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="#">Switch to Applicant Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="settings.html">Settings</a>
-                            </li>
-                            <li>
-                                <a href="#">Logout</a>
-                            </li>
-                        </ul>
-                    </li> -->
                 </ul>
                 <ul class="menu dropmobile">
-                    <!-- <li><a href="index.html">Landlord Dashboard</a></li>
-                    <li><a href="#">Switch to Applicant Dashboard</a></li>
-                    <li><a href="#">My Payments</a></li> -->
                     <li><a href="#">Help</a></li>
-                    <!-- <li><a href="settings.html">Settings</a></li>
-                    <li><a href="#">Logout</a></li> -->
                 </ul>
             </div>
         </nav>
@@ -128,7 +93,7 @@
                             <p>2</p>
                         </div>
                     </div>
-                    <h3>Create Account</h3>
+                    <h3>Account</h3>
                 </li>
                 <li class="line line-step-3"></li>
                 <li class="form-step-3">
@@ -215,22 +180,6 @@
                             <div class="cf"></div>
                         </div>
                         <div class="left-side">
-                            <!-- <div class="info">
-                                <div class="head">
-                                    <div class="image">
-                                        <img src="images/paper-plane.png" alt="">
-                                    </div>
-                                    <h2>Application Information</h2>
-                                </div>
-                                <div class="inputs">
-                                    <h4>Email Address <span>*</span></h4>
-                                    <input type="text">
-                                    <h4>Property Address (that you are applying to) <span>*</span></h4>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cf"></div>
-                            <div class="line"></div> -->
                             <div class="info">
                                 <div class="head required">
                                     <div class="image">
@@ -711,10 +660,6 @@
                             </div>
                             <div class="cf"></div>
                             <div class="info">
-                                <!-- <div class="inputs"> -->
-                                    <!-- <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application"> -->
-                                    <!-- <a href="#" class="apply-next1 next">Go to create account</a> -->
-                                <!-- </div> -->
                             </div>
                         </div>
                         <div class="cf"></div>
@@ -722,7 +667,30 @@
                 </form>
             </div>
             <div class="container apply-container">
-                <div class="fullwidth step1">
+                
+                <!-- DELETE IT -->
+                <div class="fullwidth step1 list">
+                    <a href="#" class="open-create-acc">Open Create Account (oldest)</a>
+                    <br>
+                    <br>
+                    <a href="#" class="open-apply-new-set-pass">Open Apply New Set Pass</a>
+                    <br>
+                    <br>
+                    <a href="#" class="apply-exist-input">Open Apply-Existing-InputPass</a>
+                    <br>
+                    <br>
+                    <a href="#" class="apply-ex-sendcode">Open Apply-Existing-SendCode</a>
+                    <br>
+                    <br>
+                    <a href="#" class="apply-input-code">Open Apply-Existing-InputCode</a>
+                    <br>
+                    <br>
+                    <a href="#" class="apply-exist-setpass">Open Apply-Existing-SetPass</a>
+                </div>
+                <!-- DELETE IT -->
+
+                <!-- BEGIN Create-Account-Apply -->
+                <div class="fullwidth step1 old-ver">
                     <h2>Create Account</h2>
                     <h3>(optional)</h3>
                     <p>You have the option of creating an account. Creating an account allows you to:</p>
@@ -754,6 +722,117 @@
                         </div>
                         <a href="#" class="link already-apply-login">Already have an account? Log in</a>
                 </div>
+                <!-- END Create-Account-Apply -->
+                <!-- BEGIN Apply-New-SetPass -->
+                <div class="apply-new fullwidth step1 app-new-setpass">
+                    <h2>Would you like to set a password?</h2>
+                    <h3>(optional)</h3>
+                    <p>We’ll create an account for you with your email <span>johnsmith@email.com</span>. We recommend you set a password so you can:</p>
+                    <ul class="list">
+                        <li>Access or view your application later</li>
+                        <li>Modify your application</li>
+                        <li>Add additional attachments</li>
+                    </ul>
+                    <form action="#" method="#" class="rf">
+                        <div class="field">
+                            <h4>Password</h4>
+                            <input type='password' name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                            <ul class='apply-field__rules'>
+                                <li class="val1">One lowercase character</li>
+                                <li class="val2">One uppercase character</li>
+                                <li class="val3">One number</li>
+                                <li class="val4">8 characters minimum</li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Set Password</a>
+                            <a href="#" class="skip apply-next-step1">Not Now</a>
+                            <div class="cf"></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END Apply-New-SetPass -->
+                <!-- BEGIN Apply-Existing-InputPass -->
+                <div class="apply-new fullwidth step1 input-pass">
+                    <h2>Welcome back, John!</h2>
+                    <p>Your email address, <span>johnsmith@email.com</span>, was used to apply to <span>1029 Cherry Lane</span> in <span>April 2016</span>. Do you remember your password?</p>
+                    <ul class="list">
+                        <li>Access or view your application later</li>
+                        <li>Modify the application</li>
+                        <li>Add additional attachments</li>
+                    </ul>
+                    <form action="#" method="#" class="rf">
+                        <div class="field">
+                            <h4>Password</h4>
+                            <input type='password' name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                            <ul class='apply-field__rules'>
+                                <li class="val1">One lowercase character</li>
+                                <li class="val2">One uppercase character</li>
+                                <li class="val3">One number</li>
+                                <li class="val4">8 characters minimum</li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Log In</a>
+                            <a href="#" class="skip apply-next-step1">I don’t have a password</a>
+                            <div class="cf"></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END Apply-Existing-InputPass -->
+                <!-- BEGIN Apply-Existing-SendCode -->
+                <div class="apply-new fullwidth step1 send-code">
+                    <h2>No Password? We can send you a code.</h2>
+                    <p>We can send you a temporary identification code to <span>johnsmith@email.com</span> to verify your account.</p>
+                    <a href="#" class="btn_next create apply-next-step1">Send Code</a>
+                    <a href="#" class="link apply-exist-input">Go back, I remember my password</a>
+                </div>
+                <!-- END Apply-Existing-SendCode -->
+                <!-- BEGIN Apply-Existing-InputCode -->
+                <div class="apply-new fullwidth step1 input-code">
+                    <h2>We’ve sent you an identification code.</h2>
+                    <p>We’ve sent a temporary identification code to <span>johnsmith@email.com</span> to verify your account. Check your email and enter the code below.</p>
+                    <form action="#" method="#" onsubmit="return false;">
+                        <div class="input-container">
+                            <h4>Temporary Identification Code</h4>
+                            <input type="text">
+                        </div>
+                        <input type="submit" value="Next" class="btn_next create ">
+                    </form>
+                    <a href="#" class="link">Resend Identification Code</a>
+                </div>
+                <!-- END Apply-Existing-InputCode -->
+
+                <!-- BEGIN Apply-Existing-SetPass -->
+                <div class="apply-new fullwidth step1 app-new-exsetpass">
+                    <h2>Would you like to set a password?</h2>
+                    <h3>(optional)</h3>
+                    <p>Your application will be submitted using your email, <span>johnsmith@email.com</span>. We recommend you set a password so you can:</p>
+                    <ul class="list">
+                        <li>Access or view your application later</li>
+                        <li>Modify your application</li>
+                        <li>Add additional attachments</li>
+                    </ul>
+                    <form action="#" method="#" class="rf">
+                        <div class="field">
+                            <h4>Password</h4>
+                            <input type='password' name='password' pattern='^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{9,}$' required>
+                            <ul class='apply-field__rules'>
+                                <li class="val1">One lowercase character</li>
+                                <li class="val2">One uppercase character</li>
+                                <li class="val3">One number</li>
+                                <li class="val4">8 characters minimum</li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="create btn_next apply-next-step1 disabled check-disabled">Set Password</a>
+                            <a href="#" class="skip apply-next-step1">Not Now</a>
+                            <div class="cf"></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END Apply-Existing-SetPass -->
+                
                 <div class="step2 step2active apply-login">
                     <h2>Log In</h2>
                     <div class="max-width">

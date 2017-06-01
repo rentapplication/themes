@@ -111,45 +111,6 @@
             <div class="sticky-anchor"></div>
             <div class="sticky-content"></div>
         </div>
-        <!-- <div class="row top">
-            <ul>
-                <li class="form-step-1 active">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>1</p>
-                        </div>
-                    </div>
-                    <h3>Application</h3>
-                </li>
-                <li class="line line-step-2"></li>
-                <li class="form-step-2">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>2</p>
-                        </div>
-                    </div>
-                    <h3>Create Account</h3>
-                </li>
-                <li class="line line-step-3"></li>
-                <li class="form-step-3">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>3</p>
-                        </div>
-                    </div>
-                    <h3>Verify</h3>
-                </li>
-                <li class="line line-step-4"></li>
-                <li class="form-step-4">
-                    <div class="circle-block">
-                        <div class="circle">
-                            <p>4</p>
-                        </div>
-                    </div>
-                    <h3>Payment</h3>
-                </li>
-            </ul>
-        </div> -->
         <div class="wrapper">
             <div class="step2-error">
                 <p>Please check to make sure the information you have entered is correct. If you are unable to proceed, please contact support@rentapplication.net.</p>
@@ -162,19 +123,6 @@
             <div class="application active">
                 <form action="" method="" onsubmit="return false;">
                     <div class="app-display">
-                        <!-- <div class="right-side">
-
-                            <a href="#" class="open-separate" style="position: absolute; left: 0; top: 0;">Open separate mess</a>
-
-                            <img src="images/wikipedia.png" alt="">
-                            <p>John Smith</p>
-                            <p>217-578-2819</p>
-                            <p>johnsmith@email.com</p>
-                            <div class="line"></div>
-                            <p class="left">Application Fee</p>
-                            <p class="right">$10.00</p>
-                            <div class="cf"></div>
-                        </div> -->
                         <div class="right-side">
 
                             <!-- DELETE IT -->
@@ -647,10 +595,6 @@
                             </div>
                             <div class="cf"></div>
                             <div class="info">
-                                <!-- <div class="inputs"> -->
-                                    <!-- <input type="submit" class="next apply-next1" onclick="function1() return false;" value="Submit Application"> -->
-                                    <!-- <a href="#" class="apply-next1 next">Go to create account</a> -->
-                                <!-- </div> -->
                             </div>
                         </div>
                         <div class="cf"></div>
@@ -697,171 +641,6 @@
     <script src="components/forms/jquery.validate.min.js" type="text/javascript"></script>
     <script src="components/cardvalidator/jquery.creditCardValidator.js"></script>
     <script src="assets/js/common.js" type="text/javascript"></script>
-    <!-- <script>
-    $(function() {
-        $('.rf').each(function() {
-            var form = $(this),
-                btn = form.find('.btn_next');
-            form.find('.rfield').addClass('empty_field');
-
-            function checkInput() {
-                form.find('.rfield').each(function() {
-                    if ($(this).val() != '') {
-                        $(this).removeClass('empty_field');
-                    } else {
-                        $(this).addClass('empty_field');
-                    }
-                });
-            }
-
-            function lightEmpty() {
-                form.find('.empty_field').css({
-                    'border-color': '#d8512d'
-                });
-
-                setTimeout(function() {
-                    form.find('.empty_field').removeAttr('style');
-                }, 400);
-            }
-
-            setInterval(function() {
-                checkInput();
-                var sizeEmpty = form.find('.empty_field').size();
-                if (sizeEmpty > 0) {
-                    if (btn.hasClass('disabled')) {
-                        return false
-                    } else {
-                        btn.addClass('disabled')
-                    }
-                } else {
-                    btn.removeClass('disabled')
-                }
-            }, 500);
-
-
-            btn.click(function() {
-                if ($(this).hasClass('disabled')) {
-                    lightEmpty();
-                    return false
-                } else {}
-            });
-        });
-    });
-    </script> -->
-    <!-- <script>
-    $(function() {
-        $('#card_number').validateCreditCard(function(result) {
-            if (result.card_type == null) {
-                $('#card_number').removeClass();
-            } else {
-                $('#card_number').addClass(result.card_type.name);
-            }
-
-            if (!result.valid) {
-                $('#card_number').removeClass("valid");
-            } else {
-                $('#card_number').addClass("valid");
-            }
-
-        });
-    });
-    </script> -->
-    <!-- <script>
-    var cc = form.cardcode;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cc.addEventListener('input', formatCardCode, false);
-    }
-
-    function formatCardCode() {
-        var cardCode = this.value.replace(/[^\d]/g, '').substring(0, 16);
-        cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
-        this.value = cardCode;
-    }
-    var cd = form.cardDate;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cd.addEventListener('input', formatCardDate, false);
-    }
-
-    function formatCardDate() {
-        var cardDate = this.value.replace(/[^\d]/g, '').substring(0, 4);
-        cardDate = cardDate != '' ? cardDate.match(/.{1,2}/g).join('/') : '';
-        this.value = cardDate;
-    }
-    var cv = form.cardCvc;
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
-        cv.addEventListener('input', formatCardCvc, false);
-    }
-
-    function formatCardCvc() {
-        var cardCvc = this.value.replace(/[^\d]/g, '').substring(0, 4);
-        cardCvc = cardCvc != '' ? cardCvc.match(/.{1,4}/g).join('') : '';
-        this.value = cardCvc;
-    }
-    </script> -->
-    <!-- <script>
-        $(document).ready(function(){
-            $('#check2-styler').click(function(){
-                if($(this).hasClass('checked') == false){
-                    $('.apply-next-step2').addClass("disabled");
-                } else {
-                    $('.apply-next-step2').removeClass("disabled");     
-                }
-            });
-        });
-    </script> -->
-    <!-- <script>
-        $(document).ready(function(){
-            $('.container-button .jq-radio').click(function(){
-                if($(this).hasClass('checked') == false){
-                    $(this).parent().parent().find(".buttons-block .btn_next").addClass("disabled");
-                } else {
-                    $(this).parent().parent().find(".buttons-block .btn_next").removeClass("disabled");  
-                }
-            });
-        });
-    </script> -->
-    <!-- <script>
-        $(':password').on('input', onPasswordInput);
-        // Callbacks
-        function onPasswordInput(e) {
-          var $input = $(this),
-            value = this.value,
-            $rulesItems = $input.closest('.field').find('.apply-field__rules').find('li'),
-            rules = {
-              "one lowercase character": /[a-z]/,
-              "one uppercase character": /[A-Z]/,
-              "one number": /[0-9]/,
-              "8 characters minimum": /.{8,}/
-            };
-
-          // mark the input field if it has any value
-          this.classList.toggle('hasValue', this.value);
-
-          // itterate all the rules and validate them
-          $rulesItems.each((i, elm) => {
-            var valid,
-              ruleName = elm.innerText.toLowerCase();
-
-            console.log(rules, ruleName);
-            if (rules[ruleName]) {
-              valid = new RegExp(rules[ruleName]).test(value);
-              elm.classList.toggle('active', valid);
-            }
-          });
-          var activeItemCount = 0;
-            $.each($rulesItems, function() {
-                if ($(this).hasClass('active')){
-                    activeItemCount++;
-                }
-            });
-          if (activeItemCount == 4) {
-             $("a.apply-next-step1").removeClass('check-disabled');
-          }
-          else {
-            $("a.apply-next-step1").addClass('check-disabled');
-          }
-        }
-    </script> -->
     <script>
         $(document).ready(function() {
              $('#lkl1').trigger('click');

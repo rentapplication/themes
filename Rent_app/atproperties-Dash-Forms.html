@@ -41,14 +41,10 @@
         <nav>
             <div class="menu-block cf">
                 <div class="image">
-                    <!-- <img src="images/logotype.svg" width="30" alt=""> -->
                     <a href="#">
                     	<img src="images/logotype-norification.png" height="34" alt="">
                     </a>
                 </div>
-                <!-- <div class="h1-head">
-                    <a href="index.html">Rent Application</a>
-                </div> -->
                 <div class="title">
                     <h2>Dash Form</h2>
                 </div>
@@ -111,8 +107,6 @@
                 </ul>
             </div>
         </nav>
-        <!-- End navigation -->
-        <!-- Begin wrapper-main -->
         <div class="wrapper-main main-page">
             <div id="sticky" class="sticky-element">
                 <div class="sticky-anchor"></div>
@@ -127,7 +121,7 @@
                             </li>
                         </ul>
                         <div class="landrow">
-                            <p>Landlord Dashboard</p>
+                            <p>Dashboard</p>
                         </div>
                     </div>
                 </div>
@@ -135,9 +129,8 @@
         </div>
         <div class="content cont-dash form-content active">
         	<div class="pagin-block">
-        		<a href="newform1.html" class="button">New Form</a>
+        		<a href="atproperties-Create-Form.html" class="button">New Form</a>
         	    <div class="pagination-block">
-        	        <!-- <div id="page"></div> -->
         	        <div id="pagination"></div>
         	    </div>
         	    <div class="quantity">
@@ -147,9 +140,8 @@
         	</div>
             <div class="content-head">
                 <h2 class="property-h2">Property</h2>
-                <h2 class="broker-h2">Broker</h2>
-                <h2 class="landlord-h2">Landlord</h2>
-                <h2 class="reports-h2">Reports<br>Included
+                <h2 class="broker-h2">Notification Recipient</h2>
+                <h2 class="reports-h2">Reports Included
                 	<div class="tooltip-reports">
                 	    <div class="plashka">
                 	        <p>Reports included with application</p>
@@ -162,44 +154,25 @@
                 	<input type="submit" value="">
                 </form>
             </div>
-            <!-- <div class="content-body">
-                <div class="name">
-                    <h3>
-                        <a href="preview.html" class="form-link">6673 Morse Street</a>            
-                    </h3>
-                    <p>www.rentapplication.net/morsestreet</p>
-                </div>
-                <div class="services">
-                    <ul>
-                        <li>
-                            <p>Credit</p>
-                        </li>
-                        <li>
-                            <p>Background</p>
-                        </li>
-                        <li>
-                            <p>Eviction</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <a href="#popup1" class=" fancybox-modal send">Send</a>
-                    <a href="#popup5-delete" class="remove fancybox-modal2"></a>
-                </div>
-            </div> -->
             <div class="content-body-table">
             	<table>
             		<tr>
             			<td class="property-td">
-            				<a href="#">1201 North Halsted #201</a>
+            				<a href="atproperties-Edit-Form.html">1201 North Halsted #201</a>
             				<p>www.rentapplication.net/1201NorthHalsted201</p>
             			</td>
             			<td class="broker-td">
-            				<h3>Jerry Montgomery</h3>
-            				<p>jerrymontgomery@atproperties.com</p>
-            			</td>
-            			<td class="landlord-td">
+                            <p><span>Broker</span></p>
+            				<h3><span>Jerry Montgomery</span>
+                                <div class="tooltip-reports">
+                                    <div class="plashka">
+                                        <p>jerrymontgomery@atproperties.com</p>
+                                    </div>
+                                </div>
+                            </h3>
+                            <p><span class="margin-top">Landlord</span></p>
             				<p>landlord_name1_email@email.com</p>
+                            <p>landlord_name2_email@email.com</p>
             			</td>
             			<td class="reports-td">
             				<div class="services">
@@ -217,183 +190,156 @@
             				</div>
             			</td>
             			<td class="created-td">
-            				<p>11/19/2016</p>
+            				<p>11/19/16</p>
             			</td>
             			<td class="search-td">
-            				<a href="#" class="button-edit">Edit</a>
+                            <a href="#popup1-new" class="fancybox-modal2 button-edit send-button">Send</a>
+            				<a href="atproperties-Edit-Form.html" class="button-edit">Edit</a>
             				<a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
             			</td>
             		</tr>
             	</table>
             </div>
             <div class="content-body-table">
-            	<table>
-            		<tr>
-            			<td class="property-td">
-            				<a href="#">1201 North Halsted #201</a>
-            				<p>www.rentapplication.net/1201NorthHalsted201</p>
-            			</td>
-            			<td class="broker-td">
-            				<h3>Jerry Montgomery</h3>
-            				<p>jerrymontgomery@atproperties.com</p>
-            			</td>
-            			<td class="landlord-td">
-            				<p>landlord_name1_email@email.com</p>
-            				<p>landlord_name1_email@email.com</p>
-            				<p>landlord_name1_email@email.com</p>
-            			</td>
-            			<td class="reports-td">
-            				<div class="services">
-            				    <ul>
-            				        <li>
-            				            <p>Credit</p>
-            				        </li>
-            				        <li class="disabled">
-            				            <p>Background</p>
-            				        </li>
-            				        <li class="disabled">
-            				            <p>Eviction</p>
-            				        </li>
-            				    </ul>
-            				</div>
-            			</td>
-            			<td class="created-td">
-            				<p>11/19/2016</p>
-            			</td>
-            			<td class="search-td">
-            				<a href="#" class="button-edit">Edit</a>
-            				<a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
-            			</td>
-            		</tr>
-            	</table>
+                <table>
+                    <tr>
+                        <td class="property-td">
+                            <a href="atproperties-Edit-Form.html">1201 North Halsted #201</a>
+                            <p>www.rentapplication.net/1201NorthHalsted201</p>
+                        </td>
+                        <td class="broker-td">
+                            <p><span>Broker</span></p>
+                            <h3><span>Jerry Montgomery</span>
+                                <div class="tooltip-reports">
+                                    <div class="plashka">
+                                        <p>jerrymontgomery@atproperties.com</p>
+                                    </div>
+                                </div>
+                            </h3>
+                            <p><span class="margin-top">Landlord</span></p>
+                            <p>landlord_name1_email@email.com</p>
+                            <p>landlord_name2_email@email.com</p>
+                        </td>
+                        <td class="reports-td">
+                            <div class="services">
+                                <ul>
+                                    <li>
+                                        <p>Credit</p>
+                                    </li>
+                                    <li>
+                                        <p>Background</p>
+                                    </li>
+                                    <li>
+                                        <p>Eviction</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="created-td">
+                            <p>11/19/16</p>
+                        </td>
+                        <td class="search-td">
+                            <a href="#popup1-new" class="fancybox-modal2 button-edit send-button">Send</a>
+                            <a href="atproperties-Edit-Form.html" class="button-edit">Edit</a>
+                            <a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="content-body-table">
-            	<table>
-            		<tr>
-            			<td class="property-td">
-            				<a href="#">1201 North Halsted #201</a>
-            				<p>www.rentapplication.net/1201NorthHalsted201</p>
-            			</td>
-            			<td class="broker-td">
-            				<h3>Jerry Montgomery</h3>
-            				<p>jerrymontgomery@atproperties.com</p>
-            				<p>jerrymontgomery@atproperties.com</p>
-            			</td>
-            			<td class="landlord-td">
-            				<p>landlord_name1_email@email.com</p>
-            				<p>landlord_name1_email@email.com</p>
-            			</td>
-            			<td class="reports-td">
-            				<div class="services">
-            				    <ul>
-            				        <li>
-            				            <p>Credit</p>
-            				        </li>
-            				        <li>
-            				            <p>Background</p>
-            				        </li>
-            				        <li>
-            				            <p>Eviction</p>
-            				        </li>
-            				    </ul>
-            				</div>
-            			</td>
-            			<td class="created-td">
-            				<p>11/19/2016</p>
-            			</td>
-            			<td class="search-td">
-            				<a href="#" class="button-edit">Edit</a>
-            				<a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
-            			</td>
-            		</tr>
-            	</table>
+                <table>
+                    <tr>
+                        <td class="property-td">
+                            <a href="atproperties-Edit-Form.html">1201 North Halsted #201</a>
+                            <p>www.rentapplication.net/1201NorthHalsted201</p>
+                        </td>
+                        <td class="broker-td">
+                            <p><span>Broker</span></p>
+                            <h3><span>Jerry Montgomery</span>
+                                <div class="tooltip-reports">
+                                    <div class="plashka">
+                                        <p>jerrymontgomery@atproperties.com</p>
+                                    </div>
+                                </div>
+                            </h3>
+                            <p><span class="margin-top">Landlord</span></p>
+                            <p>landlord_name1_email@email.com</p>
+                            <p>landlord_name2_email@email.com</p>
+                        </td>
+                        <td class="reports-td">
+                            <div class="services">
+                                <ul>
+                                    <li>
+                                        <p>Credit</p>
+                                    </li>
+                                    <li>
+                                        <p>Background</p>
+                                    </li>
+                                    <li>
+                                        <p>Eviction</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="created-td">
+                            <p>11/19/16</p>
+                        </td>
+                        <td class="search-td">
+                            <a href="#popup1-new" class="fancybox-modal2 button-edit send-button">Send</a>
+                            <a href="atproperties-Edit-Form.html" class="button-edit">Edit</a>
+                            <a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="content-body-table">
-            	<table>
-            		<tr>
-            			<td class="property-td">
-            				<a href="#">1201 North Halsted #201</a>
-            				<p>www.rentapplication.net/1201NorthHalsted201</p>
-            			</td>
-            			<td class="broker-td">
-            				<h3>Jerry Montgomery</h3>
-            				<p>jerrymontgomery@atproperties.com</p>
-            				<p>jerrymontgomery@atproperties.com</p>
-            			</td>
-            			<td class="landlord-td">
-            				<p>landlord_name1_email@email.com</p>
-            				<p>landlord_name1_email@email.com</p>
-            				<p>landlord_name1_email@email.com</p>
-            			</td>
-            			<td class="reports-td">
-            				<div class="services">
-            				    <ul>
-            				        <li>
-            				            <p>Credit</p>
-            				        </li>
-            				        <li>
-            				            <p>Background</p>
-            				        </li>
-            				        <li>
-            				            <p>Eviction</p>
-            				        </li>
-            				    </ul>
-            				</div>
-            			</td>
-            			<td class="created-td">
-            				<p>11/19/2016</p>
-            			</td>
-            			<td class="search-td">
-            				<a href="#" class="button-edit">Edit</a>
-            				<a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
-            			</td>
-            		</tr>
-            	</table>
+                <table>
+                    <tr>
+                        <td class="property-td">
+                            <a href="atproperties-Edit-Form.html">1201 North Halsted #201</a>
+                            <p>www.rentapplication.net/1201NorthHalsted201</p>
+                        </td>
+                        <td class="broker-td">
+                            <p><span>Broker</span></p>
+                            <h3><span>Jerry Montgomery</span>
+                                <div class="tooltip-reports">
+                                    <div class="plashka">
+                                        <p>jerrymontgomery@atproperties.com</p>
+                                    </div>
+                                </div>
+                            </h3>
+                            <p><span class="margin-top">Landlord</span></p>
+                            <p>landlord_name1_email@email.com</p>
+                            <p>landlord_name2_email@email.com</p>
+                        </td>
+                        <td class="reports-td">
+                            <div class="services">
+                                <ul>
+                                    <li>
+                                        <p>Credit</p>
+                                    </li>
+                                    <li>
+                                        <p>Background</p>
+                                    </li>
+                                    <li>
+                                        <p>Eviction</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="created-td">
+                            <p>11/19/16</p>
+                        </td>
+                        <td class="search-td">
+                            <a href="#popup1-new" class="fancybox-modal2 button-edit send-button">Send</a>
+                            <a href="atproperties-Edit-Form.html" class="button-edit">Edit</a>
+                            <a href="#popup5-delete" class="fancybox-modal2 trash-button"></a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <!-- <div class="search-row-mobile-container">
-            <form action="#" method="#" class="search-form-mobile">
-                <input type="text" placeholder="Search...">
-                <input type="submit" value="">
-                <div class="cf"></div>
-            </form>
-            <div class="cf"></div>
-        </div>
-        <div class="button-blue">
-            <div class="container">
-                <div class="archive-buttons">
-                    <a href="#" class="archive-butt">Archive</a>
-                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
-                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
-                    <div class="cf"></div>
-                </div>
-                <div class="unarchive-buttons">
-                    <a href="#" class="unarchive-butt">Unarchive</a>
-                    <a href="#popup5-delete" class="fancybox-modal2 delete-butt">Delete</a>
-                    <a href="#popup6-share" class="fancybox-modal2 share-butt">Share...</a>
-                    <div class="cf"></div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="arch-error">
-            <p>Applicant could not be archived</p>
-            <a href="#" class="close-it"></a>
-            <div class="cf"></div>
-        </div>
-        <div class="arch-succ">
-            <p>Applicant successfully archived. Go to “Archived Applicants” to view</p>
-            <a href="#" class="close-it"></a>
-            <div class="cf"></div>
-        </div> -->
         <div class="content applicant-content-REMOVE-THIS">
-
-        <!-- REMOVE THIS BLOCK -->
-        <!-- <ul class="remove-button">
-            <li><a href="#" class="open-success-state">open-success-state</a></li>
-            <li><a href="#" class="open-error-state">open-error-state</a></li>
-        </ul> -->
-        <!-- REMOVE THIS BLOCK -->
-        
             <ul class="app-buttons">
                 <li class="active">
                     <a href="#" class="active-app applicant-button">Active Applicants</a>
@@ -407,7 +353,6 @@
                     <p>Showing <span class="quanQu">1</span> to <span class="quanTo">5</span> of <span class="quanOf">5</span></p>
                 </div>
                 <div class="pagination-block">
-                    <!-- <div id="page"></div> -->
                     <div id="pagination"></div>
                 </div>
             </div>
@@ -430,7 +375,6 @@
                             <input type="checkbox">
                         </form>
                         <div class="sent-block"></div>
-                        <!-- a block on top of the text -->
                         <div class="name">
                             <a href="#" class="link">Jake Evergreen</a>
                         </div>
@@ -441,7 +385,6 @@
                             <p>Sent to Applicant</p>
                         </div>
                         <div class="date">
-                            <!-- <p>11/19/2016</p> -->
                         </div>
                         <div class="button">
                             <a href="view.html">View</a>
@@ -462,7 +405,7 @@
                             <p>Submitted</p>
                         </div>
                         <div class="date">
-                            <p>11/19/2016</p>
+                            <p>11/19/16</p>
                         </div>
                         <div class="button">
                             <a href="view.html">View</a>
@@ -559,9 +502,7 @@
             </div>
             <div class="cf"></div>
         </div>
-        <!-- End wrapper-main -->
-
-        <div id="popup1" class="modal_div new_form popup" style="display: none;">
+        <div id="popup1-new" class="modal_div new_form popup dash-popup" style="display: none;">
             <div class="header">
                 <h2>Send Application Link</h2>
             </div>
@@ -577,13 +518,10 @@
                 <form action="send.php" method="post" id="form1">
                     <div class="flr">
                         <h4>Reports Included:</h4>
-                        <!-- <input type="checkbox" id="service1"> -->
                         <p class="check">Credit</p>
                         <div class="cf"></div>
-                        <!-- <input type="checkbox" id="service2"> -->
                         <p class="check">Background</p>
                         <div class="cf"></div>
-                        <!-- <input type="checkbox" id="service3"> -->
                         <p class="check">Eviction</p>
                     </div>
                     <div class="cf"></div>
@@ -594,7 +532,7 @@
                     <div class="cf margin"></div>
                     <div class="row tabs">
                         <div class="fll">
-                            <h5>Applicant’s Email</h5>
+                            <h5>Recipient Email</h5>
                         </div>
                         <div class="flr">
                             <input type="checkbox" id="myself1" class="mycheck">
@@ -613,7 +551,6 @@
                         <textarea name="message">Here’s a link to apply: www.rentapplication.net/axisavenue</textarea>
                     </div>
                     <div class="row">
-                        <!-- <a href="#" class="button">Send Application Link</a> -->
                         <input type="submit" class="button" value="Send Application Link">
                     </div>
                     <div class="row">
@@ -631,7 +568,7 @@
         <div id="popupError" class="popup error" style="display: none;">
             <h2>Sorry, please enter the correct data</h2>
         </div>
-        <div id="popup5-delete" class="popup popup-delete" style="display: none">
+        <div id="popup5-delete" class="popup popup-delete notf" style="display: none">
             <div class="head">
                 <h2>Delete Form</h2>
             </div>
@@ -652,7 +589,6 @@
                 <h3>Share Application</h3>
                 <p>To send this application, please enter in the email address of the recipients below:</p>
                 <form action="#" method="#" runat="server" id="form2">
-                    <!-- <textarea></textarea> -->
                     <div id="boxTags">
                         <input type="hidden" id="hiddenTags"/>
                         <ul id="ulTags" style="clear:both;">
@@ -666,163 +602,6 @@
                     <a href="#" class="cancel view-delete-button">Cancel</a>
                     <div class="cf"></div>
                 </div>
-            </div>
-        </div>
-        <div id="popup10-note" class="popup popup-notes" style="display: none">
-            <div class="head">
-                <h2>Notes</h2>
-            </div>
-            <div class="container">
-                <form action="#" method="#">
-                    <textarea placeholder="This is a note..."></textarea>
-                    <input type="submit" value="Save">
-                </form>
-            </div>
-        </div>
-        <div id="popup-time1" class="popup-time" style="display: none">
-            <img src="images/noun-688691-cc.svg" width="100" alt="">
-            <h2>Need Any Help?</h2>
-            <p>We want to create the best possible experience for you! Would you like to set up a quick phone call with one of our team members to help guide you through Rent Application?</p>
-            <h3>(If you have a specific question, you can also <a href="#">email customer support</a>)</h3>
-            <div class="buttons">
-                <a href="#" class="back-button fancy-time-close">No Thanks</a>
-                <a href="#popup-time2" class="fancybox-modal next-button">Sure!</a>
-                <div class="cf"></div>
-            </div>
-        </div>
-        <div id="popup-time2" class="popup-time popup-time2" style="display: none">
-            <h2>Schedule a Time</h2>
-            <p>Choose a time slot and we’ll call to guide you through the app or answer any questions— It should only take about 15 minutes of your time!</p>
-            <h3>(Please choose a time when you have access to a computer)</h3>
-            <div class="buttons">
-                <a href="#popup-time3" class="fancybox-modal hvbutt hide-button only-button next-button disabled">Continue</a>
-            </div>
-            <div class="line"></div>
-            <div class="hidden-container">
-                <ul class="table-container">
-                    <li class="day">
-                        <ul>
-                            <li>Monday, Jan 6th</li>
-                            <li>
-                                <label>10:00am - 12:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>12:00am - 14:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>14:00am - 16:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="day">
-                        <ul>
-                            <li>Tuesday, Jan 7th</li>
-                            <li>
-                                <label>10:00am - 12:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <div class="disabled"></div>
-                                <label class="label-disabled">12:00am - 14:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>14:00am - 16:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>16:00am - 18:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="day">
-                        <ul>
-                            <li>Wednesday, Jan 8th</li>
-                            <li>
-                                <label>10:00am - 12:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>12:00am - 14:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="day">
-                        <ul>
-                            <li>Thursday, Jan 9th</li>
-                            <li>
-                                <label>10:00am - 12:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>12:00am - 14:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>14:00am - 16:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>16:00am - 18:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="day">
-                        <ul>
-                            <li>Friday, Jan 1-th</li>
-                            <li>
-                                <label>10:00am - 12:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>12:00am - 14:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                            <li>
-                                <label>14:00am - 16:00pm CST<input type="radio" name="group1"></label>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="mobile-select">
-                <div class="date-container">
-                    <select>
-                        <option value="day1">Monday, Jan 6th</option>
-                        <option value="day2">Tuesday, Jan 7th</option>
-                        <option value="day3">Wednesday, Jan 8th</option>
-                        <option value="day4">Thursday, Jan 9th</option>
-                        <option value="day5">Monday, Jan 6th</option>
-                    </select>
-                </div>
-                <div class="time-container">
-                    <select>
-                        <option value="time1">10:00am - 12:00pm CST</option>
-                        <option value="time2">12:00am - 14:00pm CST</option>
-                        <option value="time3">14:00am - 16:00pm CST</option>
-                        <option value="time4">16:00am - 18:00pm CST</option>
-                        <option value="time5">18:00am - 20:00pm CST</option>
-                    </select>
-                </div>
-            </div>
-            <!-- <div class="buttons">
-                <a href="#popup-time3" class="fancybox-modal hvbutt hide-button only-button next-button">Continue</a>
-            </div> -->
-        </div>
-        <div id="popup-time3" class="popup-time" style="display: none">
-            <h2>Phone Number</h2>
-            <p>Enter the phone number you would like to be contacted with:</p>
-            <div class="phone-container">
-                <h4>Phone Number</h4>
-                <input type="text" name="phone" placeholder="(123) 4567-8901">
-            </div>
-            <div class="buttons">
-                <a href="#popup-time2" class="back-button fancybox-modal">Back</a>
-                <a href="#popup-time4" class="fancybox-modal next-button">Schedule</a>
-                <div class="cf"></div>
-            </div>
-        </div>
-        <div id="popup-time4" class="popup-time popup-time4" style="display: none">
-            <img src="images/noun-855461-cc.svg" width="100" alt="">
-            <h2>Call Confirmed</h2>
-            <p>Great! We’ll give you a call between:</p>
-            <h2>2:00pm - 4:00pm CST</h2>
-            <p>Please make sure that you have access to a computer during your meeting.</p>
-            <div class="buttons">
-                <!-- <a href="#popup-time2" class="back-button fancybox-modal">Back</a> -->
-                <a href="#popup-time4" class="fancy-time-close only-button next-button">Got it</a>
-                <div class="cf"></div>
             </div>
         </div>
     </div>
