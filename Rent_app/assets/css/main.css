@@ -11423,7 +11423,7 @@ body {
     color: #fff; }
 
 .global_wrapper.landing .landlord-screen {
-  background: url(../../images/landing/hero-image.jpg) center center no-repeat;
+  background: url(../../images/landing/new/landing-header.jpg) center center no-repeat;
   background-size: cover;
   padding-bottom: 140px;
   position: relative; }
@@ -11545,7 +11545,15 @@ body {
   font-size: 20px;
   line-height: 1.25;
   color: #565758;
-  font-weight: 600; }
+  font-weight: 400; }
+  .global_wrapper.landing .landing-wrapper-main .streamlined h3 {
+    font-weight: 600;
+  }
+  .global_wrapper.landing .landing-wrapper-main .new-screen h3 {
+    font-size: 25px;
+    color: #565758;
+    font-weight: 400;
+  }
 
 .global_wrapper.landing .landing-wrapper-main p {
   color: #545454;
@@ -11568,6 +11576,17 @@ body {
       max-width: 580px;
       width: 49%;
       margin-left: 1%; }
+    .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report.another-side {
+      margin-top: 40px;
+    }
+    .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report.another-side .left-side {
+      float: right;
+    }
+    .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report.another-side .right-side {
+      float: left;
+      padding-left: 90px;
+      padding-top: 80px;
+    }
     .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report .desktop,
     .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report .desktop-p {
       display: block; }
@@ -11582,7 +11601,7 @@ body {
       float: left;
       text-align: left; }
     .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report p {
-      margin-top: 25px; }
+      margin-top: 30px; }
     .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report a.start-screening {
       width: 100%;
       max-width: 300px;
@@ -11660,13 +11679,55 @@ body {
           .global_wrapper.landing .landing-wrapper-main .streamlined ul li .image-container .image img {
             max-width: 220px;
             height: auto; }
+      .global_wrapper.landing .landing-wrapper-main .new-screen {
+        background: #fff;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free {
+        background: #4571cc;
+        padding: 55px 0;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free h2 {
+        color: #fff;
+        text-align: center;
+        
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free p {
+        color: #fff;
+        text-align: left;
+        max-width: 620px;
+        margin: 20px auto;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free a.start-screening {
+        width: 100%;
+        max-width: 300px;
+        padding: 13px 0;
+        display: block;
+        border: 2px solid #3ec19d;
+        background: #3ec19d;
+        border-radius: 2px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        margin: 15px auto 0; }
+      .global_wrapper.landing .landing-wrapper-main .rent-free a.start-screening:hover {
+        background: #55dcb7;
+        border-color: #55dcb7; }
+      .global_wrapper.landing .landing-wrapper-main .rent-free a.start-screening:active {
+        background: #3ead8e;
+        border-color: #3ead8e; }
+      .global_wrapper.landing .landing-wrapper-main .new-screen ul li {
+      max-width: 300px;
+      width: 32%;
+      }
       .global_wrapper.landing .landing-wrapper-main .streamlined ul li h3 {
         margin-top: 30px; }
       .global_wrapper.landing .landing-wrapper-main .streamlined ul li p {
         margin-top: 15px; }
 
 .global_wrapper.landing .landing-wrapper-main .our-customers {
-  padding: 100px 0;
+  padding: 45px 0;
   background: rgba(84, 84, 84, 0.05);
   text-align: center; }
   .global_wrapper.landing .landing-wrapper-main .our-customers ul {
@@ -11724,7 +11785,7 @@ body {
     margin: 0 auto; }
 
 .global_wrapper.landing .landing-wrapper-main .obligation {
-  background: url(../../images/landing/footer-image.jpg) center center no-repeat;
+  background: url(../../images/landing/new/footer-image.jpg) center center no-repeat;
   background-size: cover;
   padding-bottom: 150px;
   position: relative; }
@@ -11812,6 +11873,10 @@ body {
             height: auto; } }
 
 @media screen and (max-width: 768px) {
+  .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report.another-side .right-side {
+    padding-left: 10px;
+    padding-top: 0;
+  }
   .global_wrapper.landing .landlord-screen {
     background-position-x: 90%;
     padding-bottom: 100px;
@@ -11877,7 +11942,7 @@ body {
       display: block;
       margin: 0 auto;
       text-align: center;
-      margin-top: -140px;
+      margin-top: -60px;
       padding: 0 15px; }
       .global_wrapper.landing .landing-wrapper-main .accurate-reports .container-report .mobile img {
         margin-top: 0; }
