@@ -5482,7 +5482,31 @@ label.error {
   border: solid 2px #cfcfd2;
   resize: none;
   margin-top: 10px; }
-
+.popup.share-view .modal-line {
+  width: 100%;
+  height: 2px;
+  background: #e4e4e4;
+  margin: 10px auto;
+}
+.popup.share-view a.message-button {
+  display: none;
+  margin: 0 auto 10px;
+  color: #3ec19d;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+.popup.share-view a.message-button.active {
+  display: inline-block;
+}
+.popup.share-view .message-mail {
+  display: none;
+}
+.popup.share-view .message-mail.active {
+  display: block;
+}
 .popup.share-view h4 {
   margin-top: 16px;
   font-size: 16px;
@@ -12653,6 +12677,9 @@ body {
       font-size: 18px;
       line-height: 1;
       font-weight: 600; }
+    .dash-payments .account-line.dash-new .head {
+      margin: 0 10px;
+    }
     .dash-payments .account-line .head h2:first-child {
       text-align: left;
       padding-left: 62px;
@@ -12670,6 +12697,54 @@ body {
       letter-spacing: 1.1px;
       font-weight: 600;
       padding-right: 10px; }
+    .dash-payments .account-line.dash-new .head h2:nth-child(1) {
+      width: 31%;
+      text-align: left;
+      padding-left: 6%;
+    }
+    .dash-payments .account-line.dash-new .head h2:nth-child(2) {
+      width: 13%;
+      text-align: center;
+    }
+    .dash-payments .account-line.dash-new .head h2:nth-child(3) {
+      width: 18%;
+      text-align: center;
+      padding-left: 0;
+    }
+    .dash-payments .account-line.dash-new .head h2:nth-child(4) {
+      width: 18%;
+      text-align: center;
+      padding-left: 0;
+    }
+    .dash-payments .account-line.dash-new .head a {
+      width: 20%;
+    }
+    .dash-payments .account-line.dash-new .head-body h2 {
+      color: #898989;
+      font-size: 25px;
+      float: left;
+    }
+    .dash-payments .account-line.dash-new .head-body h2:nth-child(1) {
+      width: 31%;
+      text-align: left;
+      padding-left: 6%;
+      color: #545454;
+    }
+    .dash-payments .account-line.dash-new .head-body h2:nth-child(2) {
+      width: 13%;
+      text-align: center;
+      color: #545454;
+    }
+    .dash-payments .account-line.dash-new .head-body h2:nth-child(3) {
+      width: 18%;
+      text-align: center;
+      padding-left: 0;
+    }
+    .dash-payments .account-line.dash-new .head-body h2:nth-child(4) {
+      width: 18%;
+      text-align: center;
+      padding-left: 0;
+    }
     .dash-payments .account-line .head-body.empty h2 {
       text-align: center;
       font-size: 16px; }
@@ -12971,6 +13046,9 @@ body {
     width: 94%;
     float: none;
     margin: 15px auto; }
+  .dash-payments .account-line.dash-new .head h2 {
+    display: block;
+  }
     .dash-payments .search-row-mobile input[type=text] {
       border-radius: 2px;
       border: solid 1px #818f92;
@@ -14272,6 +14350,71 @@ body {
       border-color: #c63b4e; }
 
 @media screen and (max-width: 768px) {
+  .dash-payments .account-line.dash-new .head-body {
+    padding-bottom: 80px;
+  }
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(1),
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(2) {
+    width: 50%;
+    padding: 0;
+    font-size: 22px;
+  }
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(1) {
+    text-align: left;
+    width: 70%;
+    padding-left: 22px;
+  }
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(2) {
+    text-align: right;
+    width: 30%;
+    padding-right: 22px;
+  }
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(3) {
+    text-align: right;
+    width: 30%;
+    padding-right: 22px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    font-size: 14px;
+  }
+  .dash-payments .account-line.dash-new .head-body h2:nth-child(4) {
+    text-align: right;
+    width: 30%;
+    padding-right: 22px;
+    position: absolute;
+    right: 0;
+    top: 95px;
+    font-size: 14px;
+  }
+  .dash-payments .account-line.dash-new .head h2:nth-child(1),
+  .dash-payments .account-line.dash-new .head h2:nth-child(2) {
+    display: none;
+  }
+  .dash-payments .account-line.dash-new .head h2:nth-child(3) {
+    display: block !important;
+  }
+  .dash-payments .account-line.dash-new .head h2:nth-child(3),
+  .dash-payments .account-line.dash-new .head h2:nth-child(4) {
+    font-size: 14px;
+    color: #898989;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding-left: 0;
+    margin-left: 0;
+    width: 70%;
+    text-align: left;
+    padding-left: 22px;
+  }
+  .dash-payments .account-line.dash-new .head h2:nth-child(3) {
+    top: 70px;
+  }
+  .dash-payments .account-line.dash-new .head h2:nth-child(4) {
+    top: 95px;
+  }
   .banner {
     width: 94%;
     padding: 20px;
