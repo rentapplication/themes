@@ -11687,7 +11687,7 @@ body {
   text-align: center; }
   .global_wrapper.landing .landing-wrapper-main .streamlined ul {
     font-size: 0;
-    text-align: justify;
+    text-align: center;
     display: inline-block;
     margin: 70px auto 0;
     max-width: 1050px;
@@ -11697,8 +11697,8 @@ body {
       display: inline-block;
       zoom: 1;
       vertical-align: top;
-      max-width: 220px;
-      width: 25%;
+      max-width: 300px;
+      width: 33.33%;
       margin: 0 21px;
       text-align: center; }
       .global_wrapper.landing .landing-wrapper-main .streamlined ul li .image-container {
@@ -11731,6 +11731,43 @@ body {
         max-width: 620px;
         margin: 20px auto;
       }
+      .global_wrapper.landing .landing-wrapper-main .rent-free p.small-italic {
+        font-size: 13px;
+        color: #cfdaf2;
+        font-style: italic;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap .fll {
+        float: left;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap .flr {
+        float: right;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap .price-name {
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap .price-cost {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      .global_wrapper.landing .landing-wrapper-main .rent-free .prices-wrap .price-cost span {
+        font-size: 11px;
+        font-weight: 400;
+        color: #cfdaf2;
+        margin-left: 2px;
+      }
       .global_wrapper.landing .landing-wrapper-main .rent-free a.start-screening {
         width: 100%;
         max-width: 300px;
@@ -11758,7 +11795,26 @@ body {
       .global_wrapper.landing .landing-wrapper-main .streamlined ul li h3 {
         margin-top: 30px; }
       .global_wrapper.landing .landing-wrapper-main .streamlined ul li p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
         margin-top: 15px; }
+        .global_wrapper.landing .landing-wrapper-main .streamlined ul li p.price-cost {
+          font-size: 20px;
+          color: #898989;
+          font-weight: 600;
+          margin-top: 9px;
+        }
+        .global_wrapper.landing .landing-wrapper-main .streamlined ul li p.price-cost span {
+          color: #b0b5bc;
+          font-size: 11px;
+          margin-left: 2px;
+        }
+        .global_wrapper.landing .landing-wrapper-main .streamlined ul li p.small {
+          font-size: 12px;
+          color: #b0b5bc;
+          margin-top: 0;
+        }
 
 .global_wrapper.landing .landing-wrapper-main .our-customers {
   padding: 45px 0;
@@ -11776,9 +11832,9 @@ body {
       display: inline-block;
       zoom: 1;
       vertical-align: top;
-      max-width: 210px;
+      max-width: 280px;
       text-align: center;
-      margin: 0 6%; }
+      margin: 0 2.5%; }
       .global_wrapper.landing .landing-wrapper-main .our-customers ul li .image-container {
         max-width: 210px;
         height: 210px;
