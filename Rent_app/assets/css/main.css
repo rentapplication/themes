@@ -6993,7 +6993,7 @@ label.error {
     color: #545454;
     line-height: 1;
     text-align: left;
-    margin-top: 14px; }
+    margin-top: 25px; }
     .eviction-information h4 span {
       color: #dd485b; }
   .eviction-information input {
@@ -18320,7 +18320,7 @@ body.step2--active .newform-flow.newform1 .container .background-block {
 .eviction-information .input-container {
     position: relative;
     margin-top: 10px;
-    max-width: 330px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -18404,12 +18404,12 @@ body.step2--active .newform-flow.newform1 .container .background-block {
   z-index: 5; }
 .eviction-information h5 {
     font-style: normal;
-    font-size: 12px;
+    font-size: 13px;
     color: #545454;
     margin-top: 10px;
     margin-bottom: -25px;
     display: inline-block;
-    max-width: 300px;
+    max-width: 500px;
 }
 .eviction-information h5 a {
   color: #3ec19d;
@@ -18750,7 +18750,7 @@ body.form3-step2-active .preview-your-form {
     display: none;
   }
   .eviction-information .line-dashed {
-    display: none;
+    margin: 20px -35px 25px -35px;
   } 
   .eviction-information .secure {
     display: none;
@@ -18921,6 +18921,12 @@ body.form3-step2-active .preview-your-form {
     .newform-flow.newform1 .row.top ul li.line:nth-child(4) {
         left: 168px;
     }
+    .eviction-information .ev-container-payoption-start .row2.fee {
+        margin-top: 0;
+    }
+    .eviction-information h3 {
+      text-align: center;
+    } 
 }
 @media screen and (max-width: 767px) {
 	.inactive_link {
@@ -18997,6 +19003,10 @@ body.form3-step2-active .preview-your-form {
   .ev-container-payoption-start a.create {
     width: 270px;
     font-size: 15px;
+    margin-top: 20px;
+  }
+  .eviction-information h3.background {
+    margin-top: 20px;
   }
   .ev-container-payoption2 a.create {
     width: 280px;
