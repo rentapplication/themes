@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="162" height="215" viewBox="0 0 162 215"><path fill="#EFF4FB" fill-rule="evenodd" d="M161.426 169.775h-25.781v44.385H91.406v-44.385H0v-31.494L93.896 0h41.749v134.62h25.78v35.155zm-70.02-35.156V98.291c0-6.055.244-14.844.733-26.367.488-11.524.879-18.213 1.172-20.069h-1.172c-3.614 8.008-7.96 15.82-13.037 23.438l-39.258 59.326h51.562z" opacity=".838"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="215px" viewBox="0 0 162 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.83799819">
+        <g id="Landing---Rocket-Lease-" transform="translate(-709.000000, -2772.000000)" fill="#16242F">
+            <g id="numbers-gradient-outlines" transform="translate(709.000000, 1399.000000)">
+                <path d="M161.425781,1542.77539 L135.644531,1542.77539 L135.644531,1587.16016 L91.40625,1587.16016 L91.40625,1542.77539 L0,1542.77539 L0,1511.28125 L93.8964844,1373 L135.644531,1373 L135.644531,1507.61914 L161.425781,1507.61914 L161.425781,1542.77539 Z M91.40625,1507.61914 L91.40625,1471.29102 C91.40625,1465.2363 91.6503882,1456.44732 92.1386719,1444.92383 C92.6269556,1433.40033 93.0175767,1426.71095 93.3105469,1424.85547 L92.1386719,1424.85547 C88.5253726,1432.86332 84.1797129,1440.67574 79.1015625,1448.29297 L39.84375,1507.61914 L91.40625,1507.61914 Z" id="4" opacity="0.0475769942"></path>
+            </g>
+        </g>
+    </g>
+</svg>
